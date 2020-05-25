@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>prinzpiuz</title>
-    <link>http://example.org/</link>
+    <link>https://prinzpiuz.github.io/</link>
     <description>Recent content on prinzpiuz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright 2020, prinzpiuz</copyright>
     <lastBuildDate>Sat, 23 May 2020 00:18:33 +0530</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://prinzpiuz.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>My Projects</title>
-      <link>http://example.org/projects/my-projects/</link>
+      <link>https://prinzpiuz.github.io/projects/my-projects/</link>
       <pubDate>Sun, 24 May 2020 01:17:05 +0530</pubDate>
       
-      <guid>http://example.org/projects/my-projects/</guid>
+      <guid>https://prinzpiuz.github.io/projects/my-projects/</guid>
       <description>These are my hobby projects 👏 if you guys like, put a ⭐   Railgadi BOT 
 This is a telegram BOT built with python and telegram bot framework
 this bot provides lots of functionalites provied by NTES inside telegram
@@ -28,20 +28,20 @@ This app helps to manage our media servers like emby/jellyfin/plex/kodi&amp;hell
     
     <item>
       <title>Hello World</title>
-      <link>http://example.org/post/hello-world/</link>
+      <link>https://prinzpiuz.github.io/post/hello-world/</link>
       <pubDate>Sun, 24 May 2020 00:59:10 +0530</pubDate>
       
-      <guid>http://example.org/post/hello-world/</guid>
+      <guid>https://prinzpiuz.github.io/post/hello-world/</guid>
       <description>Hello world..! 😃 This is my first blog, This is kinda test publishing 😎
 thank you&amp;hellip; 💖</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>http://example.org/about/</link>
+      <link>https://prinzpiuz.github.io/about/</link>
       <pubDate>Sat, 23 May 2020 00:18:33 +0530</pubDate>
       
-      <guid>http://example.org/about/</guid>
+      <guid>https://prinzpiuz.github.io/about/</guid>
       <description>Me Hi, Myself prinzpiuz, I believe in #FreeAsInFreedom. My actual name is Prince Thaliath.
 I&amp;rsquo;m software engineer, currently working for Nuventure Connect.
 Previosouly I worked for Tridz as a system admin
