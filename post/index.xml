@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on prinzpiuz</title>
-    <link>prinzpiuz.in/post/</link>
+    <link>/post/</link>
     <description>Recent content in Posts on prinzpiuz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright 2020, prinzpiuz</copyright>
     <lastBuildDate>Sun, 24 May 2020 00:59:10 +0530</lastBuildDate>
     
-	<atom:link href="prinzpiuz.in/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hello World</title>
-      <link>prinzpiuz.in/post/hello-world/</link>
+      <link>/post/hello-world/</link>
       <pubDate>Sun, 24 May 2020 00:59:10 +0530</pubDate>
       
-      <guid>prinzpiuz.in/post/hello-world/</guid>
+      <guid>/post/hello-world/</guid>
       <description>Hello world..! 😃 This is my first blog, This is kinda test publishing 😎
 thank you&amp;hellip; 💖</description>
     </item>

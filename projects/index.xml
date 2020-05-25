@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on prinzpiuz</title>
-    <link>prinzpiuz.in/projects/</link>
+    <link>/projects/</link>
     <description>Recent content in Projects on prinzpiuz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright 2020, prinzpiuz</copyright>
     <lastBuildDate>Sun, 24 May 2020 01:17:05 +0530</lastBuildDate>
     
-	<atom:link href="prinzpiuz.in/projects/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>My Projects</title>
-      <link>prinzpiuz.in/projects/my-projects/</link>
+      <link>/projects/my-projects/</link>
       <pubDate>Sun, 24 May 2020 01:17:05 +0530</pubDate>
       
-      <guid>prinzpiuz.in/projects/my-projects/</guid>
+      <guid>/projects/my-projects/</guid>
       <description>These are my hobby projects 👏 if you guys like, put a ⭐   Railgadi BOT 
 This is a telegram BOT built with python and telegram bot framework
 this bot provides lots of functionalites provied by NTES inside telegram
