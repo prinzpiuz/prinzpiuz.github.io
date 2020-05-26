@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-05-26T15:29:46+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/my-blog-setup/</loc>
+    <lastmod>2020-05-26T15:29:46+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-05-26T15:29:46+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/set-up/</loc>
+    <lastmod>2020-05-26T15:29:46+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>/projects/my-projects/</loc>
     <lastmod>2020-05-24T01:17:05+05:30</lastmod>
   </url>
@@ -13,22 +33,12 @@
   </url>
   
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2020-05-24T00:59:10+05:30</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/hello-world/</loc>
     <lastmod>2020-05-24T00:59:10+05:30</lastmod>
   </url>
   
   <url>
     <loc>/categories/helloworld/</loc>
-    <lastmod>2020-05-24T00:59:10+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
     <lastmod>2020-05-24T00:59:10+05:30</lastmod>
   </url>
   

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on prinzpiuz</title>
-    <link>/post/</link>
-    <description>Recent content in Posts on prinzpiuz</description>
+    <title>set-up on prinzpiuz</title>
+    <link>/categories/set-up/</link>
+    <description>Recent content in set-up on prinzpiuz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright 2020, prinzpiuz</copyright>
     <lastBuildDate>Tue, 26 May 2020 15:29:46 +0530</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/set-up/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,17 +21,6 @@
       <description>I was planning to set-up a blog from my college days onwards.its been 5 years since I&amp;rsquo;m out of college.since I&amp;rsquo;m a miser person, I was always looking for cheapest hosting service 😎
 also I don&amp;rsquo;t want the headaches of hosting like
  server management database management backups hosting/bandwidth/scalability/users  And I have found solution for all this, for server management we can choose some hosting services like GitHub/Gitlab pages or Netfly.</description>
-    </item>
-    
-    <item>
-      <title>Hello world..!</title>
-      <link>/post/hello-world/</link>
-      <pubDate>Sun, 24 May 2020 00:59:10 +0530</pubDate>
-      
-      <guid>/post/hello-world/</guid>
-      <description>welcome,സ്വാഗതം 🙏 to my blog.
-This is my first blog, This is kinda test publishing 😎
-thank you&amp;hellip; 💖</description>
     </item>
     
   </channel>
