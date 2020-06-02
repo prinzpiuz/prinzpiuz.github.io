@@ -4,16 +4,36 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-05-26T15:29:46+05:30</lastmod>
+    <lastmod>2020-06-02T00:20:59+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/post/my-blog-setup/</loc>
-    <lastmod>2020-05-26T15:29:46+05:30</lastmod>
+    <loc>/categories/linux/</loc>
+    <lastmod>2020-06-02T00:20:59+05:30</lastmod>
   </url>
   
   <url>
     <loc>/post/</loc>
+    <lastmod>2020-06-02T00:20:59+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-06-02T00:20:59+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/python/</loc>
+    <lastmod>2020-06-02T00:20:59+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/python-saves-time/</loc>
+    <lastmod>2020-06-02T00:20:59+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/my-blog-setup/</loc>
     <lastmod>2020-05-26T15:29:46+05:30</lastmod>
   </url>
   
@@ -44,11 +64,6 @@
   
   <url>
     <loc>/about/</loc>
-    <lastmod>2020-05-23T00:18:33+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
     <lastmod>2020-05-23T00:18:33+05:30</lastmod>
   </url>
   

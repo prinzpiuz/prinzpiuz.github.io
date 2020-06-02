@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en"><head>
+    <title>Python Saves My Time</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../../css/theme.css"/>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-167547056-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-167547056-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body>
+        <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+    <div class="row">
+        <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
+            <a href="../../" class="text-decoration-none">
+                <img id="home-image" class="rounded-circle"
+                    
+                        src="../../images/avatar.png"
+                    
+                />
+            </a>
+        </div>
+        <div class="col-sm-8 col-12 text-sm-left text-center">
+            <h2 class="m-0 mb-2 mt-4">
+                <a href="../../" class="text-decoration-none">
+                    
+                        prinzpiuz
+                    
+                </a>
+            </h2>
+            <p class="text-muted mb-1">
+                
+                    Software Engineer | Nuventure | Cochin
+                
+            </p>
+            <ul id="nav-links" class="list-inline mb-2">
+                
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../about/" title="About">About</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../post/" title="Posts">Posts</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../categories/" title="Categories">Categories</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../projects/my-projects/index.html" title="Projects">Projects</a>
+                    </li>
+                
+            </ul>
+            <ul id="nav-social" class="list-inline">
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="http://github.com/prinzpiuz" target="_blank">
+                            <i class="fab fa-github fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://twitter.com/prinzpiuz/" target="_blank">
+                            <i class="fab fa-twitter fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://mastodon.technology/@prinzpiuz" target="_blank">
+                            <i class="fab fa-mastodon text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://pixelfed.social/prinzpiuz" target="_blank">
+                            <i class="fab fa-telegram text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://pixelfed.social/prinzpiuz" target="_blank">
+                            <i class="fas fa-images text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="mailto:prinzpiuz@gmail.com" target="_blank">
+                            <i class="fas fa-at fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+    <hr />
+</header>
+<div class="container">
+    <div class="pl-sm-2">
+        <div class="mb-3">
+            <h3 class="mb-0">Python Saves My Time</h3>
+            
+            <small class="text-muted">Published June 2, 2020</small>
+        </div>
+
+        <article>
+            <blockquote>
+<p><em>&ldquo;repetitive task should be automated&rdquo;</em> - somebody,somewhere 😎</p>
+</blockquote>
+<p>Its common philosophy in field of it to automate repetitive tasks, even if it take some time now to set-up it it will save lot of time in future. In this post I like to share kinda experience i had today while updating my machine and how python solved it easily.</p>
+<p>In my work machine I am running <a href="https://manjaro.org/">Manjaro</a> Linux, which is a <a href="https://en.wikipedia.org/wiki/Rolling_release">Rolling Release</a> based on <a href="https://www.archlinux.org/">Archlinux</a>. so while updating today i had <em>“error: failed to commit transaction (conflicting files)”</em> error, which is a common error in archlinux due to same file already exists in machine(file conflict) you can read more about it in <a href="https://wiki.archlinux.org/index.php/pacman#%22Failed_to_commit_transaction_(conflicting_files)%22_error">here</a>. The solution for this error is to delete each file manually, so easy na ?. just remove that file with rm command.
+But what if we have this much conflicted files ?</p>
+<p><div class="highlight-wrapper">
+    
+        <details>
+            <summary>expand</summary>
+            <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">  
+btrfs-progs: /usr/bin/fsck.btrfs exists in filesystem
+btrfs-progs: /usr/bin/mkfs.btrfs exists in filesystem
+btrfs-progs: /usr/include/btrfsutil.h exists in filesystem
+btrfs-progs: /usr/lib/initcpio/hooks/btrfs exists in filesystem
+btrfs-progs: /usr/lib/initcpio/install/btrfs exists in filesystem
+btrfs-progs: /usr/lib/libbtrfs.so exists in filesystem?
+btrfs-progs: /usr/lib/libbtrfs.so.0 exists in filesystem
+btrfs-progs: /usr/lib/libbtrfs.so.0.1 exists in filesystem
+btrfs-progs: /usr/lib/libbtrfsutil.so exists in filesystem
+btrfs-progs: /usr/lib/libbtrfsutil.so.1 exists in filesystem
+btrfs-progs: /usr/lib/python3.8/site-packages/btrfsutil.cpython-38-x86_64-linux-gnu.so exists in filesystem
+btrfs-progs: /usr/lib/systemd/system/btrfs-scrub@.service exists in filesystem
+btrfs-progs: /usr/lib/systemd/system/btrfs-scrub@.timer exists in filesystem
+btrfs-progs: /usr/lib/udev/rules.d/64-btrfs-dm.rules exists in filesystem
+btrfs-progs: /usr/share/bash-completion/completions/btrfs exists in filesystem
+btrfs-progs: /usr/share/man/man5/btrfs.5.gz exists in filesystem
+btrfs-progs: /usr/share/man/man8/btrfs-balance.8.gz exists in filesystem
+btrfs-progs: /usr/share/man/man8/btrfs-check.8.gz exists in filesystem
+btrfs-progs: /usr/share/man/man8/btrfs-convert.8.gz exists in filesystem
+btrfs-progs: /usr/share/man/man8/btrfs-device.8.gz exists in filesystem
+btrfs-progs: /usr/share/man/man8/btrfs-filesystem.8.gz exists in filesystem
+btrfs-progs: /usr/share/man/man8/btrfs-find-root.8.gz exists in filesystem
+btrfs-progs: /usr/share/man/man8/btrfs-image.8.gz exists in filesystem
+btrfs-progs: /usr/share/man/man8/btrfs-inspect-internal.8.gz exists in filesystem
+btrfs-progs: /usr/share/man/man8/btrfs-map-logical.8.gz exists in filesystem
+btrfs-progs: /usr/share/man/man8/btrfs-property.8.gz exists in filesystem
+btrfs-progs: /usr/share/man/man8/btrfs-qgroup.8.gz exists in filesystem
+btrfs-progs: /usr/share/man/man8/btrfs-quota.8.gz exists in filesystem
+btrfs-progs: /usr/share/man/man8/btrfs-receive.8.gz exists in filesystem
+btrfs-progs: /usr/share/man/man8/btrfs-replace.8.gz exists in filesystem
+btrfs-progs: /usr/share/man/man8/btrfs-rescue.8.gz exists in filesystem
+btrfs-progs: /usr/share/man/man8/btrfs-restore.8.gz exists in filesystem
+btrfs-progs: /usr/share/man/man8/btrfs-scrub.8.gz exists in filesystem
+btrfs-progs: /usr/share/man/man8/btrfs-select-super.8.gz exists in filesystem
+btrfs-progs: /usr/share/man/man8/btrfs-send.8.gz exists in filesystem
+btrfs-progs: /usr/share/man/man8/btrfs-subvolume.8.gz exists in filesystem
+btrfs-progs: /usr/share/man/man8/btrfs.8.gz exists in filesystem
+btrfs-progs: /usr/share/man/man8/btrfsck.8.gz exists in filesystem
+btrfs-progs: /usr/share/man/man8/btrfstune.8.gz exists in filesystem
+btrfs-progs: /usr/share/man/man8/fsck.btrfs.8.gz exists in filesystem
+btrfs-progs: /usr/share/man/man8/mkfs.btrfs.8.gz exists in filesystem</code></pre></div>
+        </details>
+    
+</div>
+<br>
+so it will be tough to delete all this conflict files one by one. I use python for helping in this kind of context.
+so my idea is to save this shell output as text file and parse string one by one from it into a python list and split string based
+on space and get the file path  from it and run shell commands on that path from python</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os 
+file<span style="color:#f92672">=</span>open(<span style="color:#e6db74">&#34;conflict.txt&#34;</span>, <span style="color:#e6db74">&#34;r&#34;</span>)
+<span style="color:#66d9ef">for</span> string <span style="color:#f92672">in</span> file:
+  os<span style="color:#f92672">.</span>system(<span style="color:#e6db74">&#34;sudo rm &#34;</span><span style="color:#f92672">+</span> string<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34; &#34;</span>)[<span style="color:#ae81ff">1</span>])
+</code></pre></div><p>This python snippet do the thing for me and save a lot of time.<br>
+Read more about <a href="https://docs.python.org/3/library/os.html#os.system">os.system</a></p>
+
+        </article>
+    </div>
+
+            </div>
+        </div><footer class="text-center pb-1">
+    <small class="text-muted">
+        
+            &copy; Copyright 2020, prinzpiuz
+        
+    </small>
+</footer>
+</body>
+</html>

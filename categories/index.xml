@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright 2020, prinzpiuz</copyright>
-    <lastBuildDate>Tue, 26 May 2020 15:29:46 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2020 00:20:59 +0530</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>linux</title>
+      <link>/categories/linux/</link>
+      <pubDate>Tue, 02 Jun 2020 00:20:59 +0530</pubDate>
+      
+      <guid>/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>/categories/python/</link>
+      <pubDate>Tue, 02 Jun 2020 00:20:59 +0530</pubDate>
+      
+      <guid>/categories/python/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>set-up</title>

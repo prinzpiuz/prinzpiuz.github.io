@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on prinzpiuz</title>
+    <link>/categories/linux/</link>
+    <description>Recent content in linux on prinzpiuz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Copyright 2020, prinzpiuz</copyright>
+    <lastBuildDate>Tue, 02 Jun 2020 00:20:59 +0530</lastBuildDate>
+    
+	<atom:link href="/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python Saves My Time</title>
+      <link>/post/python-saves-time/</link>
+      <pubDate>Tue, 02 Jun 2020 00:20:59 +0530</pubDate>
+      
+      <guid>/post/python-saves-time/</guid>
+      <description>&amp;ldquo;repetitive task should be automated&amp;rdquo; - somebody,somewhere 😎
+ Its common philosophy in field of it to automate repetitive tasks, even if it take some time now to set-up it it will save lot of time in future. In this post I like to share kinda experience i had today while updating my machine and how python solved it easily.
+In my work machine I am running Manjaro Linux, which is a Rolling Release based on Archlinux.</description>
+    </item>
+    
+  </channel>
+</rss>
