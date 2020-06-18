@@ -7,17 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright 2020, prinzpiuz</copyright>
-    <lastBuildDate>Tue, 02 Jun 2020 00:20:59 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2020 14:58:35 +0530</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>flutter</title>
+      <link>/categories/flutter/</link>
+      <pubDate>Sat, 13 Jun 2020 14:58:35 +0530</pubDate>
+      
+      <guid>/categories/flutter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>linux</title>
       <link>/categories/linux/</link>
-      <pubDate>Tue, 02 Jun 2020 00:20:59 +0530</pubDate>
+      <pubDate>Sat, 13 Jun 2020 14:58:35 +0530</pubDate>
       
       <guid>/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>server</title>
+      <link>/categories/server/</link>
+      <pubDate>Sat, 13 Jun 2020 14:58:35 +0530</pubDate>
+      
+      <guid>/categories/server/</guid>
       <description></description>
     </item>
     
