@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright 2020, prinzpiuz</copyright>
-    <lastBuildDate>Tue, 07 Jul 2020 16:23:04 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2020 17:46:27 +0530</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Errors and Exceptions In Python</title>
+      <link>/post/errors-and-exceptions/</link>
+      <pubDate>Sat, 03 Oct 2020 17:46:27 +0530</pubDate>
+      
+      <guid>/post/errors-and-exceptions/</guid>
+      <description>This blog is about How to manage Exceptions in python, this is more like notes i took while reading Dusty Phillips&amp;rsquo;s Python 3 Object-oriented Programming,
+This post can be divide like
+ why raising an exception ? what is happening while an exception is raised ? Handling exceptions The exception hierarchy Defining our own exceptions  Why raising an exception ? All the programs out there dont always output a valid result always, errors can happen, like it&amp;rsquo;s not possible to divide by zero, or to access the eighth item in a five-item list.</description>
+    </item>
     
     <item>
       <title>Open Alternative, Not Ban</title>
