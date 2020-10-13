@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright 2020, prinzpiuz</copyright>
-    <lastBuildDate>Sat, 03 Oct 2020 17:46:27 +0530</lastBuildDate>
-    
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 03 Oct 2020 17:46:27 +0530</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Errors and Exceptions In Python</title>
       <link>/post/errors-and-exceptions/</link>
@@ -95,12 +91,14 @@ thank you&amp;hellip; 💖</description>
       <pubDate>Sat, 23 May 2020 00:18:33 +0530</pubDate>
       
       <guid>/about/</guid>
-      <description>Me Hi, Myself prinzpiuz, I believe in #FreeAsInFreedom. I&amp;rsquo;m software engineer, currently working for Nuventure Connect.
+      <description>Me Hi, Myself prinzpiuz, I believe in #FreeAsInFreedom.
+I am against all that questioning my freedom,
+So I don&amp;rsquo;t have relegion, cast, men, women or politics
+I stand for human, I am human
+I&amp;rsquo;m software engineer, currently working for Nuventure Connect.
 Previosouly I worked for Tridz as a system admin
 I started this blog for sharing my Tweaks | Hacks | DIYs
-I watch Movies in my free time, also i like Football, Badminton, and Cycling
-Contact Me Currently I&amp;rsquo;m living in Varapuzha | Kochi | Kerala | India
-Mail  personal: prinzpiuz@gmail.com work: prince@nuventure.in  Social  Github Twitter Mastodon Pixelfed Telegram  </description>
+I watch Movies in my free time, also i like Football, Badminton, and Cycling</description>
     </item>
     
   </channel>
