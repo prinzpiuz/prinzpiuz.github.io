@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en"><head>
+    <title>Introduction to Async Django</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../../css/theme.css"/>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-167547056-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-167547056-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body>
+        <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+    <div class="row">
+        <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
+            <a href="../../" class="text-decoration-none">
+                <img id="home-image" class="rounded-circle"
+                    
+                        src="../../images/avatar.png"
+                    
+                />
+            </a>
+        </div>
+        <div class="col-sm-8 col-12 text-sm-left text-center">
+            <h2 class="m-0 mb-2 mt-4">
+                <a href="../../" class="text-decoration-none">
+                    
+                        PrinzPiuz
+                    
+                </a>
+            </h2>
+            <p class="text-muted mb-1">
+                
+                    Software Engineer | Nuventure | Cochin
+                
+            </p>
+            <ul id="nav-links" class="list-inline mb-2">
+                
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../about/" title="About">About</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../post/" title="Posts">Posts</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../categories/" title="Categories">Categories</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../projects/my-projects/index.html" title="Projects">Projects</a>
+                    </li>
+                
+            </ul>
+            <ul id="nav-social" class="list-inline">
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="http://github.com/prinzpiuz" target="_blank">
+                            <i class="fab fa-github fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://twitter.com/prinzpiuz/" target="_blank">
+                            <i class="fab fa-twitter fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://mastodon.technology/@prinzpiuz" target="_blank">
+                            <i class="fab fa-mastodon text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://t.me/princepiuz" target="_blank">
+                            <i class="fab fa-telegram text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://pixelfed.social/prinzpiuz" target="_blank">
+                            <i class="fas fa-images text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://www.strava.com/athletes/68470966" target="_blank">
+                            <i class="fab fa-strava text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="mailto:prinzpiuz@gmail.com" target="_blank">
+                            <i class="fas fa-at fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+    <hr />
+</header>
+<div class="container">
+    <div class="pl-sm-2">
+        <div class="mb-3">
+            <h3 class="mb-0">Introduction to Async Django</h3>
+            
+            <small class="text-muted">Published January 21, 2021</small>
+        </div>
+
+        <article>
+            <p>This is basically a written version of talk I presented among my collegues.
+This is a basic introduction to asynchronous programming in django.<br>
+So the async support for django came with <a href="https://docs.djangoproject.com/en/3.1/topics/async/">django 3.1</a> in august 2020, a great leap in history of Django. still it lack support in certain areas like ORM, cache layer, but it will be available soon. The effort for implementing async support in django was done by <a href="https://twitter.com/andrewgodwin">Andrew Godwin</a> 👏<br>
+Now let&rsquo;s have look into how this async django works&hellip;.</p>
+<ul>
+<li>
+<p><strong>Synchronous v/s Asynchronous Execution</strong><br>
+Simply speaking, synchronous execution is sequential execution. And if there is any blocking code comes in between like db lookup, api fetching the whole system get blocked for it. our only built in option for running code in parallel in the same process is threads. while asynchronous execution is happening inside a event loop. where event loop is central execution point where you can run multiple **<a href="#coroutines">coroutines</a>
+at ones, coroutines will be executed synchronously until an await syntax is reached and then they pause, give up control to the event loop, and something else can happen</p>
+</li>
+<li>
+<p><strong>Thread, Task, Process in python</strong><br>
+All the terms refereed in this section are same name given to programs that run concurrently. Some common things that can be seen in this three modes of execution is that they can be stopped at any point and switch to different one. the state of each is saved and can be started from where it stopped</p>
+<ul>
+<li><strong>Threading</strong><br>
+Threading in python is done with the help of <a href="https://docs.python.org/3/library/threading.html">threading</a> module, Threads are managed by Operating system, Threads are light weight compared to process and they share same resources. Even multiple processors are available execution take place only in a single one. All control of threads is with operating system, means operating system can decide when to switch the thread, how much resource should allocate&hellip;etc. So thread based execution is also called as <a href="https://en.wikipedia.org/wiki/Preemption_%28computing%29#Preemptive_multitasking">Preemptive multitasking</a></li>
+<li><strong>Task</strong><br>
+<a href="https://docs.python.org/3/library/asyncio.html">AsyncIO</a> module uses Tasks for achieving concurrency.Task are being run in event loop. Task work just opposite of Threads, like all the control is in the hands of program itself, the program itself will give control back to the event loop when the execution get blocked and event loop check for any other program/task/coroutine available in loop so that it can be run in  event loop in the mean time. Here also execution happens in single process. and resource sharing will be same as that of threads</li>
+<li><strong>Process</strong><br>
+Process help to achieve multiprocessing in python. and it can be programmed through <a href="https://docs.python.org/3/library/multiprocessing.html">multiprocessing  </a> module. In multiprocessing python create new process. its almost same as running copy&rsquo;s of individual program, each of them having independent resources. And main advantage of this is that, unlike threads and task, if it&rsquo;s a multicore system, process can run on each core at same time. the ultimate parallelism. but there are some complication in between the communication of process.</li>
+</ul>
+<p>so by understanding this you can select the use cases where you need to select Thread, Task, Process. for <a href="https://en.wikipedia.org/wiki/I/O_bound">I/O bound</a> problems threading and task are useful. while for task that rely on heavy cpu cycle <a href="https://en.wikipedia.org/wiki/CPU-bound">(cpu bound)</a>, Multiprocessing will be good. And Remember wrong choosing can get you into big technical debts later.</p>
+</li>
+<li>
+<p><strong>Examples</strong></p>
+<ul>
+<li>
+<p><strong>Notorious sleep example:</strong><br>
+consider an async view in django.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">async <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">view</span>(request):
+  await asyncio<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.5</span>)
+  <span style="color:#66d9ef">return</span> HttpResponse(<span style="color:#e6db74">&#34;hello async world&#34;</span>)
+</code></pre></div><p>here the <code>asyncio.sleep(0.5)</code> doesn&rsquo;t make any sense than <code>time.sleep(0.5)</code>. what we need to understand from the examples of sleep in async django view is that, they represent some blocking functionality. which when get blocked, event loop will execute some other task in que rather than waiting for the blocking functionality</p>
+</li>
+<li>
+<p><strong>More understandable example:</strong>
+<div class="highlight-wrapper">
+    
+        <details>
+            <summary>expand</summary>
+            <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"> 
+    <span style="color:#f92672">from</span> django.http <span style="color:#f92672">import</span> HttpResponse
+    <span style="color:#f92672">import</span> time
+    <span style="color:#f92672">import</span> asyncio
+
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">count</span>():
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;One&#34;</span>)
+        time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">1</span>)
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Two&#34;</span>)
+
+
+    async <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">async_count</span>():
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;One&#34;</span>)
+        await asyncio<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">1</span>)
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Two&#34;</span>)
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">home_view</span>(request):
+        <span style="color:#66d9ef">return</span> HttpResponse(<span style="color:#e6db74">&#39;Hello world&#39;</span>)
+
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main_view</span>(request):
+        start_time <span style="color:#f92672">=</span> time<span style="color:#f92672">.</span>time()
+        count()
+        count()
+        count()
+        total <span style="color:#f92672">=</span> (time<span style="color:#f92672">.</span>time()<span style="color:#f92672">-</span>start_time)
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;total: &#39;</span>, total)
+        <span style="color:#66d9ef">return</span> HttpResponse(<span style="color:#e6db74">&#39;sync time = {}&#39;</span><span style="color:#f92672">.</span>format(total))
+
+
+    async <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main_view_async</span>(request):
+        start_time <span style="color:#f92672">=</span> time<span style="color:#f92672">.</span>time()
+        await asyncio<span style="color:#f92672">.</span>gather(async_count(), async_count(), async_count())
+        total <span style="color:#f92672">=</span> (time<span style="color:#f92672">.</span>time()<span style="color:#f92672">-</span>start_time)
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;total: &#39;</span>, total)
+        <span style="color:#66d9ef">return</span> HttpResponse(<span style="color:#e6db74">&#39;async time = {}&#39;</span><span style="color:#f92672">.</span>format(total))
+    </code></pre></div>
+        </details>
+    
+</div>
+</p>
+<p>Here in this view, I have written two views one is async and other is normal synchronous one, but both of them doing same thing. print string one and two in a time gap of 1 second for 3 times.<br>
+let execute this code and see the output</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">One
+Two
+One
+Two
+One
+Two
+total:  3.0027403831481934
+<span style="color:#f92672">[</span>29/Jan/2021 20:35:51<span style="color:#f92672">]</span> <span style="color:#e6db74">&#34;GET /sync/ HTTP/1.1&#34;</span> <span style="color:#ae81ff">200</span> <span style="color:#ae81ff">30</span>
+Not Found: /favicon.ico
+<span style="color:#f92672">[</span>29/Jan/2021 20:35:51<span style="color:#f92672">]</span> <span style="color:#e6db74">&#34;GET /favicon.ico HTTP/1.1&#34;</span> <span style="color:#ae81ff">404</span> <span style="color:#ae81ff">2352</span>
+One
+One
+One
+Two
+Two
+Two
+total:  1.002244234085083
+<span style="color:#f92672">[</span>29/Jan/2021 20:36:11<span style="color:#f92672">]</span> <span style="color:#e6db74">&#34;GET /async/ HTTP/1.1&#34;</span> <span style="color:#ae81ff">200</span> <span style="color:#ae81ff">30</span>
+</code></pre></div><p>First I called sync view and its took about <code>3 seconds</code> to execute the view and you can see the view executed in a synchronous manner and let see how the async view executed, it  took only <code>1 second</code> to execute the async view. magic lies in the <code>asyncio.gather()</code> function its gather/group tasks and send to event loop. so here when it execute the first <code>async_count()</code> function and reach <code>await asyncio.sleep(1)</code> the execution get blocked for 1 second, so the event loop go to next task and so on&hellip; thats why the printing order in both the views are different</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Conclusion</strong><br>
+From my view point its always synchronous views are safe to write, but you have you to pay the performance cost. In async views there is no ordering guarantee or even no guarantee for that piece of code will be executed. also beware of, for what purpose you are writing this async views. async views will slower response if its processing some cpu bound task.<br>
+<strong>But remember programming world and pythonistas are moving more to async</strong></p>
+</li>
+</ul>
+<h5 id="notes">Notes</h5>
+<ul>
+<li>
+<h6 id="coroutines"><strong>coroutines:</strong></h6>
+coroutines are special types of functions that deliberate <em>yield</em> control over to the caller, but does not end its context in the process but maintain its idle state. They benefit from the ability to keep their data throughout their lifetime and, unlike functions can have several entry points for suspending and resuming execution</li>
+</ul>
+<h5 id="further-reads">Further Reads</h5>
+<ul>
+<li><a href="https://github.com/django/deps/blob/master/accepted/0009-async.rst">proposal for async python into django</a></li>
+<li><a href="https://realpython.com/python-concurrency/">More on python concurrency</a></li>
+</ul>
+
+        </article>
+    </div>
+
+            </div>
+        </div><footer class="text-center pb-1">
+    <small class="text-muted">
+        
+            &copy; Copyright 2020, prinzpiuz
+        
+    </small>
+</footer>
+</body>
+</html>

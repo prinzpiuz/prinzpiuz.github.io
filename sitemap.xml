@@ -4,26 +4,36 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-10-03T17:46:27+05:30</lastmod>
+    <lastmod>2021-01-21T00:43:47+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/post/errors-and-exceptions/</loc>
-    <lastmod>2020-10-03T17:46:27+05:30</lastmod>
+    <loc>/categories/django/</loc>
+    <lastmod>2021-01-21T00:43:47+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/introduction-to-async-django/</loc>
+    <lastmod>2021-01-21T00:43:47+05:30</lastmod>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2020-10-03T17:46:27+05:30</lastmod>
+    <lastmod>2021-01-21T00:43:47+05:30</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-10-03T17:46:27+05:30</lastmod>
+    <lastmod>2021-01-21T00:43:47+05:30</lastmod>
   </url>
   
   <url>
     <loc>/categories/python/</loc>
+    <lastmod>2021-01-21T00:43:47+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/errors-and-exceptions/</loc>
     <lastmod>2020-10-03T17:46:27+05:30</lastmod>
   </url>
   
