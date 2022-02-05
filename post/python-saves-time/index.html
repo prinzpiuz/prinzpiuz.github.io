@@ -17,7 +17,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
     
 <script type="application/javascript">
 var doNotTrack = false;
@@ -38,7 +37,9 @@ if (!doNotTrack) {
             <a href="../../" class="text-decoration-none">
                 <img id="home-image" class="rounded-circle"
                     
-                        src="../../images/avatar.png"
+                        
+                            src="../../images/avatar.jpeg"
+                        
                     
                 />
             </a>
@@ -79,7 +80,7 @@ if (!doNotTrack) {
             <ul id="nav-social" class="list-inline">
                 
                     <li class="list-inline-item mr-3">
-                        <a href="http://github.com/prinzpiuz" target="_blank">
+                        <a href="https://github.com/prinzpiuz" target="_blank">
                             <i class="fab fa-github fa-1x text-muted"></i>
                         </a>
                     </li>
@@ -97,12 +98,6 @@ if (!doNotTrack) {
                     </li>
                 
                     <li class="list-inline-item mr-3">
-                        <a href="https://t.me/princepiuz" target="_blank">
-                            <i class="fab fa-telegram text-muted"></i>
-                        </a>
-                    </li>
-                
-                    <li class="list-inline-item mr-3">
                         <a href="https://pixelfed.social/prinzpiuz" target="_blank">
                             <i class="fas fa-images text-muted"></i>
                         </a>
@@ -111,12 +106,6 @@ if (!doNotTrack) {
                     <li class="list-inline-item mr-3">
                         <a href="https://www.strava.com/athletes/68470966" target="_blank">
                             <i class="fab fa-strava text-muted"></i>
-                        </a>
-                    </li>
-                
-                    <li class="list-inline-item mr-3">
-                        <a href="mailto:prinzpiuz@gmail.com" target="_blank">
-                            <i class="fas fa-at fa-1x text-muted"></i>
                         </a>
                     </li>
                 
@@ -144,7 +133,7 @@ But what if we have this much conflicted files ?</p>
     
         <details>
             <summary>expand</summary>
-            <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">  
+            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">  
 btrfs-progs: /usr/bin/fsck.btrfs exists in filesystem
 btrfs-progs: /usr/bin/mkfs.btrfs exists in filesystem
 btrfs-progs: /usr/include/btrfsutil.h exists in filesystem
@@ -193,7 +182,7 @@ btrfs-progs: /usr/share/man/man8/mkfs.btrfs.8.gz exists in filesystem</code></pr
 so it will be tough to delete all this conflict files one by one. I use python for helping in this kind of context.
 so my idea is to save this shell output as text file and parse string one by one from it into a python list and split string based
 on space and get the file path  from it and run shell commands on that path from python</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os 
 file<span style="color:#f92672">=</span>open(<span style="color:#e6db74">&#34;conflict.txt&#34;</span>, <span style="color:#e6db74">&#34;r&#34;</span>)
 <span style="color:#66d9ef">for</span> string <span style="color:#f92672">in</span> file:
   os<span style="color:#f92672">.</span>system(<span style="color:#e6db74">&#34;sudo rm &#34;</span><span style="color:#f92672">+</span> string<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34; &#34;</span>)[<span style="color:#ae81ff">1</span>])

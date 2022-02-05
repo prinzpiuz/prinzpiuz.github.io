@@ -17,7 +17,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
     
 <script type="application/javascript">
 var doNotTrack = false;
@@ -38,7 +37,9 @@ if (!doNotTrack) {
             <a href="../../" class="text-decoration-none">
                 <img id="home-image" class="rounded-circle"
                     
-                        src="../../images/avatar.png"
+                        
+                            src="../../images/avatar.jpeg"
+                        
                     
                 />
             </a>
@@ -79,7 +80,7 @@ if (!doNotTrack) {
             <ul id="nav-social" class="list-inline">
                 
                     <li class="list-inline-item mr-3">
-                        <a href="http://github.com/prinzpiuz" target="_blank">
+                        <a href="https://github.com/prinzpiuz" target="_blank">
                             <i class="fab fa-github fa-1x text-muted"></i>
                         </a>
                     </li>
@@ -97,12 +98,6 @@ if (!doNotTrack) {
                     </li>
                 
                     <li class="list-inline-item mr-3">
-                        <a href="https://t.me/princepiuz" target="_blank">
-                            <i class="fab fa-telegram text-muted"></i>
-                        </a>
-                    </li>
-                
-                    <li class="list-inline-item mr-3">
                         <a href="https://pixelfed.social/prinzpiuz" target="_blank">
                             <i class="fas fa-images text-muted"></i>
                         </a>
@@ -111,12 +106,6 @@ if (!doNotTrack) {
                     <li class="list-inline-item mr-3">
                         <a href="https://www.strava.com/athletes/68470966" target="_blank">
                             <i class="fab fa-strava text-muted"></i>
-                        </a>
-                    </li>
-                
-                    <li class="list-inline-item mr-3">
-                        <a href="mailto:prinzpiuz@gmail.com" target="_blank">
-                            <i class="fas fa-at fa-1x text-muted"></i>
                         </a>
                     </li>
                 
@@ -147,9 +136,9 @@ This post can be divide like</p>
 <p>All the programs out there dont always output a valid result always, errors can happen, like it&rsquo;s not possible to
 divide by zero, or to access the eighth item in a five-item list.<br>
 Want to see some error ? Thw easiest way to cause an exception is this.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;hello world&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> print <span style="color:#e6db74">&#34;hello world&#34;</span>
 File <span style="color:#e6db74">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#ae81ff">1</span>
-<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;hello world&#34;</span>
+print <span style="color:#e6db74">&#34;hello world&#34;</span>
 <span style="color:#f92672">^</span>
 <span style="color:#a6e22e">SyntaxError</span>: invalid syntax
 </code></pre></div><p>This is print statement in python 2, when we try to run this in python 3 interpreter, we get this syntax error.
@@ -161,15 +150,15 @@ Exception (which extends BaseException ) as their superclass</p>
 <h4 id="whats-happening-while-an-exception-is-raised-">What&rsquo;s happening while an exception is raised ?</h4>
 <p>When an exception is raised, the program execution is stopped, everything supposed to run after the exception will not run, if exception is not managed correctly the program will exit with the error message<br>
 Take a look at this simple function:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">no_return</span>():
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;I am about to raise an exception&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">no_return</span>():
+    print(<span style="color:#e6db74">&#34;I am about to raise an exception&#34;</span>)
     <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">Exception</span>(<span style="color:#e6db74">&#34;This is always raised&#34;</span>)
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;This line will never execute&#34;</span>)
+    print(<span style="color:#e6db74">&#34;This line will never execute&#34;</span>)
     <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;I won&#39;t be returned&#34;</span>
 </code></pre></div><p>If we execute this function, we see that the first print call is executed and then the
 exception is raised. The second print statement is never executed, and the return
 statement never executes either</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> no_return()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> no_return()
 I am about to <span style="color:#66d9ef">raise</span> an exception
 Traceback (most recent call last):
 File <span style="color:#e6db74">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#ae81ff">1</span>, <span style="color:#f92672">in</span> <span style="color:#f92672">&lt;</span>module<span style="color:#f92672">&gt;</span>
@@ -178,11 +167,11 @@ File <span style="color:#e6db74">&#34;exception_quits.py&#34;</span>, line <span
 <span style="color:#a6e22e">Exception</span>: This <span style="color:#f92672">is</span> always raised
 </code></pre></div><h4 id="handling-exceptions">Handling exceptions</h4>
 <p>Even though if the program raise some exception, we can recover from it, by wrapping the code in try &hellip; except clause, any code block that might throw an exception can be put inside the try block and thing that we want to do while an exception raise can be put inside the except block</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">try</span>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">try</span>:
     no_return()
 <span style="color:#66d9ef">except</span>:
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;I caught an exception&#34;</span>)
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;executed after the exception&#34;</span>)
+    print(<span style="color:#e6db74">&#34;I caught an exception&#34;</span>)
+    print(<span style="color:#e6db74">&#34;executed after the exception&#34;</span>)
 <span style="color:#75715e">#output</span>
 I am about to <span style="color:#66d9ef">raise</span> an exception
 I caught an exception
@@ -191,47 +180,47 @@ executed after the exception
 What if we were writing some code that could raise both a TypeError and a
 ZeroDivisionError ? We might want to catch the ZeroDivisionError , but
 let the TypeError propagate to the console</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">funny_division</span>(divider):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">funny_division</span>(divider):
     <span style="color:#66d9ef">try</span>:
         <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">100</span> <span style="color:#f92672">/</span> divider
     <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">ZeroDivisionError</span>:
         <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Zero is not a good idea!&#34;</span>
-<span style="color:#66d9ef">print</span>(funny_division(<span style="color:#ae81ff">0</span>))
-<span style="color:#66d9ef">print</span>(funny_division(<span style="color:#ae81ff">50.0</span>))
-<span style="color:#66d9ef">print</span>(funny_division(<span style="color:#e6db74">&#34;hello&#34;</span>))
+print(funny_division(<span style="color:#ae81ff">0</span>))
+print(funny_division(<span style="color:#ae81ff">50.0</span>))
+print(funny_division(<span style="color:#e6db74">&#34;hello&#34;</span>))
 <span style="color:#75715e">#output</span>
 Zero <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> a good idea<span style="color:#960050;background-color:#1e0010">!</span>
 <span style="color:#ae81ff">2.0</span>
 Traceback (most recent call last):
 File <span style="color:#e6db74">&#34;catch_specific_exception.py&#34;</span>, line <span style="color:#ae81ff">9</span>, <span style="color:#f92672">in</span> <span style="color:#f92672">&lt;</span>module<span style="color:#f92672">&gt;</span>
-<span style="color:#66d9ef">print</span>(funny_division(<span style="color:#e6db74">&#34;hello&#34;</span>))
+print(funny_division(<span style="color:#e6db74">&#34;hello&#34;</span>))
 File <span style="color:#e6db74">&#34;catch_specific_exception.py&#34;</span>, line <span style="color:#ae81ff">3</span>, <span style="color:#f92672">in</span> funny_division
 <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">100</span> <span style="color:#f92672">/</span> anumber
 <span style="color:#a6e22e">TypeError</span>: unsupported operand type(s) <span style="color:#66d9ef">for</span> <span style="color:#f92672">/</span>: <span style="color:#e6db74">&#39;int&#39;</span> <span style="color:#f92672">and</span> <span style="color:#e6db74">&#39;str&#39;</span><span style="color:#f92672">.</span>
 </code></pre></div><p>So in the above code the we are avoiding all ZeroDivisionError but catching and printing all TypeError</p>
 <h5 id="keywords-finally-and-else">keywords, finally and else</h5>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> random
-some_exceptions <span style="color:#f92672">=</span> [<span style="color:#a6e22e">ValueError</span>, <span style="color:#a6e22e">TypeError</span>, <span style="color:#a6e22e">IndexError</span>, None]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> random
+some_exceptions <span style="color:#f92672">=</span> [<span style="color:#a6e22e">ValueError</span>, <span style="color:#a6e22e">TypeError</span>, <span style="color:#a6e22e">IndexError</span>, <span style="color:#66d9ef">None</span>]
 <span style="color:#66d9ef">try</span>:
     choice <span style="color:#f92672">=</span> random<span style="color:#f92672">.</span>choice(some_exceptions)
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;raising {}&#34;</span><span style="color:#f92672">.</span>format(choice))
+    print(<span style="color:#e6db74">&#34;raising </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(choice))
 <span style="color:#66d9ef">if</span> choice:
     <span style="color:#66d9ef">raise</span> choice(<span style="color:#e6db74">&#34;An error&#34;</span>)
 <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">ValueError</span>:
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Caught a ValueError&#34;</span>)
+    print(<span style="color:#e6db74">&#34;Caught a ValueError&#34;</span>)
 <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">TypeError</span>:
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Caught a TypeError&#34;</span>)
+    print(<span style="color:#e6db74">&#34;Caught a TypeError&#34;</span>)
 <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Caught some other error: </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span>
+    print(<span style="color:#e6db74">&#34;Caught some other error: </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span>
     ( e<span style="color:#f92672">.</span>__class__<span style="color:#f92672">.</span>__name__))
 <span style="color:#66d9ef">else</span>:
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;This code called if there is no exception&#34;</span>)
+    print(<span style="color:#e6db74">&#34;This code called if there is no exception&#34;</span>)
 <span style="color:#66d9ef">finally</span>:
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;This cleanup code is always called&#34;</span>)
+    print(<span style="color:#e6db74">&#34;This cleanup code is always called&#34;</span>)
 </code></pre></div><p>If we run this example—which illustrates almost every conceivable exception
 handling scenario—a few times, we&rsquo;ll get different output each time, depending
 on which exception random chooses. Here are some example runs:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ python finally_and_else.py
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ python finally_and_else.py
 raising None
 This code called <span style="color:#66d9ef">if</span> there is no exception
 This cleanup code is always called
@@ -276,7 +265,7 @@ readers of your code that you are intentionally handling the special case except
 content to the class! We can, of course, extend BaseException directly, but then it
 will not be caught by generic except Exception clauses.
 Here&rsquo;s a simple exception we might use in a banking application:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">InvalidWithdrawal</span>(<span style="color:#a6e22e">Exception</span>):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">InvalidWithdrawal</span>(<span style="color:#a6e22e">Exception</span>):
     <span style="color:#66d9ef">pass</span>
 <span style="color:#66d9ef">raise</span> InvalidWithdrawal(<span style="color:#e6db74">&#34;You don&#39;t have $50 in your account&#34;</span>)
 </code></pre></div><p>The last line shows how to call that exception<br>
@@ -284,20 +273,20 @@ The Exception. __init** method is designed to accept any arguments and store the
 as a tuple in an attribute named args . This makes exceptions easier to define without
 needing to override __init** .
 So a more custom version of above exception is like</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">InvalidWithdrawal</span>(<span style="color:#a6e22e">Exception</span>):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">InvalidWithdrawal</span>(<span style="color:#a6e22e">Exception</span>):
     <span style="color:#66d9ef">def</span> __init__(self, balance, amount):
-        super()<span style="color:#f92672">.</span>__init__(<span style="color:#e6db74">&#34;account doesn&#39;t have ${}&#34;</span><span style="color:#f92672">.</span>format(amount))
+        super()<span style="color:#f92672">.</span>__init__(<span style="color:#e6db74">&#34;account doesn&#39;t have $</span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(amount))
         self<span style="color:#f92672">.</span>amount <span style="color:#f92672">=</span> amount
         self<span style="color:#f92672">.</span>balance <span style="color:#f92672">=</span> balance
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">overage</span>(self):
         <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>amount <span style="color:#f92672">-</span> self<span style="color:#f92672">.</span>balance
 </code></pre></div><p>Here&rsquo;s how we would handle an InvalidWithdrawal exception if one was raised:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">try</span>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">try</span>:
     <span style="color:#66d9ef">raise</span> InvalidWithdrawal(<span style="color:#ae81ff">25</span>, <span style="color:#ae81ff">50</span>)
 <span style="color:#66d9ef">except</span> InvalidWithdrawal <span style="color:#66d9ef">as</span> e:
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;I&#39;m sorry, but your withdrawal is &#34;</span>
+    print(<span style="color:#e6db74">&#34;I&#39;m sorry, but your withdrawal is &#34;</span>
     <span style="color:#e6db74">&#34;more than your balance by &#34;</span>
-    <span style="color:#e6db74">&#34;${}&#34;</span><span style="color:#f92672">.</span>format(e<span style="color:#f92672">.</span>overage()))
+    <span style="color:#e6db74">&#34;$</span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(e<span style="color:#f92672">.</span>overage()))
 </code></pre></div><h4 id="conclusion">Conclusion</h4>
 <p>while researching for this, I had a doubt like there is if..else then why try&hellip;except, and i got this to <a href="https://docs.python.org/3/glossary.html#term-eafp">read</a>. Python programmers tend to follow a model of Ask forgiveness rather than permission,
 which is to say, they execute code and then deal with anything that goes wrong. The

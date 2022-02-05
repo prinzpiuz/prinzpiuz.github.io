@@ -17,7 +17,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
     
 <script type="application/javascript">
 var doNotTrack = false;
@@ -38,7 +37,9 @@ if (!doNotTrack) {
             <a href="../../" class="text-decoration-none">
                 <img id="home-image" class="rounded-circle"
                     
-                        src="../../images/avatar.png"
+                        
+                            src="../../images/avatar.jpeg"
+                        
                     
                 />
             </a>
@@ -79,7 +80,7 @@ if (!doNotTrack) {
             <ul id="nav-social" class="list-inline">
                 
                     <li class="list-inline-item mr-3">
-                        <a href="http://github.com/prinzpiuz" target="_blank">
+                        <a href="https://github.com/prinzpiuz" target="_blank">
                             <i class="fab fa-github fa-1x text-muted"></i>
                         </a>
                     </li>
@@ -97,12 +98,6 @@ if (!doNotTrack) {
                     </li>
                 
                     <li class="list-inline-item mr-3">
-                        <a href="https://t.me/princepiuz" target="_blank">
-                            <i class="fab fa-telegram text-muted"></i>
-                        </a>
-                    </li>
-                
-                    <li class="list-inline-item mr-3">
                         <a href="https://pixelfed.social/prinzpiuz" target="_blank">
                             <i class="fas fa-images text-muted"></i>
                         </a>
@@ -111,12 +106,6 @@ if (!doNotTrack) {
                     <li class="list-inline-item mr-3">
                         <a href="https://www.strava.com/athletes/68470966" target="_blank">
                             <i class="fab fa-strava text-muted"></i>
-                        </a>
-                    </li>
-                
-                    <li class="list-inline-item mr-3">
-                        <a href="mailto:prinzpiuz@gmail.com" target="_blank">
-                            <i class="fas fa-at fa-1x text-muted"></i>
                         </a>
                     </li>
                 
@@ -134,8 +123,7 @@ if (!doNotTrack) {
         </div>
 
         <article>
-            <figure class="figure_center">
-    <img src="../../images/media_server.jpg" width="300" height="300"/> 
+            <figure class="figure_center"><img src="../../images/media_server.jpg" width="300" height="300"/>
 </figure>
 
 <blockquote>
@@ -152,12 +140,12 @@ These are the set-ups i tried so far&hellip;.</p>
 <li>
 <p><strong><a href="https://en.wikipedia.org/wiki/Secure_copy">scp</a></strong><br>
 its a secure file copying protocol for transferring file between two machines</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">scp -r user@host:directory/SourceFolder TargetFolder
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">scp -r user@host:directory/SourceFolder TargetFolder
 </code></pre></div></li>
 <li>
 <p><strong><a href="https://en.wikipedia.org/wiki/SSHFS">sshfs</a></strong><br>
 Basically it helps to mount file system from server in to our local machine, which gives us a GUI based interaction to server, so that we can edit files and move them to server like normal GUI thing,I created the following <a href="https://en.wikipedia.org/wiki/Alias_(command)">alias</a> for the easy access of same</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">alias mov<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sudo sshfs user@host:directory/SourceFolder TargetFolder&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">alias mov<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sudo sshfs user@host:directory/SourceFolder TargetFolder&#34;</span>
 </code></pre></div><p>this should be added to your corresponding rc file.</p>
 </li>
 <li>

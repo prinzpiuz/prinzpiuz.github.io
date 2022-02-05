@@ -1,119 +1,73 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>/categories/</loc>
     <lastmod>2021-01-21T00:43:47+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/django/</loc>
     <lastmod>2021-01-21T00:43:47+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/introduction-to-async-django/</loc>
     <lastmod>2021-01-21T00:43:47+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/</loc>
     <lastmod>2021-01-21T00:43:47+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/</loc>
     <lastmod>2021-01-21T00:43:47+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/python/</loc>
     <lastmod>2021-01-21T00:43:47+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/errors-and-exceptions/</loc>
     <lastmod>2020-10-03T17:46:27+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/general/</loc>
     <lastmod>2020-07-07T16:23:04+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/open-alternative-not-ban/</loc>
     <lastmod>2020-07-07T16:23:04+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/open-source/</loc>
     <lastmod>2020-07-07T16:23:04+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/flutter/</loc>
     <lastmod>2020-06-13T14:58:35+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/linux/</loc>
     <lastmod>2020-06-13T14:58:35+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/my-media-server-setup/</loc>
     <lastmod>2020-06-13T14:58:35+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/server/</loc>
     <lastmod>2020-06-13T14:58:35+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/python-saves-time/</loc>
     <lastmod>2020-06-02T00:20:59+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/my-blog-setup/</loc>
     <lastmod>2020-05-26T15:29:46+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/set-up/</loc>
     <lastmod>2020-05-26T15:29:46+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/projects/my-projects/</loc>
     <lastmod>2020-05-24T01:17:05+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/projects/</loc>
     <lastmod>2020-05-24T01:17:05+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/hello-world/</loc>
     <lastmod>2020-05-24T00:59:10+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/helloworld/</loc>
     <lastmod>2020-05-24T00:59:10+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/about/</loc>
     <lastmod>2020-05-23T00:18:33+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/</loc>
   </url>
-  
 </urlset>

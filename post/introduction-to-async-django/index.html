@@ -17,7 +17,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
     
 <script type="application/javascript">
 var doNotTrack = false;
@@ -38,7 +37,9 @@ if (!doNotTrack) {
             <a href="../../" class="text-decoration-none">
                 <img id="home-image" class="rounded-circle"
                     
-                        src="../../images/avatar.png"
+                        
+                            src="../../images/avatar.jpeg"
+                        
                     
                 />
             </a>
@@ -79,7 +80,7 @@ if (!doNotTrack) {
             <ul id="nav-social" class="list-inline">
                 
                     <li class="list-inline-item mr-3">
-                        <a href="http://github.com/prinzpiuz" target="_blank">
+                        <a href="https://github.com/prinzpiuz" target="_blank">
                             <i class="fab fa-github fa-1x text-muted"></i>
                         </a>
                     </li>
@@ -97,12 +98,6 @@ if (!doNotTrack) {
                     </li>
                 
                     <li class="list-inline-item mr-3">
-                        <a href="https://t.me/princepiuz" target="_blank">
-                            <i class="fab fa-telegram text-muted"></i>
-                        </a>
-                    </li>
-                
-                    <li class="list-inline-item mr-3">
                         <a href="https://pixelfed.social/prinzpiuz" target="_blank">
                             <i class="fas fa-images text-muted"></i>
                         </a>
@@ -111,12 +106,6 @@ if (!doNotTrack) {
                     <li class="list-inline-item mr-3">
                         <a href="https://www.strava.com/athletes/68470966" target="_blank">
                             <i class="fab fa-strava text-muted"></i>
-                        </a>
-                    </li>
-                
-                    <li class="list-inline-item mr-3">
-                        <a href="mailto:prinzpiuz@gmail.com" target="_blank">
-                            <i class="fas fa-at fa-1x text-muted"></i>
                         </a>
                     </li>
                 
@@ -163,8 +152,8 @@ Process help to achieve multiprocessing in python. and it can be programmed thro
 <li>
 <p><strong>Notorious sleep example:</strong><br>
 consider an async view in django.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">async <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">view</span>(request):
-  await asyncio<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.5</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">view</span>(request):
+  <span style="color:#66d9ef">await</span> asyncio<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.5</span>)
   <span style="color:#66d9ef">return</span> HttpResponse(<span style="color:#e6db74">&#34;hello async world&#34;</span>)
 </code></pre></div><p>here the <code>asyncio.sleep(0.5)</code> doesn&rsquo;t make any sense than <code>time.sleep(0.5)</code>. what we need to understand from the examples of sleep in async django view is that, they represent some blocking functionality. which when get blocked, event loop will execute some other task in que rather than waiting for the blocking functionality</p>
 </li>
@@ -174,22 +163,22 @@ consider an async view in django.</p>
     
         <details>
             <summary>expand</summary>
-            <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"> 
+            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"> 
     <span style="color:#f92672">from</span> django.http <span style="color:#f92672">import</span> HttpResponse
     <span style="color:#f92672">import</span> time
     <span style="color:#f92672">import</span> asyncio
 
 
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">count</span>():
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;One&#34;</span>)
+        print(<span style="color:#e6db74">&#34;One&#34;</span>)
         time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">1</span>)
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Two&#34;</span>)
+        print(<span style="color:#e6db74">&#34;Two&#34;</span>)
 
 
-    async <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">async_count</span>():
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;One&#34;</span>)
-        await asyncio<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">1</span>)
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Two&#34;</span>)
+    <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">async_count</span>():
+        print(<span style="color:#e6db74">&#34;One&#34;</span>)
+        <span style="color:#66d9ef">await</span> asyncio<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">1</span>)
+        print(<span style="color:#e6db74">&#34;Two&#34;</span>)
 
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">home_view</span>(request):
         <span style="color:#66d9ef">return</span> HttpResponse(<span style="color:#e6db74">&#39;Hello world&#39;</span>)
@@ -201,16 +190,16 @@ consider an async view in django.</p>
         count()
         count()
         total <span style="color:#f92672">=</span> (time<span style="color:#f92672">.</span>time()<span style="color:#f92672">-</span>start_time)
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;total: &#39;</span>, total)
-        <span style="color:#66d9ef">return</span> HttpResponse(<span style="color:#e6db74">&#39;sync time = {}&#39;</span><span style="color:#f92672">.</span>format(total))
+        print(<span style="color:#e6db74">&#39;total: &#39;</span>, total)
+        <span style="color:#66d9ef">return</span> HttpResponse(<span style="color:#e6db74">&#39;sync time = </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">.</span>format(total))
 
 
-    async <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main_view_async</span>(request):
+    <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main_view_async</span>(request):
         start_time <span style="color:#f92672">=</span> time<span style="color:#f92672">.</span>time()
-        await asyncio<span style="color:#f92672">.</span>gather(async_count(), async_count(), async_count())
+        <span style="color:#66d9ef">await</span> asyncio<span style="color:#f92672">.</span>gather(async_count(), async_count(), async_count())
         total <span style="color:#f92672">=</span> (time<span style="color:#f92672">.</span>time()<span style="color:#f92672">-</span>start_time)
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;total: &#39;</span>, total)
-        <span style="color:#66d9ef">return</span> HttpResponse(<span style="color:#e6db74">&#39;async time = {}&#39;</span><span style="color:#f92672">.</span>format(total))
+        print(<span style="color:#e6db74">&#39;total: &#39;</span>, total)
+        <span style="color:#66d9ef">return</span> HttpResponse(<span style="color:#e6db74">&#39;async time = </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">.</span>format(total))
     </code></pre></div>
         </details>
     
@@ -218,7 +207,7 @@ consider an async view in django.</p>
 </p>
 <p>Here in this view, I have written two views one is async and other is normal synchronous one, but both of them doing same thing. print string one and two in a time gap of 1 second for 3 times.<br>
 let execute this code and see the output</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">One
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">One
 Two
 One
 Two
