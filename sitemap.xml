@@ -2,16 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/post/how-i-automatically-deploying-this-blog/</loc>
+    <lastmod>2022-07-01T23:37:16+05:30</lastmod>
+  </url><url>
+    <loc>/post/</loc>
+    <lastmod>2022-07-01T23:37:16+05:30</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2022-07-01T23:37:16+05:30</lastmod>
+  </url><url>
     <loc>/categories/</loc>
     <lastmod>2022-06-06T10:45:15+05:30</lastmod>
   </url><url>
     <loc>/categories/design/</loc>
-    <lastmod>2022-06-06T10:45:15+05:30</lastmod>
-  </url><url>
-    <loc>/post/</loc>
-    <lastmod>2022-06-06T10:45:15+05:30</lastmod>
-  </url><url>
-    <loc>/</loc>
     <lastmod>2022-06-06T10:45:15+05:30</lastmod>
   </url><url>
     <loc>/post/wonder-world-of-svgs/</loc>
