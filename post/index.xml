@@ -23,8 +23,8 @@
       <pubDate>Thu, 21 Jan 2021 00:43:47 +0530</pubDate>
       
       <guid>/post/introduction-to-async-django/</guid>
-      <description>This is basically a written version of talk I presented among my collegues. This is a basic introduction to asynchronous programming in django.
-So the async support for django came with django 3.1 in august 2020, a great leap in history of Django. still it lack support in certain areas like ORM, cache layer, but it will be available soon. The effort for implementing async support in django was done by Andrew Godwin 👏</description>
+      <description>This is a written version of the talk I presented to my colleagues. This is a basic introduction to asynchronous programming in django.
+So the async support for django came with django 3.1 in august 2020, a great leap in the history of Django. still, it lacks support in certain areas like ORM, and cache layer, but it will be available soon. The effort for implementing async support in django was done by Andrew Godwin 👏</description>
     </item>
     
     <item>
@@ -33,9 +33,9 @@ So the async support for django came with django 3.1 in august 2020, a great lea
       <pubDate>Sat, 03 Oct 2020 17:46:27 +0530</pubDate>
       
       <guid>/post/errors-and-exceptions/</guid>
-      <description>This blog is about How to manage Exceptions in python, this is more like notes i took while reading Dusty Phillips&amp;rsquo;s Python 3 Object-oriented Programming,
-This post can be divide like
- why raising an exception ? what is happening while an exception is raised ? Handling exceptions The exception hierarchy Defining our own exceptions  Why raising an exception ? All the programs out there dont always output a valid result always, errors can happen, like it&amp;rsquo;s not possible to divide by zero, or to access the eighth item in a five-item list.</description>
+      <description>This blog is about How to manage Exceptions in python, this is more like notes I took while reading Dusty Phillips&amp;rsquo;s Python 3 Object-oriented Programming,
+This post can be divided into
+ why raise an exception? what is happening when an exception is raised? Handling exceptions The exception hierarchy Defining our exceptions  Why raise an exception? All the programs out there don&amp;rsquo;t always output a valid result, errors can happen like it&amp;rsquo;s not possible to divide by zero, or to access the eighth item in a five-item list.</description>
     </item>
     
     <item>
@@ -86,7 +86,7 @@ also I don&amp;rsquo;t want the headaches of hosting like
       
       <guid>/post/hello-world/</guid>
       <description>welcome,കേറി വാടാ മക്കളെ, 🙏 to my blog.
-This is my first blog, This is kinda test publishing 😎
+This is my first blog, This is a kinda test publishing 😎
 thank you&amp;hellip; 💖</description>
     </item>
     
