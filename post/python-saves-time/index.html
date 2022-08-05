@@ -110,8 +110,7 @@ But what if we have this much conflicted files ?</p>
     
         <details>
             <summary>expand</summary>
-            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">  
-btrfs-progs: /usr/bin/fsck.btrfs exists in filesystem
+            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">btrfs-progs: /usr/bin/fsck.btrfs exists in filesystem
 btrfs-progs: /usr/bin/mkfs.btrfs exists in filesystem
 btrfs-progs: /usr/include/btrfsutil.h exists in filesystem
 btrfs-progs: /usr/lib/initcpio/hooks/btrfs exists in filesystem
@@ -155,15 +154,15 @@ btrfs-progs: /usr/share/man/man8/mkfs.btrfs.8.gz exists in filesystem</code></pr
         </details>
     
 </div>
-<br>
+
 so it will be tough to delete all this conflict files one by one. I use python for helping in this kind of context.
 so my idea is to save this shell output as text file and parse string one by one from it into a python list and split string based
 on space and get the file path  from it and run shell commands on that path from python</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os
 file<span style="color:#f92672">=</span>open(<span style="color:#e6db74">&#34;conflict.txt&#34;</span>, <span style="color:#e6db74">&#34;r&#34;</span>)
 <span style="color:#66d9ef">for</span> string <span style="color:#f92672">in</span> file:
   os<span style="color:#f92672">.</span>system(<span style="color:#e6db74">&#34;sudo rm &#34;</span><span style="color:#f92672">+</span> string<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34; &#34;</span>)[<span style="color:#ae81ff">1</span>])
-</code></pre></div><p>This python snippet do the thing for me and saves a lot of time.<br>
+</code></pre></div><p>This python snippet do the thing for me and saves a lot of time.
 Read more about <a href="https://docs.python.org/3/library/os.html#os.system">os.system</a></p>
 
         </article>

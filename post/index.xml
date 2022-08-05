@@ -32,8 +32,7 @@
       <pubDate>Thu, 21 Jan 2021 00:43:47 +0530</pubDate>
       
       <guid>/post/introduction-to-async-django/</guid>
-      <description>This is a written version of the talk I presented to my colleagues. This is a basic introduction to asynchronous programming in django.
-So the async support for django came with django 3.1 in august 2020, a great leap in the history of Django. still, it lacks support in certain areas like ORM, and cache layer, but it will be available soon. The effort for implementing async support in django was done by Andrew Godwin 👏</description>
+      <description>This is a written version of the talk I presented to my colleagues. This is a basic introduction to asynchronous programming in django. So the async support for django came with django 3.1 in august 2020, a great leap in the history of Django. still, it lacks support in certain areas like ORM, and cache layer, but it will be available soon. The effort for implementing async support in django was done by Andrew Godwin 👏 Now let&amp;rsquo;s look into how this async django works&amp;hellip;</description>
     </item>
     
     <item>
@@ -42,8 +41,7 @@ So the async support for django came with django 3.1 in august 2020, a great lea
       <pubDate>Sat, 03 Oct 2020 17:46:27 +0530</pubDate>
       
       <guid>/post/errors-and-exceptions/</guid>
-      <description>This blog is about How to manage Exceptions in python, this is more like notes I took while reading Dusty Phillips&amp;rsquo;s Python 3 Object-oriented Programming,
-This post can be divided into
+      <description>This blog is about How to manage Exceptions in python, this is more like notes I took while reading Dusty Phillips&amp;rsquo;s Python 3 Object-oriented Programming, This post can be divided into
  why raise an exception? what is happening when an exception is raised? Handling exceptions The exception hierarchy Defining our exceptions  Why raise an exception? All the programs out there don&amp;rsquo;t always output a valid result, errors can happen like it&amp;rsquo;s not possible to divide by zero, or to access the eighth item in a five-item list.</description>
     </item>
     
@@ -93,9 +91,7 @@ In my work machine I am running Manjaro Linux, which is a Rolling Release based 
       <pubDate>Sun, 24 May 2020 00:59:10 +0530</pubDate>
       
       <guid>/post/hello-world/</guid>
-      <description>welcome,കേറി വാടാ മക്കളെ, 🙏 to my blog.
-This is my first blog, This is a kinda test publishing 😎
-thank you&amp;hellip; 💖</description>
+      <description>welcome,കേറി വാടാ മക്കളെ, 🙏 to my blog. This is my first blog, This is a kinda test publishing 😎 thank you&amp;hellip; 💖</description>
     </item>
     
   </channel>

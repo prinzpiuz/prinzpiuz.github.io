@@ -100,7 +100,7 @@
         </div>
 
         <article>
-            <p>This blog is about How to manage Exceptions in python, this is more like notes I took while reading <a href="https://dusty.phillips.codes/">Dusty Phillips</a>&rsquo;s <a href="https://www.packtpub.com/product/python-3-object-oriented-programming-third-edition/9781789615852">Python 3 Object-oriented Programming</a>,<br>
+            <p>This blog is about How to manage Exceptions in python, this is more like notes I took while reading <a href="https://dusty.phillips.codes/">Dusty Phillips</a>&rsquo;s <a href="https://www.packtpub.com/product/python-3-object-oriented-programming-third-edition/9781789615852">Python 3 Object-oriented Programming</a>,
 This post can be divided into</p>
 <ul>
 <li>why raise an exception?</li>
@@ -111,7 +111,7 @@ This post can be divided into</p>
 </ul>
 <h4 id="why-raise-an-exception">Why raise an exception?</h4>
 <p>All the programs out there don&rsquo;t always output a valid result, errors can happen like it&rsquo;s not possible to
-divide by zero, or to access the eighth item in a five-item list.<br>
+divide by zero, or to access the eighth item in a five-item list.
 Want to see some errors? The easiest way to cause an exception is this.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">&gt;&gt;&gt; print <span style="color:#e6db74">&#34;hello world&#34;</span>
 File <span style="color:#e6db74">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#ae81ff">1</span>
@@ -123,7 +123,7 @@ So exceptions are indicators of something wrong in our program, You may have not
 Errors are sometimes considered direr than exceptions, but they are dealt with in the same way. Indeed, all the error classes in the preceding example have
 Exception (which extends BaseException ) as their superclass</p>
 <h4 id="whats-happening-while-an-exception-is-raised">What&rsquo;s happening while an exception is raised?</h4>
-<p>When an exception is raised, the program execution is stopped, and everything supposed to run after the exception will not run, if the exception is not managed correctly the program will exit with the error message<br>
+<p>When an exception is raised, the program execution is stopped, and everything supposed to run after the exception will not run, if the exception is not managed correctly the program will exit with the error message
 Take a look at this simple function:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">no_return</span>():
     print(<span style="color:#e6db74">&#34;I am about to raise an exception&#34;</span>)
@@ -222,12 +222,12 @@ examples include:</p>
 from inside a try clause. The <code>finally</code> handle will still be executed before the
 value is returned</p>
 <h4 id="the-exception-hierarchy">The exception hierarchy</h4>
-<p>Most exceptions are a subclass of the Exception class, but this is not fully true. The exception itself inherits from a class called BaseException. All exceptions must extend the BaseException class or one of its subclasses.<br>
+<p>Most exceptions are a subclass of the Exception class, but this is not fully true. The exception itself inherits from a class called BaseException. All exceptions must extend the BaseException class or one of its subclasses.
 When we use the <code>except</code> clause without specifying any type of exception, it will
 catch all subclasses of <code>BaseException</code> which is to say, it will catch all exceptions,
 including the two special ones. Since we almost always want these to get special
 treatment, it is unwise to use the <code>except</code> statement without arguments. If you want
-to catch all exceptions other than SystemExit and KeyboardInterrupt, explicitly catch Exception.<br>
+to catch all exceptions other than SystemExit and KeyboardInterrupt, explicitly catch Exception.
 Furthermore, if you do want to catch all exceptions, I suggest using the syntax
 except BaseException: instead of a raw <code>except</code>. This helps explicitly tell future
 readers of your code that you are intentionally handling the special case exceptions.</p>
@@ -239,7 +239,7 @@ Here&rsquo;s a simple exception we might use in a banking application:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">InvalidWithdrawal</span>(<span style="color:#a6e22e">Exception</span>):
     <span style="color:#66d9ef">pass</span>
 <span style="color:#66d9ef">raise</span> InvalidWithdrawal(<span style="color:#e6db74">&#34;You don&#39;t have $50 in your account&#34;</span>)
-</code></pre></div><p>The last line shows how to call that exception<br>
+</code></pre></div><p>The last line shows how to call that exception
 The Exception. __init** method is designed to accept any arguments and store them
 as a tuple in an attribute named args . This makes exceptions easier to define without
 needing to override init**.
@@ -269,7 +269,7 @@ those circumstances are only a little bit exceptional. Taking this argument furt
 we can see that the exception syntax is also effective for flow control. Like an, if statement, exceptions can be used for decision making, branching, and
 message passing</p>
 <h6 id="further-reads"><strong>Further reads</strong></h6>
-<p><a href="https://docs.python.org/3/library/exceptions.html#bltin-exceptions">Built-in Exceptions in python</a><br>
+<p><a href="https://docs.python.org/3/library/exceptions.html#bltin-exceptions">Built-in Exceptions in python</a>
 <a href="https://docs.python.org/3/tutorial/errors.html#tut-userexceptions">User-defined Exceptions</a></p>
 
         </article>

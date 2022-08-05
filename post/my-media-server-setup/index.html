@@ -111,23 +111,23 @@
 With the arrival of 4G. everybody having lot of data and every body was downloading lot of movies, TV series, Documentaries..etc. and I set-up a <a href="https://kodi.tv/">Kodi</a> server in pc and kodi client in mobile and streaming movies from pc to mobile through LAN, which changed a lot of things in my movie watching experience. like now I can watch movies from where ever I want, also I can watch in whatever style I want. Then I moved to Banglore for my intership and work. And it changed lot of things like it was an end to first era of my pc, after i went to Banglore nobody used my PC and it was turning to an E-waste, and I am forced to watch movies in my laptop (I always hated saving media files in my work machine). But I had to, But within year due to some personal issues I had to relocate to my home town. Also we had a new smart TV in home. Also a Fibre optic internet connection @ 50MbPS 😆 and I have got a plan for my old PC, <strong>Turning it to media server</strong> 🎦.
 so the set-up is like my old pc as <a href="https://emby.media/">emby</a> server streaming contents to my TV through my Home LAN.and for performance i changed it to a minimal <a href="https://www.debian.org/">debian</a> machine and all access through <a href="https://en.wikipedia.org/wiki/Secure_Shell">ssh</a> from lap or phone through <a href="https://termux.com/">termux</a> since there is no GUI I can save lot of memory.</p>
 <h5 id="thats-not-the-end-">That&rsquo;s not the end. ❗</h5>
-<p>we need to put movies to server, TV shows and movies to their respective folders.<br>
+<p>we need to put movies to server, TV shows and movies to their respective folders.
 These are the set-ups i tried so far&hellip;.</p>
 <ul>
 <li>
-<p><strong><a href="https://en.wikipedia.org/wiki/Secure_copy">scp</a></strong><br>
+<p><strong><a href="https://en.wikipedia.org/wiki/Secure_copy">scp</a></strong>
 its a secure file copying protocol for transferring file between two machines</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">scp -r user@host:directory/SourceFolder TargetFolder
 </code></pre></div></li>
 <li>
-<p><strong><a href="https://en.wikipedia.org/wiki/SSHFS">sshfs</a></strong><br>
+<p><strong><a href="https://en.wikipedia.org/wiki/SSHFS">sshfs</a></strong>
 Basically it helps to mount file system from server in to our local machine, which gives us a GUI based interaction to server, so that we can edit files and move them to server like normal GUI thing,I created the following <a href="https://en.wikipedia.org/wiki/Alias_(command)">alias</a> for the easy access of same</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">alias mov<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sudo sshfs user@host:directory/SourceFolder TargetFolder&#34;</span>
 </code></pre></div><p>this should be added to your corresponding rc file.</p>
 </li>
 <li>
-<p><strong><a href="https://github.com/prinzpiuz/Media-Server-Manager">Custom Media Server Manager</a></strong><br>
-so this is a custom minimal server built with python and <a href="https://github.com/pallets/flask">flask</a>, flask is minimal python framework to build web application, and I run this in my server with <a href="https://github.com/unbit/uwsgi">uWSGI</a> and <a href="https://en.wikipedia.org/wiki/Nginx">nginx</a><br>
+<p><strong><a href="https://github.com/prinzpiuz/Media-Server-Manager">Custom Media Server Manager</a></strong>
+so this is a custom minimal server built with python and <a href="https://github.com/pallets/flask">flask</a>, flask is minimal python framework to build web application, and I run this in my server with <a href="https://github.com/unbit/uwsgi">uWSGI</a> and <a href="https://en.wikipedia.org/wiki/Nginx">nginx</a>
 <strong>Features</strong></p>
 <ul>
 <li>Uploading to selected folder</li>
@@ -139,7 +139,7 @@ so this is a custom minimal server built with python and <a href="https://github
 <p><strong>Limitations</strong></p>
 <ul>
 <li>Server management(on top of media i also need to watch this)</li>
-<li>Chance of browser to crash while handling larger files(especially in mobile browser)<br>
+<li>Chance of browser to crash while handling larger files(especially in mobile browser)
 *solution(upload in chunks)</li>
 <li>No background task support</li>
 <li>Hard to set-up for non technical people</li>
@@ -147,9 +147,9 @@ so this is a custom minimal server built with python and <a href="https://github
 <p>So I planned to build a dedicated Mobile application for the same which solves all above problem</p>
 </li>
 <li>
-<p><strong><a href="https://github.com/prinzpiuz/MSM">MSM</a></strong><br>
+<p><strong><a href="https://github.com/prinzpiuz/MSM">MSM</a></strong>
 This is a dedicated mobile application for managing media server buit with <a href="https://dart.dev/">dart</a> and <a href="https://flutter.dev/">flutter</a> works on top of ssh,
-so no other dedicated set-up needed for this, only need to enable ssh connections to your server<br>
+so no other dedicated set-up needed for this, only need to enable ssh connections to your server
 <strong>Features</strong></p>
 <ul>
 <li>Dedicated manager for Media servers</li>
@@ -159,8 +159,8 @@ so no other dedicated set-up needed for this, only need to enable ssh connection
 <li>Live shell(you can access server from mobile through terminal in application)</li>
 <li>Save and run frequently used commands</li>
 </ul>
-<p>latest stable release can be Downloaded from <a href="https://github.com/prinzpiuz/MSM/releases">here</a><br>
-And this was very useful for me since I usually download movies in my phone.<br>
+<p>latest stable release can be Downloaded from <a href="https://github.com/prinzpiuz/MSM/releases">here</a>
+And this was very useful for me since I usually download movies in my phone.
 Ios version not yet available&hellip;.</p>
 </li>
 </ul>

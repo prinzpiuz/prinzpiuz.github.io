@@ -32,8 +32,7 @@
       <pubDate>Thu, 21 Jan 2021 00:43:47 +0530</pubDate>
       
       <guid>/post/introduction-to-async-django/</guid>
-      <description>This is a written version of the talk I presented to my colleagues. This is a basic introduction to asynchronous programming in django.
-So the async support for django came with django 3.1 in august 2020, a great leap in the history of Django. still, it lacks support in certain areas like ORM, and cache layer, but it will be available soon. The effort for implementing async support in django was done by Andrew Godwin 👏</description>
+      <description>This is a written version of the talk I presented to my colleagues. This is a basic introduction to asynchronous programming in django. So the async support for django came with django 3.1 in august 2020, a great leap in the history of Django. still, it lacks support in certain areas like ORM, and cache layer, but it will be available soon. The effort for implementing async support in django was done by Andrew Godwin 👏 Now let&amp;rsquo;s look into how this async django works&amp;hellip;</description>
     </item>
     
     <item>
@@ -42,8 +41,7 @@ So the async support for django came with django 3.1 in august 2020, a great lea
       <pubDate>Sat, 03 Oct 2020 17:46:27 +0530</pubDate>
       
       <guid>/post/errors-and-exceptions/</guid>
-      <description>This blog is about How to manage Exceptions in python, this is more like notes I took while reading Dusty Phillips&amp;rsquo;s Python 3 Object-oriented Programming,
-This post can be divided into
+      <description>This blog is about How to manage Exceptions in python, this is more like notes I took while reading Dusty Phillips&amp;rsquo;s Python 3 Object-oriented Programming, This post can be divided into
  why raise an exception? what is happening when an exception is raised? Handling exceptions The exception hierarchy Defining our exceptions  Why raise an exception? All the programs out there don&amp;rsquo;t always output a valid result, errors can happen like it&amp;rsquo;s not possible to divide by zero, or to access the eighth item in a five-item list.</description>
     </item>
     
@@ -94,11 +92,9 @@ In my work machine I am running Manjaro Linux, which is a Rolling Release based 
       
       <guid>/projects/my-projects/</guid>
       <description>These are my hobby projects 👏 if you guys like, put a ⭐ More projects can be seen here   Railgadi BOT 
-This is a telegram BOT built with python and telegram bot framework
-this bot provides lots of functionalites provied by NTES inside telegram
+This is a telegram BOT built with python and telegram bot framework this bot provides lots of functionalites provied by NTES inside telegram
   MSM 
-This is a android app built on top of Dart and Flutter
-This app helps to manage our media servers like emby/jellyfin/plex/kodi&amp;hellip;etc</description>
+This is a android app built on top of Dart and Flutter This app helps to manage our media servers like emby/jellyfin/plex/kodi&amp;hellip;etc Works on top of ssh, No further setup needed in server</description>
     </item>
     
     <item>
@@ -107,9 +103,7 @@ This app helps to manage our media servers like emby/jellyfin/plex/kodi&amp;hell
       <pubDate>Sun, 24 May 2020 00:59:10 +0530</pubDate>
       
       <guid>/post/hello-world/</guid>
-      <description>welcome,കേറി വാടാ മക്കളെ, 🙏 to my blog.
-This is my first blog, This is a kinda test publishing 😎
-thank you&amp;hellip; 💖</description>
+      <description>welcome,കേറി വാടാ മക്കളെ, 🙏 to my blog. This is my first blog, This is a kinda test publishing 😎 thank you&amp;hellip; 💖</description>
     </item>
     
     <item>
@@ -118,12 +112,9 @@ thank you&amp;hellip; 💖</description>
       <pubDate>Sat, 23 May 2020 00:18:33 +0530</pubDate>
       
       <guid>/about/</guid>
-      <description>Me Hi, I am prinzpiuz, I believe in #FreeAsInFreedom in every aspect.
-I&amp;rsquo;m a software engineer, currently working for NetProtect, a subsidiary of Ziff Davis.
+      <description>Me Hi, I am prinzpiuz, I believe in #FreeAsInFreedom in every aspect. I&amp;rsquo;m a software engineer, currently working for NetProtect, a subsidiary of Ziff Davis.
 Previously I worked for
- Nuventure Connect as a software engineer Tridz as a system admin  I started this blog for sharing my Tweaks | Hacks | DIYs
-I like reading very much (mostly science and history books/blogs),
-also, I&amp;rsquo;ll be watching movies/tv-shows in my free time.</description>
+ Nuventure Connect as a software engineer Tridz as a system admin  I started this blog for sharing my Tweaks | Hacks | DIYs I like reading very much (mostly science and history books/blogs), also, I&amp;rsquo;ll be watching movies/tv-shows in my free time.</description>
     </item>
     
   </channel>
