@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright 2022, prinzpiuz</copyright>
-    <lastBuildDate>Fri, 01 Jul 2022 23:37:16 +0530</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Jan 2023 20:23:40 +0530</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Things I Self-Hosting 🖳</title>
+      <link>/post/things-i-self-hosting/</link>
+      <pubDate>Fri, 06 Jan 2023 20:23:40 +0530</pubDate>
+      
+      <guid>/post/things-i-self-hosting/</guid>
+      <description>Disclaimer: This blog is not in any way promoting piracy.
+This is small new year blog about things I self-host to make my life easier, I have a previous blog here about my media server setup. So the same system I am using for self-hosting some applications which are helpful for me in my day-to-day life, basically I have turned my childhood PC to a local server, it&amp;rsquo;s been 13 years since its first boot, this mighty machine working for me without any complaints.</description>
+    </item>
+    
     <item>
       <title>How I Automatically Deploying This Blog?</title>
       <link>/post/how-i-automatically-deploying-this-blog/</link>
