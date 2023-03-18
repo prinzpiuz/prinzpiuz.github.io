@@ -2,144 +2,144 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on prinzpiuz</title>
-    <link>/categories/</link>
+    <link>https://prinzpiuz.in/categories/</link>
     <description>Recent content in Categories on prinzpiuz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright 2023, prinzpiuz</copyright>
-    <lastBuildDate>Sat, 18 Mar 2023 18:50:44 +0530</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Mar 2023 18:50:44 +0530</lastBuildDate><atom:link href="https://prinzpiuz.in/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python</title>
-      <link>/categories/python/</link>
+      <link>https://prinzpiuz.in/categories/python/</link>
       <pubDate>Sat, 18 Mar 2023 18:50:44 +0530</pubDate>
       
-      <guid>/categories/python/</guid>
+      <guid>https://prinzpiuz.in/categories/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Shell</title>
-      <link>/categories/shell/</link>
+      <link>https://prinzpiuz.in/categories/shell/</link>
       <pubDate>Sat, 18 Mar 2023 18:50:44 +0530</pubDate>
       
-      <guid>/categories/shell/</guid>
+      <guid>https://prinzpiuz.in/categories/shell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tweaks</title>
-      <link>/categories/tweaks/</link>
+      <link>https://prinzpiuz.in/categories/tweaks/</link>
       <pubDate>Sat, 18 Mar 2023 18:50:44 +0530</pubDate>
       
-      <guid>/categories/tweaks/</guid>
+      <guid>https://prinzpiuz.in/categories/tweaks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>openSource</title>
-      <link>/categories/opensource/</link>
+      <link>https://prinzpiuz.in/categories/opensource/</link>
       <pubDate>Fri, 06 Jan 2023 20:23:40 +0530</pubDate>
       
-      <guid>/categories/opensource/</guid>
+      <guid>https://prinzpiuz.in/categories/opensource/</guid>
       <description></description>
     </item>
     
     <item>
       <title>self-Hosting</title>
-      <link>/categories/self-hosting/</link>
+      <link>https://prinzpiuz.in/categories/self-hosting/</link>
       <pubDate>Fri, 06 Jan 2023 20:23:40 +0530</pubDate>
       
-      <guid>/categories/self-hosting/</guid>
+      <guid>https://prinzpiuz.in/categories/self-hosting/</guid>
       <description></description>
     </item>
     
     <item>
       <title>server</title>
-      <link>/categories/server/</link>
+      <link>https://prinzpiuz.in/categories/server/</link>
       <pubDate>Fri, 06 Jan 2023 20:23:40 +0530</pubDate>
       
-      <guid>/categories/server/</guid>
+      <guid>https://prinzpiuz.in/categories/server/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Deploy</title>
-      <link>/categories/deploy/</link>
+      <link>https://prinzpiuz.in/categories/deploy/</link>
       <pubDate>Fri, 01 Jul 2022 23:37:16 +0530</pubDate>
       
-      <guid>/categories/deploy/</guid>
+      <guid>https://prinzpiuz.in/categories/deploy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Design</title>
-      <link>/categories/design/</link>
+      <link>https://prinzpiuz.in/categories/design/</link>
       <pubDate>Mon, 06 Jun 2022 10:45:15 +0530</pubDate>
       
-      <guid>/categories/design/</guid>
+      <guid>https://prinzpiuz.in/categories/design/</guid>
       <description></description>
     </item>
     
     <item>
       <title>django</title>
-      <link>/categories/django/</link>
+      <link>https://prinzpiuz.in/categories/django/</link>
       <pubDate>Thu, 21 Jan 2021 00:43:47 +0530</pubDate>
       
-      <guid>/categories/django/</guid>
+      <guid>https://prinzpiuz.in/categories/django/</guid>
       <description></description>
     </item>
     
     <item>
       <title>general</title>
-      <link>/categories/general/</link>
+      <link>https://prinzpiuz.in/categories/general/</link>
       <pubDate>Tue, 07 Jul 2020 16:23:04 +0530</pubDate>
       
-      <guid>/categories/general/</guid>
+      <guid>https://prinzpiuz.in/categories/general/</guid>
       <description></description>
     </item>
     
     <item>
       <title>open source</title>
-      <link>/categories/open-source/</link>
+      <link>https://prinzpiuz.in/categories/open-source/</link>
       <pubDate>Tue, 07 Jul 2020 16:23:04 +0530</pubDate>
       
-      <guid>/categories/open-source/</guid>
+      <guid>https://prinzpiuz.in/categories/open-source/</guid>
       <description></description>
     </item>
     
     <item>
       <title>flutter</title>
-      <link>/categories/flutter/</link>
+      <link>https://prinzpiuz.in/categories/flutter/</link>
       <pubDate>Sat, 13 Jun 2020 14:58:35 +0530</pubDate>
       
-      <guid>/categories/flutter/</guid>
+      <guid>https://prinzpiuz.in/categories/flutter/</guid>
       <description></description>
     </item>
     
     <item>
       <title>linux</title>
-      <link>/categories/linux/</link>
+      <link>https://prinzpiuz.in/categories/linux/</link>
       <pubDate>Sat, 13 Jun 2020 14:58:35 +0530</pubDate>
       
-      <guid>/categories/linux/</guid>
+      <guid>https://prinzpiuz.in/categories/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>set-up</title>
-      <link>/categories/set-up/</link>
+      <link>https://prinzpiuz.in/categories/set-up/</link>
       <pubDate>Tue, 26 May 2020 15:29:46 +0530</pubDate>
       
-      <guid>/categories/set-up/</guid>
+      <guid>https://prinzpiuz.in/categories/set-up/</guid>
       <description></description>
     </item>
     
     <item>
       <title>helloworld</title>
-      <link>/categories/helloworld/</link>
+      <link>https://prinzpiuz.in/categories/helloworld/</link>
       <pubDate>Sun, 24 May 2020 00:59:10 +0530</pubDate>
       
-      <guid>/categories/helloworld/</guid>
+      <guid>https://prinzpiuz.in/categories/helloworld/</guid>
       <description></description>
     </item>
     
