@@ -2,16 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2023-01-06T20:23:40+05:30</lastmod>
+    <loc>/post/a-small-tweak-to-enhance-your-shell/</loc>
+    <lastmod>2023-03-18T18:50:44+05:30</lastmod>
   </url><url>
-    <loc>/categories/opensource/</loc>
-    <lastmod>2023-01-06T20:23:40+05:30</lastmod>
+    <loc>/categories/</loc>
+    <lastmod>2023-03-18T18:50:44+05:30</lastmod>
   </url><url>
     <loc>/post/</loc>
-    <lastmod>2023-01-06T20:23:40+05:30</lastmod>
+    <lastmod>2023-03-18T18:50:44+05:30</lastmod>
   </url><url>
     <loc>/</loc>
+    <lastmod>2023-03-18T18:50:44+05:30</lastmod>
+  </url><url>
+    <loc>/categories/python/</loc>
+    <lastmod>2023-03-18T18:50:44+05:30</lastmod>
+  </url><url>
+    <loc>/categories/shell/</loc>
+    <lastmod>2023-03-18T18:50:44+05:30</lastmod>
+  </url><url>
+    <loc>/categories/tweaks/</loc>
+    <lastmod>2023-03-18T18:50:44+05:30</lastmod>
+  </url><url>
+    <loc>/categories/opensource/</loc>
     <lastmod>2023-01-06T20:23:40+05:30</lastmod>
   </url><url>
     <loc>/categories/self-hosting/</loc>
@@ -22,6 +34,9 @@
   </url><url>
     <loc>/post/things-i-self-hosting/</loc>
     <lastmod>2023-01-06T20:23:40+05:30</lastmod>
+  </url><url>
+    <loc>/categories/deploy/</loc>
+    <lastmod>2022-07-01T23:37:16+05:30</lastmod>
   </url><url>
     <loc>/post/how-i-automatically-deploying-this-blog/</loc>
     <lastmod>2022-07-01T23:37:16+05:30</lastmod>
@@ -36,9 +51,6 @@
     <lastmod>2021-01-21T00:43:47+05:30</lastmod>
   </url><url>
     <loc>/post/introduction-to-async-django/</loc>
-    <lastmod>2021-01-21T00:43:47+05:30</lastmod>
-  </url><url>
-    <loc>/categories/python/</loc>
     <lastmod>2021-01-21T00:43:47+05:30</lastmod>
   </url><url>
     <loc>/post/errors-and-exceptions/</loc>

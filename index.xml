@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright 2023, prinzpiuz</copyright>
-    <lastBuildDate>Fri, 06 Jan 2023 20:23:40 +0530</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Mar 2023 18:50:44 +0530</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Small Tweak To Enhance Your Shell</title>
+      <link>/post/a-small-tweak-to-enhance-your-shell/</link>
+      <pubDate>Sat, 18 Mar 2023 18:50:44 +0530</pubDate>
+      
+      <guid>/post/a-small-tweak-to-enhance-your-shell/</guid>
+      <description>This is a short blog about, How a small enhancement in my .zshrc file helped me to do some repetitive steps automatically. So coming to the topic, Let me explain the situation, Te problem here was navigating between each of the project folders, also to activate virtual environments in the case of python projects. I need to remember all the paths of projects folder and their virtual environments in case of python projects.</description>
+    </item>
+    
     <item>
       <title>Things I Self-Hosting 🖳</title>
       <link>/post/things-i-self-hosting/</link>
