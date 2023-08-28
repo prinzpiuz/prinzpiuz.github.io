@@ -2,22 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://prinzpiuz.in/categories/airflow/</loc>
-    <lastmod>2023-05-28T10:49:11+05:30</lastmod>
-  </url><url>
     <loc>https://prinzpiuz.in/categories/</loc>
+    <lastmod>2023-08-27T20:24:58+05:30</lastmod>
+  </url><url>
+    <loc>https://prinzpiuz.in/categories/cloning/</loc>
+    <lastmod>2023-08-27T20:24:58+05:30</lastmod>
+  </url><url>
+    <loc>https://prinzpiuz.in/categories/debian/</loc>
+    <lastmod>2023-08-27T20:24:58+05:30</lastmod>
+  </url><url>
+    <loc>https://prinzpiuz.in/post/how-to-clone-your-machine-to-another/</loc>
+    <lastmod>2023-08-27T20:24:58+05:30</lastmod>
+  </url><url>
+    <loc>https://prinzpiuz.in/categories/linux/</loc>
+    <lastmod>2023-08-27T20:24:58+05:30</lastmod>
+  </url><url>
+    <loc>https://prinzpiuz.in/post/</loc>
+    <lastmod>2023-08-27T20:24:58+05:30</lastmod>
+  </url><url>
+    <loc>https://prinzpiuz.in/</loc>
+    <lastmod>2023-08-27T20:24:58+05:30</lastmod>
+  </url><url>
+    <loc>https://prinzpiuz.in/categories/rsync/</loc>
+    <lastmod>2023-08-27T20:24:58+05:30</lastmod>
+  </url><url>
+    <loc>https://prinzpiuz.in/categories/airflow/</loc>
     <lastmod>2023-05-28T10:49:11+05:30</lastmod>
   </url><url>
     <loc>https://prinzpiuz.in/post/how-to-extent-airflow-ui/</loc>
     <lastmod>2023-05-28T10:49:11+05:30</lastmod>
   </url><url>
     <loc>https://prinzpiuz.in/categories/flask/</loc>
-    <lastmod>2023-05-28T10:49:11+05:30</lastmod>
-  </url><url>
-    <loc>https://prinzpiuz.in/post/</loc>
-    <lastmod>2023-05-28T10:49:11+05:30</lastmod>
-  </url><url>
-    <loc>https://prinzpiuz.in/</loc>
     <lastmod>2023-05-28T10:49:11+05:30</lastmod>
   </url><url>
     <loc>https://prinzpiuz.in/categories/python/</loc>
@@ -75,9 +90,6 @@
     <lastmod>2020-07-07T16:23:04+05:30</lastmod>
   </url><url>
     <loc>https://prinzpiuz.in/categories/flutter/</loc>
-    <lastmod>2020-06-13T14:58:35+05:30</lastmod>
-  </url><url>
-    <loc>https://prinzpiuz.in/categories/linux/</loc>
     <lastmod>2020-06-13T14:58:35+05:30</lastmod>
   </url><url>
     <loc>https://prinzpiuz.in/post/my-media-server-setup/</loc>
