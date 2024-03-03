@@ -127,7 +127,7 @@
             <h3 class="mb-0">Errors and Exceptions In Python</h3>
             
             <small class="text-muted">Published October 3, 2020</small>
-            <small>🕐 7 Mins</small>
+            <small>🕐 6 Mins</small>
 
         </div>
 
@@ -146,7 +146,6 @@ This post can be divided into</p>
 divide by zero, or to access the eighth item in a five-item list.
 Want to see some errors? The easiest way to cause an exception is this.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">&gt;&gt;&gt; print <span style="color:#e6db74">&#34;hello world&#34;</span>
-File <span style="color:#e6db74">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#ae81ff">1</span>
 print <span style="color:#e6db74">&#34;hello world&#34;</span>
 ^
 SyntaxError: invalid syntax
@@ -168,8 +167,6 @@ statement never executes either</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> no_return()
 I am about to <span style="color:#66d9ef">raise</span> an exception
 Traceback (most recent call last):
-File <span style="color:#e6db74">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#ae81ff">1</span>, <span style="color:#f92672">in</span> <span style="color:#f92672">&lt;</span>module<span style="color:#f92672">&gt;</span>
-File <span style="color:#e6db74">&#34;exception_quits.py&#34;</span>, line <span style="color:#ae81ff">3</span>, <span style="color:#f92672">in</span> no_return
 <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">Exception</span>(<span style="color:#e6db74">&#34;This is always raised&#34;</span>)
 <span style="color:#a6e22e">Exception</span>: This <span style="color:#f92672">is</span> always raised
 </code></pre></div><h4 id="handling-exceptions">Handling exceptions</h4>
@@ -197,10 +194,8 @@ print(funny_division(<span style="color:#e6db74">&#34;hello&#34;</span>))
 Zero <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> a good idea<span style="color:#960050;background-color:#1e0010">!</span>
 <span style="color:#ae81ff">2.0</span>
 Traceback (most recent call last):
-File <span style="color:#e6db74">&#34;catch_specific_exception.py&#34;</span>, line <span style="color:#ae81ff">9</span>, <span style="color:#f92672">in</span> <span style="color:#f92672">&lt;</span>module<span style="color:#f92672">&gt;</span>
 print(funny_division(<span style="color:#e6db74">&#34;hello&#34;</span>))
-File <span style="color:#e6db74">&#34;catch_specific_exception.py&#34;</span>, line <span style="color:#ae81ff">3</span>, <span style="color:#f92672">in</span> funny_division
-<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">100</span> <span style="color:#f92672">/</span> anumber
+<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">100</span> <span style="color:#f92672">/</span> divider
 <span style="color:#a6e22e">TypeError</span>: unsupported operand type(s) <span style="color:#66d9ef">for</span> <span style="color:#f92672">/</span>: <span style="color:#e6db74">&#39;int&#39;</span> <span style="color:#f92672">and</span> <span style="color:#e6db74">&#39;str&#39;</span><span style="color:#f92672">.</span>
 </code></pre></div><p>So in the above code, we are avoiding all ZeroDivisionError but catching and printing all TypeError</p>
 <h5 id="keywords-finally-and-else">keywords, finally, and else</h5>
@@ -311,9 +306,11 @@ message passing</p>
     <footer class="text-center pb-1">
   <small class="text-muted">
      &copy; Copyright 2023, prinzpiuz<br />
-    Built with 💚 in <a href="https://gohugo.io/">Hugo</a>
-    
+    Built with 💚 in <a href="https://gohugo.io/">Hugo</a><br />
   </small>
+  <div style="text-align: right !important;position: absolute !important;right: 50px !important;bottom: 16px !important;">
+     v1.0.0 
+  </div>
 </footer>
 </body>
 </html>
