@@ -66,7 +66,7 @@
             </h2>
             <p class="text-muted mb-1">
                 
-                    Software Engineer | Ziff Davis | Cochin
+                    Software Engineer | Nuventure | Cochin
                 
             </p>
             <ul id="nav-links" class="list-inline mb-2">
@@ -81,7 +81,7 @@
                     </li>
                 
                     <li class="list-inline-item">
-                        <a class="badge badge-white " href="../../categories/" title="Categories">Categories</a>
+                        <a class="badge badge-white " href="../../uses/" title="/Uses">/Uses</a>
                     </li>
                 
                     <li class="list-inline-item">
@@ -132,11 +132,10 @@
             <h3 class="mb-0">Wonder World of SVGs</h3>
             
             <small class="text-muted">Published June 6, 2022</small>
-            <small>🕐 7 Mins</small>
+            <small>🕐 6 Mins</small>
 
             
         </div>
-
         <article>
             <h5 id="little-svg-history">Little SVG history</h5>
 <p>Scalable Vector Graphics (SVG) is an XML-based vector image format for <strong>two-dimensional graphics with support for interactivity and animation</strong>. The SVG specification is an open standard developed by the World Wide Web Consortium (W3C) in 1999. SVG images are defined in a vector graphics format and stored in XML text files. <strong>SVG images can thus be scaled in size without loss of quality</strong>, and SVG files can be searched, indexed, scripted, and compressed. The XML text files can be created and edited with text editors or vector graphics editors, and are rendered by the most-used web browsers. <em>more can be read from <a href="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics">Wikipedia</a></em></p>
@@ -147,11 +146,11 @@
 </svg>
 
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-svg" data-lang="svg"><span style="color:#f92672">&lt;svg</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;http://www.w3.org/2000/svg&#34;</span>
-    <span style="color:#a6e22e">width=</span><span style="color:#e6db74">&#34;100&#34;</span> <span style="color:#a6e22e">height=</span><span style="color:#e6db74">&#34;100&#34;</span> <span style="color:#a6e22e">viewBox=</span><span style="color:#e6db74">&#34;0 0 100 100&#34;</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;circle</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;50&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;50&#34;</span> <span style="color:#a6e22e">r=</span><span style="color:#e6db74">&#34;25&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;#73A1D4&#34;</span> <span style="color:#f92672">/&gt;</span>
-<span style="color:#f92672">&lt;/svg&gt;</span>
-</code></pre></div><p>let&rsquo;s look the above svg code. let me try to explain basic elements &amp; attributes of above code. This is a basic svg code for creating circle as shown above. All svg scripts should be between <strong>&lt;svg&gt;&lt;/svg&gt;</strong> like html is in <strong>&lt;html&gt;&lt;/html&gt;</strong>.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-svg" data-lang="svg"><span style="display:flex;"><span><span style="color:#f92672">&lt;svg</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;http://www.w3.org/2000/svg&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">width=</span><span style="color:#e6db74">&#34;100&#34;</span> <span style="color:#a6e22e">height=</span><span style="color:#e6db74">&#34;100&#34;</span> <span style="color:#a6e22e">viewBox=</span><span style="color:#e6db74">&#34;0 0 100 100&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;circle</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;50&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;50&#34;</span> <span style="color:#a6e22e">r=</span><span style="color:#e6db74">&#34;25&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;#73A1D4&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/svg&gt;</span>
+</span></span></code></pre></div><p>let&rsquo;s look the above svg code. let me try to explain basic elements &amp; attributes of above code. This is a basic svg code for creating circle as shown above. All svg scripts should be between <strong>&lt;svg&gt;&lt;/svg&gt;</strong> like html is in <strong>&lt;html&gt;&lt;/html&gt;</strong>.
 <strong>xmlns</strong> attribute is used to describe the namespace, since SVG is XML-based it is namespaced then only we can use it along with other XML-based languages. here <em><strong><a href="http://www.w3.org/2000/svg">http://www.w3.org/2000/svg</a></strong></em> means or defines the namespace for SVG. so when the user agent interprets this code and sees that the XML namespace of this element and its descents is SVG it will interpret it as SVG. This is very useful when users write SVG mixed with other XML-based languages. more about namespaces can be read in this awesome <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Namespaces_Crash_Course">article</a>
 <strong>width</strong> &amp; <strong>height</strong> attribute is used to define the horizontal and vertical length of the user coordinate system
 <strong>viewBox</strong> should be set to a string, containing four numbers separated by spaces and/or a comma, it defines the position and dimension of the content of the SVG script, the 4 numbers in the viewBox attribute represent min-x, min-y, width, and height. the <strong>min-x</strong> &amp; <strong>min-y</strong> values are set at the top, left corner of our view box. Changing these values will pan our view. <strong>width</strong> and <strong>height</strong> set the number of pixels that are visible inside of our view box. so here 0, 0 means it should be in the center of the viewport, and width and height with values 100, 100 means all pixel should be visible. read <a href="https://wattenberger.com/guide/scaling-svg">this</a> amazing article to understand more about the SVG view box.
@@ -173,21 +172,21 @@ And <strong>circle</strong> element is what we use for drawing circles. It&rsquo
 </svg>
 
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-svg" data-lang="svg"><span style="color:#f92672">&lt;svg</span> <span style="color:#a6e22e">width=</span><span style="color:#e6db74">&#34;350&#34;</span> <span style="color:#a6e22e">height=</span><span style="color:#e6db74">&#34;300&#34;</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;http://www.w3.org/2000/svg&#34;</span> <span style="color:#a6e22e">xmlns:xlink=</span><span style="color:#e6db74">&#34;http://www.w3.org/1999/xlink&#34;</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;ellipse</span> <span style="color:#a6e22e">ry=</span><span style="color:#e6db74">&#34;31&#34;</span> <span style="color:#a6e22e">rx=</span><span style="color:#e6db74">&#34;30.5&#34;</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;svg_1&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;98&#34;</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;92.5&#34;</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#f92672">/&gt;</span>
-    <span style="color:#f92672">&lt;line</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;svg_2&#34;</span> <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;208&#34;</span> <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;94&#34;</span> <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;130&#34;</span> <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;93&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#f92672">/&gt;</span>
-    <span style="color:#f92672">&lt;line</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;svg_3&#34;</span> <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;162&#34;</span> <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;130&#34;</span> <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;163&#34;</span> <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;94&#34;</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#f92672">/&gt;</span>
-    <span style="color:#f92672">&lt;line</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;svg_4&#34;</span> <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;162&#34;</span> <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;56&#34;</span> <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;163&#34;</span> <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;95&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#f92672">/&gt;</span>
-    <span style="color:#f92672">&lt;line</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;svg_5&#34;</span> <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;238&#34;</span> <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;59&#34;</span> <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;207&#34;</span> <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;94&#34;</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#f92672">/&gt;</span>
-    <span style="color:#f92672">&lt;line</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;svg_6&#34;</span> <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;239&#34;</span> <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;128&#34;</span> <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;207&#34;</span> <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;94&#34;</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#f92672">/&gt;</span>
-    <span style="color:#f92672">&lt;ellipse</span> <span style="color:#a6e22e">ry=</span><span style="color:#e6db74">&#34;2.5&#34;</span> <span style="color:#a6e22e">rx=</span><span style="color:#e6db74">&#34;4.5&#34;</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;svg_8&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;92.5&#34;</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;81.5&#34;</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#f92672">/&gt;</span>
-    <span style="color:#f92672">&lt;ellipse</span> <span style="color:#a6e22e">ry=</span><span style="color:#e6db74">&#34;2.5&#34;</span> <span style="color:#a6e22e">rx=</span><span style="color:#e6db74">&#34;4.5&#34;</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;svg_9&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;92.5&#34;</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;105&#34;</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#f92672">/&gt;</span>
-    <span style="color:#f92672">&lt;path</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;svg_7&#34;</span> <span style="color:#a6e22e">d=</span><span style="color:#e6db74">&#34;m80,107c12,13 28,0 28,0&#34;</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#f92672">/&gt;</span>
-    <span style="color:#f92672">&lt;line</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;svg_10&#34;</span> <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;139&#34;</span> <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;40&#34;</span> <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;161&#34;</span> <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;57&#34;</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#f92672">/&gt;</span>
-    <span style="color:#f92672">&lt;line</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;svg_10&#34;</span> <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;163&#34;</span> <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;129&#34;</span> <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;193&#34;</span> <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;155&#34;</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#f92672">/&gt;</span>
-    <span style="color:#f92672">&lt;line</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;svg_13&#34;</span> <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;106&#34;</span> <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;93&#34;</span> <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;93&#34;</span> <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;93&#34;</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#f92672">/&gt;</span>
-<span style="color:#f92672">&lt;/svg&gt;</span>
-</code></pre></div><p>Look at the above SVG code. now we have some more new elements. let me try to explain them.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-svg" data-lang="svg"><span style="display:flex;"><span><span style="color:#f92672">&lt;svg</span> <span style="color:#a6e22e">width=</span><span style="color:#e6db74">&#34;350&#34;</span> <span style="color:#a6e22e">height=</span><span style="color:#e6db74">&#34;300&#34;</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;http://www.w3.org/2000/svg&#34;</span> <span style="color:#a6e22e">xmlns:xlink=</span><span style="color:#e6db74">&#34;http://www.w3.org/1999/xlink&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;ellipse</span> <span style="color:#a6e22e">ry=</span><span style="color:#e6db74">&#34;31&#34;</span> <span style="color:#a6e22e">rx=</span><span style="color:#e6db74">&#34;30.5&#34;</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;svg_1&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;98&#34;</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;92.5&#34;</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;line</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;svg_2&#34;</span> <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;208&#34;</span> <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;94&#34;</span> <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;130&#34;</span> <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;93&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;line</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;svg_3&#34;</span> <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;162&#34;</span> <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;130&#34;</span> <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;163&#34;</span> <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;94&#34;</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;line</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;svg_4&#34;</span> <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;162&#34;</span> <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;56&#34;</span> <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;163&#34;</span> <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;95&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;line</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;svg_5&#34;</span> <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;238&#34;</span> <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;59&#34;</span> <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;207&#34;</span> <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;94&#34;</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;line</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;svg_6&#34;</span> <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;239&#34;</span> <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;128&#34;</span> <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;207&#34;</span> <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;94&#34;</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;ellipse</span> <span style="color:#a6e22e">ry=</span><span style="color:#e6db74">&#34;2.5&#34;</span> <span style="color:#a6e22e">rx=</span><span style="color:#e6db74">&#34;4.5&#34;</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;svg_8&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;92.5&#34;</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;81.5&#34;</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;ellipse</span> <span style="color:#a6e22e">ry=</span><span style="color:#e6db74">&#34;2.5&#34;</span> <span style="color:#a6e22e">rx=</span><span style="color:#e6db74">&#34;4.5&#34;</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;svg_9&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;92.5&#34;</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;105&#34;</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;path</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;svg_7&#34;</span> <span style="color:#a6e22e">d=</span><span style="color:#e6db74">&#34;m80,107c12,13 28,0 28,0&#34;</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;line</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;svg_10&#34;</span> <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;139&#34;</span> <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;40&#34;</span> <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;161&#34;</span> <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;57&#34;</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;line</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;svg_10&#34;</span> <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;163&#34;</span> <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;129&#34;</span> <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;193&#34;</span> <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;155&#34;</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;line</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;svg_13&#34;</span> <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;106&#34;</span> <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;93&#34;</span> <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;93&#34;</span> <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;93&#34;</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/svg&gt;</span>
+</span></span></code></pre></div><p>Look at the above SVG code. now we have some more new elements. let me try to explain them.</p>
 <ul>
 <li>
 <p><strong>ellipse</strong>
@@ -320,235 +319,235 @@ The Path SVG element is the generic element to define a shape. All the basic sha
     
         <details>
             <summary>expand</summary>
-            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-svg" data-lang="svg"><span style="color:#f92672">&lt;svg</span>
-<span style="color:#a6e22e">width=</span><span style="color:#e6db74">&#34;350&#34;</span>
-<span style="color:#a6e22e">height=</span><span style="color:#e6db74">&#34;300&#34;</span>
-<span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;http://www.w3.org/2000/svg&#34;</span>
-<span style="color:#a6e22e">xmlns:xlink=</span><span style="color:#e6db74">&#34;http://www.w3.org/1999/xlink&#34;</span>
-<span style="color:#a6e22e">onload=</span><span style="color:#e6db74">&#34;init()&#34;</span>
-
-<span style="color:#f92672">&gt;</span>
-
-  <span style="color:#f92672">&lt;style&gt;</span>
-    #mouth {
-        animation: dance 1s infinite alternate;
-    }
-
-    @keyframes dance {
-        100% {
-            transform: rotate(2deg);
-        }
-    }
-  <span style="color:#f92672">&lt;/style&gt;</span>
-  <span style="color:#f92672">&lt;script&gt;</span>
-    var right_hand;
-    var left_leg;
-    var left_hand;
-    var right_leg;
-    function init() {
-        right_hand = document.getElementById(&#39;right_hand&#39;);
-        left_leg = document.getElementById(&#39;left_leg&#39;);
-        left_hand = document.getElementById(&#39;left_hand&#39;);
-        right_leg = document.getElementById(&#39;right_leg&#39;);
-        window.requestAnimationFrame(rotate);
-    }
-
-    function rotate(timestamp) {
-      var milliseconds = timestamp % 1000;
-      var degrees      = milliseconds * .2; // 360 degrees in 1000 ms
-      right_hand.setAttribute(&#39;x1&#39;, degrees);
-      left_leg.setAttribute(&#39;x2&#39;, degrees);
-      left_hand.setAttribute(&#39;x2&#39;, degrees);
-      right_leg.setAttribute(&#39;y2&#39;, degrees);
-      window.requestAnimationFrame(rotate);
-    }
-  <span style="color:#f92672">&lt;/script&gt;</span>
-
-<span style="color:#f92672">&lt;ellipse</span>
-<span style="color:#a6e22e">ry=</span><span style="color:#e6db74">&#34;31&#34;</span>
-<span style="color:#a6e22e">rx=</span><span style="color:#e6db74">&#34;30.5&#34;</span>
-<span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;head&#34;</span>
-<span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;98&#34;</span>
-<span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;92.5&#34;</span>
-<span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span>
-<span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span>
-
-<span style="color:#f92672">&gt;</span>
-<span style="color:#f92672">&lt;animate</span>
-  <span style="color:#a6e22e">attributeName=</span><span style="color:#e6db74">&#34;stroke&#34;</span>
-  <span style="color:#a6e22e">dur=</span><span style="color:#e6db74">&#34;5000ms&#34;</span>
-  <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;#3CAA1A&#34;</span>
-  <span style="color:#a6e22e">repeatCount=</span><span style="color:#e6db74">&#34;indefinite&#34;</span>
-
-<span style="color:#f92672">/&gt;</span>
-<span style="color:#f92672">&lt;/ellipse&gt;</span>
-<span style="color:#f92672">&lt;line</span>
-<span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span>
-<span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;center_bone&#34;</span>
-<span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;208&#34;</span>
-<span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;94&#34;</span>
-<span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;130&#34;</span>
-<span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;93&#34;</span>
-<span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span>
-<span style="color:#f92672">&gt;</span>
-<span style="color:#f92672">&lt;animate</span>
-  <span style="color:#a6e22e">attributeName=</span><span style="color:#e6db74">&#34;stroke&#34;</span>
-  <span style="color:#a6e22e">dur=</span><span style="color:#e6db74">&#34;5000ms&#34;</span>
-  <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;#1AAA54&#34;</span>
-  <span style="color:#a6e22e">repeatCount=</span><span style="color:#e6db74">&#34;indefinite&#34;</span>
-<span style="color:#f92672">/&gt;</span>
-  <span style="color:#f92672">&lt;/line&gt;</span>
-  <span style="color:#f92672">&lt;line</span>
-    <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;right_arm&#34;</span>
-    <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;162&#34;</span>
-    <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;130&#34;</span>
-    <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;163&#34;</span>
-    <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;94&#34;</span>
-    <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span>
-    <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span>
-  <span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;animate</span>
-      <span style="color:#a6e22e">attributeName=</span><span style="color:#e6db74">&#34;stroke&#34;</span>
-      <span style="color:#a6e22e">dur=</span><span style="color:#e6db74">&#34;5000ms&#34;</span>
-      <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;#1AAA9A&#34;</span>
-      <span style="color:#a6e22e">repeatCount=</span><span style="color:#e6db74">&#34;indefinite&#34;</span>
-    <span style="color:#f92672">/&gt;</span>
-  <span style="color:#f92672">&lt;/line&gt;</span>
-  <span style="color:#f92672">&lt;line</span>
-    <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span>
-    <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;left_arm&#34;</span>
-    <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;162&#34;</span>
-    <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;56&#34;</span>
-    <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;163&#34;</span>
-    <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;95&#34;</span>
-    <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span>
-  <span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;animate</span>
-      <span style="color:#a6e22e">attributeName=</span><span style="color:#e6db74">&#34;stroke&#34;</span>
-      <span style="color:#a6e22e">dur=</span><span style="color:#e6db74">&#34;5000ms&#34;</span>
-      <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;#1A85AA&#34;</span>
-      <span style="color:#a6e22e">repeatCount=</span><span style="color:#e6db74">&#34;indefinite&#34;</span>
-    <span style="color:#f92672">/&gt;</span>
-  <span style="color:#f92672">&lt;/line&gt;</span>
-  <span style="color:#f92672">&lt;line</span>
-    <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;left_leg&#34;</span>
-    <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;238&#34;</span>
-    <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;59&#34;</span>
-    <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;207&#34;</span>
-    <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;94&#34;</span>
-    <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span>
-    <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span>
-  <span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;animate</span>
-      <span style="color:#a6e22e">attributeName=</span><span style="color:#e6db74">&#34;stroke&#34;</span>
-      <span style="color:#a6e22e">dur=</span><span style="color:#e6db74">&#34;5000ms&#34;</span>
-      <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;#0E4EB8&#34;</span>
-      <span style="color:#a6e22e">repeatCount=</span><span style="color:#e6db74">&#34;indefinite&#34;</span>
-    <span style="color:#f92672">/&gt;</span>
-  <span style="color:#f92672">&lt;/line&gt;</span>
-  <span style="color:#f92672">&lt;line</span>
-    <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;right_leg&#34;</span>
-    <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;239&#34;</span>
-    <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;128&#34;</span>
-    <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;207&#34;</span>
-    <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;94&#34;</span>
-    <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span>
-    <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span>
-  <span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;animate</span>
-      <span style="color:#a6e22e">attributeName=</span><span style="color:#e6db74">&#34;stroke&#34;</span>
-      <span style="color:#a6e22e">dur=</span><span style="color:#e6db74">&#34;5000ms&#34;</span>
-      <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;#160EB8&#34;</span>
-      <span style="color:#a6e22e">repeatCount=</span><span style="color:#e6db74">&#34;indefinite&#34;</span>
-    <span style="color:#f92672">/&gt;</span>
-  <span style="color:#f92672">&lt;/line&gt;</span>
-  <span style="color:#f92672">&lt;ellipse</span>
-    <span style="color:#a6e22e">ry=</span><span style="color:#e6db74">&#34;2.5&#34;</span>
-    <span style="color:#a6e22e">rx=</span><span style="color:#e6db74">&#34;4.5&#34;</span>
-    <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;left_eye&#34;</span>
-    <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;92.5&#34;</span>
-    <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;81.5&#34;</span>
-    <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span>
-    <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span>
-  <span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;animate</span>
-      <span style="color:#a6e22e">attributeName=</span><span style="color:#e6db74">&#34;stroke&#34;</span>
-      <span style="color:#a6e22e">dur=</span><span style="color:#e6db74">&#34;5000ms&#34;</span>
-      <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;#8E0EB8&#34;</span>
-      <span style="color:#a6e22e">repeatCount=</span><span style="color:#e6db74">&#34;indefinite&#34;</span>
-    <span style="color:#f92672">/&gt;</span>
-  <span style="color:#f92672">&lt;/ellipse&gt;</span>
-  <span style="color:#f92672">&lt;ellipse</span>
-    <span style="color:#a6e22e">ry=</span><span style="color:#e6db74">&#34;2.5&#34;</span>
-    <span style="color:#a6e22e">rx=</span><span style="color:#e6db74">&#34;4.5&#34;</span>
-    <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;right_eye&#34;</span>
-    <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;92.5&#34;</span>
-    <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;105&#34;</span>
-    <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span>
-    <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span>
-  <span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;animate</span>
-      <span style="color:#a6e22e">attributeName=</span><span style="color:#e6db74">&#34;stroke&#34;</span>
-      <span style="color:#a6e22e">dur=</span><span style="color:#e6db74">&#34;5000ms&#34;</span>
-      <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;#B80E9F&#34;</span>
-      <span style="color:#a6e22e">repeatCount=</span><span style="color:#e6db74">&#34;indefinite&#34;</span>
-    <span style="color:#f92672">/&gt;</span>
-  <span style="color:#f92672">&lt;/ellipse&gt;</span>
-  <span style="color:#f92672">&lt;path</span>
-    <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;mouth&#34;</span>
-    <span style="color:#a6e22e">d=</span><span style="color:#e6db74">&#34;m80,107c12,13 28,0 28,0&#34;</span>
-    <span style="color:#a6e22e">opacity=</span><span style="color:#e6db74">&#34;NaN&#34;</span>
-    <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span>
-    <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span>
-  <span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;animate</span>
-      <span style="color:#a6e22e">attributeName=</span><span style="color:#e6db74">&#34;stroke&#34;</span>
-      <span style="color:#a6e22e">dur=</span><span style="color:#e6db74">&#34;5000ms&#34;</span>
-      <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;#A95881&#34;</span>
-      <span style="color:#a6e22e">repeatCount=</span><span style="color:#e6db74">&#34;indefinite&#34;</span>
-    <span style="color:#f92672">/&gt;</span>
-  <span style="color:#f92672">&lt;/path&gt;</span>
-  <span style="color:#f92672">&lt;line</span>
-    <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;left_hand&#34;</span>
-    <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;139&#34;</span>
-    <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;40&#34;</span>
-    <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;161&#34;</span>
-    <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;57&#34;</span>
-    <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span>
-    <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span>
-  <span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;animate</span>
-      <span style="color:#a6e22e">attributeName=</span><span style="color:#e6db74">&#34;stroke&#34;</span>
-      <span style="color:#a6e22e">dur=</span><span style="color:#e6db74">&#34;5000ms&#34;</span>
-      <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;#7F2A34&#34;</span>
-      <span style="color:#a6e22e">repeatCount=</span><span style="color:#e6db74">&#34;indefinite&#34;</span>
-    <span style="color:#f92672">/&gt;</span>
-  <span style="color:#f92672">&lt;/line&gt;</span>
-  <span style="color:#f92672">&lt;line</span>
-    <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;right_hand&#34;</span>
-    <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;163&#34;</span>
-    <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;129&#34;</span>
-    <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;193&#34;</span>
-    <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;155&#34;</span>
-    <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span>
-    <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span>
-  <span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;animate</span>
-      <span style="color:#a6e22e">attributeName=</span><span style="color:#e6db74">&#34;stroke&#34;</span>
-      <span style="color:#a6e22e">dur=</span><span style="color:#e6db74">&#34;5000ms&#34;</span>
-      <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;#E73F1B&#34;</span>
-      <span style="color:#a6e22e">repeatCount=</span><span style="color:#e6db74">&#34;indefinite&#34;</span>
-    <span style="color:#f92672">/&gt;</span>
-  <span style="color:#f92672">&lt;/line&gt;</span>
-  <span style="color:#f92672">&lt;line</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;nose&#34;</span> <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;106&#34;</span> <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;93&#34;</span> <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;93&#34;</span> <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;93&#34;</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;animate</span>
-      <span style="color:#a6e22e">attributeName=</span><span style="color:#e6db74">&#34;stroke&#34;</span>
-      <span style="color:#a6e22e">dur=</span><span style="color:#e6db74">&#34;5000ms&#34;</span>
-      <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;#18ECEA&#34;</span>
-      <span style="color:#a6e22e">repeatCount=</span><span style="color:#e6db74">&#34;indefinite&#34;</span>
-    <span style="color:#f92672">/&gt;</span>
-  <span style="color:#f92672">&lt;/line&gt;</span>
-<span style="color:#f92672">&lt;/svg&gt;</span></code></pre></div>
+            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-svg" data-lang="svg"><span style="display:flex;"><span><span style="color:#f92672">&lt;svg</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">width=</span><span style="color:#e6db74">&#34;350&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">height=</span><span style="color:#e6db74">&#34;300&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;http://www.w3.org/2000/svg&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">xmlns:xlink=</span><span style="color:#e6db74">&#34;http://www.w3.org/1999/xlink&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">onload=</span><span style="color:#e6db74">&#34;init()&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;style&gt;</span>
+</span></span><span style="display:flex;"><span>    #mouth {
+</span></span><span style="display:flex;"><span>        animation: dance 1s infinite alternate;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    @keyframes dance {
+</span></span><span style="display:flex;"><span>        100% {
+</span></span><span style="display:flex;"><span>            transform: rotate(2deg);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/style&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;script&gt;</span>
+</span></span><span style="display:flex;"><span>    var right_hand;
+</span></span><span style="display:flex;"><span>    var left_leg;
+</span></span><span style="display:flex;"><span>    var left_hand;
+</span></span><span style="display:flex;"><span>    var right_leg;
+</span></span><span style="display:flex;"><span>    function init() {
+</span></span><span style="display:flex;"><span>        right_hand = document.getElementById(&#39;right_hand&#39;);
+</span></span><span style="display:flex;"><span>        left_leg = document.getElementById(&#39;left_leg&#39;);
+</span></span><span style="display:flex;"><span>        left_hand = document.getElementById(&#39;left_hand&#39;);
+</span></span><span style="display:flex;"><span>        right_leg = document.getElementById(&#39;right_leg&#39;);
+</span></span><span style="display:flex;"><span>        window.requestAnimationFrame(rotate);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    function rotate(timestamp) {
+</span></span><span style="display:flex;"><span>      var milliseconds = timestamp % 1000;
+</span></span><span style="display:flex;"><span>      var degrees      = milliseconds * .2; // 360 degrees in 1000 ms
+</span></span><span style="display:flex;"><span>      right_hand.setAttribute(&#39;x1&#39;, degrees);
+</span></span><span style="display:flex;"><span>      left_leg.setAttribute(&#39;x2&#39;, degrees);
+</span></span><span style="display:flex;"><span>      left_hand.setAttribute(&#39;x2&#39;, degrees);
+</span></span><span style="display:flex;"><span>      right_leg.setAttribute(&#39;y2&#39;, degrees);
+</span></span><span style="display:flex;"><span>      window.requestAnimationFrame(rotate);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/script&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;ellipse</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">ry=</span><span style="color:#e6db74">&#34;31&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">rx=</span><span style="color:#e6db74">&#34;30.5&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;head&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;98&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;92.5&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;animate</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">attributeName=</span><span style="color:#e6db74">&#34;stroke&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">dur=</span><span style="color:#e6db74">&#34;5000ms&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;#3CAA1A&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">repeatCount=</span><span style="color:#e6db74">&#34;indefinite&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/ellipse&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;line</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;center_bone&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;208&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;94&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;130&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;93&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;animate</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">attributeName=</span><span style="color:#e6db74">&#34;stroke&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">dur=</span><span style="color:#e6db74">&#34;5000ms&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;#1AAA54&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">repeatCount=</span><span style="color:#e6db74">&#34;indefinite&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/line&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;line</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;right_arm&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;162&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;130&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;163&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;94&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;animate</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">attributeName=</span><span style="color:#e6db74">&#34;stroke&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">dur=</span><span style="color:#e6db74">&#34;5000ms&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;#1AAA9A&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">repeatCount=</span><span style="color:#e6db74">&#34;indefinite&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/line&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;line</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;left_arm&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;162&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;56&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;163&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;95&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;animate</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">attributeName=</span><span style="color:#e6db74">&#34;stroke&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">dur=</span><span style="color:#e6db74">&#34;5000ms&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;#1A85AA&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">repeatCount=</span><span style="color:#e6db74">&#34;indefinite&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/line&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;line</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;left_leg&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;238&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;59&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;207&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;94&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;animate</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">attributeName=</span><span style="color:#e6db74">&#34;stroke&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">dur=</span><span style="color:#e6db74">&#34;5000ms&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;#0E4EB8&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">repeatCount=</span><span style="color:#e6db74">&#34;indefinite&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/line&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;line</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;right_leg&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;239&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;128&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;207&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;94&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;animate</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">attributeName=</span><span style="color:#e6db74">&#34;stroke&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">dur=</span><span style="color:#e6db74">&#34;5000ms&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;#160EB8&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">repeatCount=</span><span style="color:#e6db74">&#34;indefinite&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/line&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;ellipse</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">ry=</span><span style="color:#e6db74">&#34;2.5&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">rx=</span><span style="color:#e6db74">&#34;4.5&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;left_eye&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;92.5&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;81.5&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;animate</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">attributeName=</span><span style="color:#e6db74">&#34;stroke&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">dur=</span><span style="color:#e6db74">&#34;5000ms&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;#8E0EB8&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">repeatCount=</span><span style="color:#e6db74">&#34;indefinite&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/ellipse&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;ellipse</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">ry=</span><span style="color:#e6db74">&#34;2.5&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">rx=</span><span style="color:#e6db74">&#34;4.5&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;right_eye&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;92.5&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;105&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;animate</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">attributeName=</span><span style="color:#e6db74">&#34;stroke&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">dur=</span><span style="color:#e6db74">&#34;5000ms&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;#B80E9F&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">repeatCount=</span><span style="color:#e6db74">&#34;indefinite&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/ellipse&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;path</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;mouth&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">d=</span><span style="color:#e6db74">&#34;m80,107c12,13 28,0 28,0&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">opacity=</span><span style="color:#e6db74">&#34;NaN&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;animate</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">attributeName=</span><span style="color:#e6db74">&#34;stroke&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">dur=</span><span style="color:#e6db74">&#34;5000ms&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;#A95881&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">repeatCount=</span><span style="color:#e6db74">&#34;indefinite&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/path&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;line</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;left_hand&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;139&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;40&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;161&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;57&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;animate</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">attributeName=</span><span style="color:#e6db74">&#34;stroke&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">dur=</span><span style="color:#e6db74">&#34;5000ms&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;#7F2A34&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">repeatCount=</span><span style="color:#e6db74">&#34;indefinite&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/line&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;line</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;right_hand&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;163&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;129&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;193&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;155&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;animate</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">attributeName=</span><span style="color:#e6db74">&#34;stroke&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">dur=</span><span style="color:#e6db74">&#34;5000ms&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;#E73F1B&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">repeatCount=</span><span style="color:#e6db74">&#34;indefinite&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/line&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;line</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;nose&#34;</span> <span style="color:#a6e22e">y2=</span><span style="color:#e6db74">&#34;106&#34;</span> <span style="color:#a6e22e">x2=</span><span style="color:#e6db74">&#34;93&#34;</span> <span style="color:#a6e22e">y1=</span><span style="color:#e6db74">&#34;93&#34;</span> <span style="color:#a6e22e">x1=</span><span style="color:#e6db74">&#34;93&#34;</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;animate</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">attributeName=</span><span style="color:#e6db74">&#34;stroke&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">dur=</span><span style="color:#e6db74">&#34;5000ms&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;#18ECEA&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">repeatCount=</span><span style="color:#e6db74">&#34;indefinite&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/line&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/svg&gt;</span></span></span></code></pre></div>
         </details>
     
 </div>
@@ -585,7 +584,7 @@ The SVG <!-- raw HTML omitted --> element provides a way to animate an attribute
     Built with 💚 in <a href="https://gohugo.io/">Hugo</a><br />
   </small>
   <div id="version_div">
-     v1.16.0 
+     v1.16.1 
   </div>
   <div id="not_by_ai">
     <img src="../../images/not_by_ai.svg" alt="Not By AI" />

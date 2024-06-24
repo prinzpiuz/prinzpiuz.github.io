@@ -4,8 +4,9 @@
     <title>Tags on prinzpiuz</title>
     <link>https://prinzpiuz.in/tags/</link>
     <description>Recent content in Tags on prinzpiuz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; Copyright 2024, prinzpiuz</copyright><atom:link href="https://prinzpiuz.in/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; Copyright 2024, prinzpiuz</copyright>
+    <atom:link href="https://prinzpiuz.in/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

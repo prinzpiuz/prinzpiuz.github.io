@@ -66,7 +66,7 @@
             </h2>
             <p class="text-muted mb-1">
                 
-                    Software Engineer | Ziff Davis | Cochin
+                    Software Engineer | Nuventure | Cochin
                 
             </p>
             <ul id="nav-links" class="list-inline mb-2">
@@ -81,7 +81,7 @@
                     </li>
                 
                     <li class="list-inline-item">
-                        <a class="badge badge-white " href="../../categories/" title="Categories">Categories</a>
+                        <a class="badge badge-white " href="../../uses/" title="/Uses">/Uses</a>
                     </li>
                 
                     <li class="list-inline-item">
@@ -136,7 +136,6 @@
 
             
         </div>
-
         <article>
             <p>This is a short blog about, How a small enhancement in my <code>.zshrc</code> file helped me to do some repetitive steps automatically.
 So coming to the topic, Let me explain the situation,
@@ -145,18 +144,18 @@ So I did some tweaks in <code>.zshrc</code> to make things easy.
 I am using <a href="https://zsh.sourceforge.io/">zsh</a> as my shell, There are other shells available like <a href="https://www.gnu.org/software/bash/">bash</a>, and <a href="https://fishshell.com/">fish</a>, bash is the default shell in most operating systems. I am using zsh because it brings some extra features to the terminal. And every shell will be having corresponding rc files located <code>~/</code>, It will be a hidden file. You can see it by doing a <code>ls -al ~/</code>.
 Its functionality is, As the name suggests rc is short for <strong>R</strong>un <strong>C</strong>ommand, which means it runs commands we wrote in the rc file every time we open a new terminal. Since I am using zsh my rc will be seen as <code>.zshrc</code>.
 So here is what I did to solve the above-mentioned problem.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#to auto alias projects in hobby dir</span>
-<span style="color:#66d9ef">for</span> repo in <span style="color:#66d9ef">$(</span>ls ~/projects/hobby<span style="color:#66d9ef">)</span>
-<span style="color:#66d9ef">do</span>
-  alias $repo<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cd ~/projects/hobby/</span>$repo<span style="color:#e6db74">&#34;</span>
-<span style="color:#66d9ef">done</span>
-
-<span style="color:#75715e">#to auto alias activate command for virtual envs in venv directory</span>
-<span style="color:#66d9ef">for</span> venv in <span style="color:#66d9ef">$(</span>ls ~/venvs<span style="color:#66d9ef">)</span>
-<span style="color:#66d9ef">do</span>
-  alias $venv<span style="color:#e6db74">&#34;env&#34;</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;source ~/venvs/</span>$venv<span style="color:#e6db74">/bin/activate &amp;&amp; </span>$venv<span style="color:#e6db74">&#34;</span>
-<span style="color:#66d9ef">done</span>
-</code></pre></div><p>This is a shell script, what happening here is, I am creating <a href="https://en.wikipedia.org/wiki/Alias_(command)">alias</a> for every directory in my hobby projects folder, so that if I enter the name of my hobby projects folder in terminal, I can change my location into that directory.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#to auto alias projects in hobby dir</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> repo in <span style="color:#66d9ef">$(</span>ls ~/projects/hobby<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  alias $repo<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cd ~/projects/hobby/</span>$repo<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#to auto alias activate command for virtual envs in venv directory</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> venv in <span style="color:#66d9ef">$(</span>ls ~/venvs<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  alias $venv<span style="color:#e6db74">&#34;env&#34;</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;source ~/venvs/</span>$venv<span style="color:#e6db74">/bin/activate &amp;&amp; </span>$venv<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span></code></pre></div><p>This is a shell script, what happening here is, I am creating <a href="https://en.wikipedia.org/wiki/Alias_(command)">alias</a> for every directory in my hobby projects folder, so that if I enter the name of my hobby projects folder in terminal, I can change my location into that directory.
 Also second part is more interesting, I am appending <code>env</code> to the last section of virtual environments folders and aliasing them, So when I write <code>&lt;project name&gt;</code> + <code>env</code>, it will activate virtual environment and then change location to that folder, since zsh has built in auto-completion for alias, after typing one or two letters of project name and hitting tab, zsh will show available options.</p>
 <p>Here is a short screencast of how it actually works.</p>
 <p>
@@ -224,7 +223,7 @@ Also second part is more interesting, I am appending <code>env</code> to the las
     Built with 💚 in <a href="https://gohugo.io/">Hugo</a><br />
   </small>
   <div id="version_div">
-     v1.16.0 
+     v1.16.1 
   </div>
   <div id="not_by_ai">
     <img src="../../images/not_by_ai.svg" alt="Not By AI" />

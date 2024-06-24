@@ -4,207 +4,171 @@
     <title>Categories on prinzpiuz</title>
     <link>https://prinzpiuz.in/categories/</link>
     <description>Recent content in Categories on prinzpiuz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright 2024, prinzpiuz</copyright>
-    <lastBuildDate>Sat, 20 Apr 2024 13:07:35 +0530</lastBuildDate><atom:link href="https://prinzpiuz.in/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Jun 2024 19:56:18 +0530</lastBuildDate>
+    <atom:link href="https://prinzpiuz.in/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Uses</title>
+      <link>https://prinzpiuz.in/categories/uses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://prinzpiuz.in/categories/uses/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Cinema</title>
       <link>https://prinzpiuz.in/categories/cinema/</link>
-      <pubDate>Sat, 20 Apr 2024 13:07:35 +0530</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://prinzpiuz.in/categories/cinema/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Review</title>
       <link>https://prinzpiuz.in/categories/review/</link>
-      <pubDate>Sat, 20 Apr 2024 13:07:35 +0530</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://prinzpiuz.in/categories/review/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Cloning</title>
       <link>https://prinzpiuz.in/categories/cloning/</link>
-      <pubDate>Sun, 27 Aug 2023 20:24:58 +0530</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://prinzpiuz.in/categories/cloning/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Debian</title>
       <link>https://prinzpiuz.in/categories/debian/</link>
-      <pubDate>Sun, 27 Aug 2023 20:24:58 +0530</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://prinzpiuz.in/categories/debian/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Linux</title>
       <link>https://prinzpiuz.in/categories/linux/</link>
-      <pubDate>Sun, 27 Aug 2023 20:24:58 +0530</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://prinzpiuz.in/categories/linux/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>rSync</title>
+      <title>RSync</title>
       <link>https://prinzpiuz.in/categories/rsync/</link>
-      <pubDate>Sun, 27 Aug 2023 20:24:58 +0530</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://prinzpiuz.in/categories/rsync/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Airflow</title>
       <link>https://prinzpiuz.in/categories/airflow/</link>
-      <pubDate>Sun, 28 May 2023 10:49:11 +0530</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://prinzpiuz.in/categories/airflow/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Flask</title>
       <link>https://prinzpiuz.in/categories/flask/</link>
-      <pubDate>Sun, 28 May 2023 10:49:11 +0530</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://prinzpiuz.in/categories/flask/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Python</title>
       <link>https://prinzpiuz.in/categories/python/</link>
-      <pubDate>Sun, 28 May 2023 10:49:11 +0530</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://prinzpiuz.in/categories/python/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Shell</title>
       <link>https://prinzpiuz.in/categories/shell/</link>
-      <pubDate>Sat, 18 Mar 2023 18:50:44 +0530</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://prinzpiuz.in/categories/shell/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Tweaks</title>
       <link>https://prinzpiuz.in/categories/tweaks/</link>
-      <pubDate>Sat, 18 Mar 2023 18:50:44 +0530</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://prinzpiuz.in/categories/tweaks/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>openSource</title>
+      <title>OpenSource</title>
       <link>https://prinzpiuz.in/categories/opensource/</link>
-      <pubDate>Fri, 06 Jan 2023 20:23:40 +0530</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://prinzpiuz.in/categories/opensource/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>self-Hosting</title>
+      <title>Self-Hosting</title>
       <link>https://prinzpiuz.in/categories/self-hosting/</link>
-      <pubDate>Fri, 06 Jan 2023 20:23:40 +0530</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://prinzpiuz.in/categories/self-hosting/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>server</title>
+      <title>Server</title>
       <link>https://prinzpiuz.in/categories/server/</link>
-      <pubDate>Fri, 06 Jan 2023 20:23:40 +0530</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://prinzpiuz.in/categories/server/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Deploy</title>
       <link>https://prinzpiuz.in/categories/deploy/</link>
-      <pubDate>Fri, 01 Jul 2022 23:37:16 +0530</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://prinzpiuz.in/categories/deploy/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Design</title>
       <link>https://prinzpiuz.in/categories/design/</link>
-      <pubDate>Mon, 06 Jun 2022 10:45:15 +0530</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://prinzpiuz.in/categories/design/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>django</title>
+      <title>Django</title>
       <link>https://prinzpiuz.in/categories/django/</link>
-      <pubDate>Thu, 21 Jan 2021 00:43:47 +0530</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://prinzpiuz.in/categories/django/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>general</title>
+      <title>General</title>
       <link>https://prinzpiuz.in/categories/general/</link>
-      <pubDate>Tue, 07 Jul 2020 16:23:04 +0530</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://prinzpiuz.in/categories/general/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>open source</title>
+      <title>Open Source</title>
       <link>https://prinzpiuz.in/categories/open-source/</link>
-      <pubDate>Tue, 07 Jul 2020 16:23:04 +0530</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://prinzpiuz.in/categories/open-source/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>flutter</title>
+      <title>Flutter</title>
       <link>https://prinzpiuz.in/categories/flutter/</link>
-      <pubDate>Sat, 13 Jun 2020 14:58:35 +0530</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://prinzpiuz.in/categories/flutter/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>set-up</title>
+      <title>Set-Up</title>
       <link>https://prinzpiuz.in/categories/set-up/</link>
-      <pubDate>Tue, 26 May 2020 15:29:46 +0530</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://prinzpiuz.in/categories/set-up/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>helloworld</title>
+      <title>Helloworld</title>
       <link>https://prinzpiuz.in/categories/helloworld/</link>
-      <pubDate>Sun, 24 May 2020 00:59:10 +0530</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://prinzpiuz.in/categories/helloworld/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

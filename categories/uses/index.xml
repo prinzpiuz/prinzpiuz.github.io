@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Uses on prinzpiuz</title>
+    <link>https://prinzpiuz.in/categories/uses/</link>
+    <description>Recent content in Uses on prinzpiuz</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Copyright 2024, prinzpiuz</copyright>
+    <lastBuildDate>Mon, 24 Jun 2024 19:56:18 +0530</lastBuildDate>
+    <atom:link href="https://prinzpiuz.in/categories/uses/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tools &amp; Tech Stack ⚒</title>
+      <link>https://prinzpiuz.in/uses/</link>
+      <pubDate>Thu, 13 Jun 2024 00:18:33 +0530</pubDate>
+      <guid>https://prinzpiuz.in/uses/</guid>
+      <description>This page is inspired from @wesbos&amp;rsquo;, uses.tech page.&#xA;This section was planned from the beginning of this blog.&#xA;Now it&amp;rsquo;s finally happening.&#xA;This post lists all the tools and equipment I use day in and day out.&#xA;Some tools/tech I am using may not be ideal for everyone, But they are somehow working for me. Please don&amp;rsquo;t take this as any sort of recommendation.&#xA;Hardware&#xA;I currently have three powerful machines:</description>
+    </item>
+  </channel>
+</rss>

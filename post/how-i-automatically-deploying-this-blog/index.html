@@ -66,7 +66,7 @@
             </h2>
             <p class="text-muted mb-1">
                 
-                    Software Engineer | Ziff Davis | Cochin
+                    Software Engineer | Nuventure | Cochin
                 
             </p>
             <ul id="nav-links" class="list-inline mb-2">
@@ -81,7 +81,7 @@
                     </li>
                 
                     <li class="list-inline-item">
-                        <a class="badge badge-white " href="../../categories/" title="Categories">Categories</a>
+                        <a class="badge badge-white " href="../../uses/" title="/Uses">/Uses</a>
                     </li>
                 
                     <li class="list-inline-item">
@@ -136,7 +136,6 @@
 
             
         </div>
-
         <article>
             <p>This is a kinda sequel to <a href="../../post/my-blog-setup/">My Blog Set up</a>.
 So before explaining the current setup. I know you guys are curious about knowing about the previous setup. Before, my setup was like, I set up my blog&rsquo;s build folder as a git submodule. so after completing writing my blog I manually take a build and push both repos (blog repo and build repo) to GitHub and then manually create merge requisites there and merge to master. This was like boring for me. and recently when got time I had some research on automatically deploying Hugo sites on GitHub pages and I found these two action plugins</p>
@@ -165,48 +164,48 @@ So before explaining the current setup. I know you guys are curious about knowin
 </li>
 </ul>
 <p>So I created a GitHub workflow based on this plugin like this</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">name</span>: <span style="color:#ae81ff">Build and deploy</span>
-
-<span style="color:#f92672">on</span>:
-  <span style="color:#f92672">push</span>:
-    <span style="color:#f92672">branches</span>:
-      - <span style="color:#ae81ff">master</span> <span style="color:#75715e"># Set a branch name to trigger deployment</span>
-  <span style="color:#f92672">pull_request</span>:
-
-<span style="color:#f92672">jobs</span>:
-  <span style="color:#f92672">deploy</span>:
-    <span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-20.04</span>
-    <span style="color:#f92672">permissions</span>:
-      <span style="color:#f92672">contents</span>: <span style="color:#ae81ff">write</span>
-    <span style="color:#f92672">concurrency</span>:
-      <span style="color:#f92672">group</span>: <span style="color:#ae81ff">${{ github.workflow }}-${{ github.ref }}</span>
-    <span style="color:#f92672">steps</span>:
-      - <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/checkout@v3</span>
-        <span style="color:#f92672">with</span>:
-          <span style="color:#f92672">submodules</span>: <span style="color:#66d9ef">true</span> <span style="color:#75715e"># Fetch Hugo themes (true OR recursive)</span>
-          <span style="color:#f92672">fetch-depth</span>: <span style="color:#ae81ff">0</span> <span style="color:#75715e"># Fetch all history for .GitInfo and .Lastmod</span>
-
-      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Setup Hugo</span>
-        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">peaceiris/actions-hugo@v2</span>
-        <span style="color:#f92672">with</span>:
-          <span style="color:#f92672">hugo-version</span>: <span style="color:#e6db74">&#34;0.89.0&#34;</span>
-
-      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Build</span>
-        <span style="color:#f92672">run</span>: <span style="color:#ae81ff">hugo</span>
-
-      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy</span>
-        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">peaceiris/actions-gh-pages@v3</span>
-        <span style="color:#75715e"># If you&#39;re changing the branch from main,</span>
-        <span style="color:#75715e"># also change the `main` in `refs/heads/main`</span>
-        <span style="color:#75715e"># below accordingly.</span>
-        <span style="color:#f92672">if</span>: <span style="color:#ae81ff">${{ github.ref == &#39;refs/heads/master&#39; }}</span>
-        <span style="color:#f92672">with</span>:
-          <span style="color:#f92672">personal_token</span>: <span style="color:#ae81ff">${{ secrets.PERSONAL_TOKEN }}</span>
-          <span style="color:#f92672">external_repository</span>: <span style="color:#ae81ff">prinzpiuz/prinzpiuz.github.io</span>
-          <span style="color:#f92672">publish_dir</span>: <span style="color:#ae81ff">./public</span>
-          <span style="color:#f92672">publish_branch</span>: <span style="color:#ae81ff">master</span>
-          <span style="color:#f92672">commit_message</span>: <span style="color:#ae81ff">${{ github.event.head_commit.message }}</span>
-</code></pre></div><p>It&rsquo;s very pretty straightforward, even though let me explain this very simple for newbies</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">name</span>: <span style="color:#ae81ff">Build and deploy</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">on</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">push</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">branches</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">master</span> <span style="color:#75715e"># Set a branch name to trigger deployment</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">pull_request</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">jobs</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">deploy</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-20.04</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">permissions</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">contents</span>: <span style="color:#ae81ff">write</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">concurrency</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">group</span>: <span style="color:#ae81ff">${{ github.workflow }}-${{ github.ref }}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">steps</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/checkout@v3</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">with</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">submodules</span>: <span style="color:#66d9ef">true</span> <span style="color:#75715e"># Fetch Hugo themes (true OR recursive)</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">fetch-depth</span>: <span style="color:#ae81ff">0</span> <span style="color:#75715e"># Fetch all history for .GitInfo and .Lastmod</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Setup Hugo</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">peaceiris/actions-hugo@v2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">with</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">hugo-version</span>: <span style="color:#e6db74">&#34;0.89.0&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Build</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: <span style="color:#ae81ff">hugo</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">peaceiris/actions-gh-pages@v3</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># If you&#39;re changing the branch from main,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># also change the `main` in `refs/heads/main`</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># below accordingly.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">if</span>: <span style="color:#ae81ff">${{ github.ref == &#39;refs/heads/master&#39; }}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">with</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">personal_token</span>: <span style="color:#ae81ff">${{ secrets.PERSONAL_TOKEN }}</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">external_repository</span>: <span style="color:#ae81ff">prinzpiuz/prinzpiuz.github.io</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">publish_dir</span>: <span style="color:#ae81ff">./public</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">publish_branch</span>: <span style="color:#ae81ff">master</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">commit_message</span>: <span style="color:#ae81ff">${{ github.event.head_commit.message }}</span>
+</span></span></code></pre></div><p>It&rsquo;s very pretty straightforward, even though let me explain this very simple for newbies</p>
 <ul>
 <li>I am telling action to run only when there is a push event to master</li>
 <li>Then I am using checkout action to pull the latest code including submodules(this will ensure the latest changes in Hugo themes too)</li>
@@ -230,7 +229,7 @@ Thanks to GitHub actions 👏🏼&hellip;</p>
     Built with 💚 in <a href="https://gohugo.io/">Hugo</a><br />
   </small>
   <div id="version_div">
-     v1.16.0 
+     v1.16.1 
   </div>
   <div id="not_by_ai">
     <img src="../../images/not_by_ai.svg" alt="Not By AI" />
