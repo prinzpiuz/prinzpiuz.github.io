@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Copyright 2025, prinzpiuz</copyright>
-    <lastBuildDate>Tue, 28 Jan 2025 10:27:53 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 02 Feb 2025 11:18:27 +0530</lastBuildDate>
     <atom:link href="https://prinzpiuz.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>System Backup With Restic</title>
+      <link>https://prinzpiuz.in/post/my_backup_strategies_part2/</link>
+      <pubDate>Sat, 25 Jan 2025 23:07:40 +0530</pubDate>
+      <guid>https://prinzpiuz.in/post/my_backup_strategies_part2/</guid>
+      <description>This blog post continues the discussion on my backup strategies. If you haven&amp;rsquo;t read the previous post, please check it out here.&#xA;Currently, all the machines I am using run on Linux, so this post will focus on How I use Restic for Linux systems.&#xA;Experiences With System Backups&#xA;My experience with backup software includes using URBackup. I implemented it as a common backup solution for my workplace, where we operated a LAN setup on a 2 TB server for about 20 users, consisting of both Linux and Windows platforms.</description>
+    </item>
+    <item>
+      <title>My Backup Strategies</title>
+      <link>https://prinzpiuz.in/post/my_backup_strategies/</link>
+      <pubDate>Sat, 25 Jan 2025 20:06:15 +0530</pubDate>
+      <guid>https://prinzpiuz.in/post/my_backup_strategies/</guid>
+      <description>This is my first blog post for 2025, and I&amp;rsquo;m glad I published it in January. This post covers my backup setup, including the tools I tried, what I&amp;rsquo;m currently using, and my strategies.&#xA;What is Backup?&#xA;A backup is essentially a duplicate of your important data, created to ensure that you have access to it in the event of data loss or corruption in your primary storage.&#xA;This protective measure is crucial for safeguarding your files, whether due to accidental deletion, hardware failure, or unexpected disasters.</description>
+    </item>
     <item>
       <title>Tools &amp; Tech Stack ⚒</title>
       <link>https://prinzpiuz.in/uses/</link>

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <title>System Backup With Restic</title>
+
+  <meta name="description" content="Just Some Random Engineering, DIY Stuff" />
+
+  
+  <meta property="og:url" content="https://prinzpiuz.in/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="prinzpiuz" />
+  <meta
+    property="og:description"
+    content="Just Some Random Engineering, DIY Stuff"
+  />
+  <meta property="og:image" content="https://prinzpiuz.in/images/avatar.jpeg" />
+
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="prinzpiuz.in" />
+  <meta property="twitter:url" content="https://prinzpiuz.in/" />
+  <meta name="twitter:title" content="prinzpiuz" />
+  <meta
+    name="twitter:description"
+    content="Just Some Random Engineering, DIY Stuff"
+  />
+  <meta
+    name="twitter:image"
+    content="https://prinzpiuz.in/images/avatar.jpeg"
+  />
+
+  
+
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <script
+    data-goatcounter="https://prinzpiuz.goatcounter.com/count"
+    async
+    src="//gc.zgo.at/count.js"
+  ></script>
+</head>
+<body>
+    <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+    <div class="row">
+        <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
+            <a href="../../" class="text-decoration-none">
+                <img id="home-image" class="rounded-circle"
+                    
+                        
+                            src="../../images/avatar.jpeg"
+                        
+                    
+                />
+            </a>
+        </div>
+        <div class="col-sm-8 col-12 text-sm-left text-center">
+            <h2 class="m-0 mb-2 mt-4">
+                <a href="../../" class="text-decoration-none">
+                    
+                        PrinzPiuz
+                    
+                </a>
+            </h2>
+            <p class="text-muted mb-1">
+                
+                    Software Engineer | Nuventure | Cochin
+                
+            </p>
+            <ul id="nav-links" class="list-inline mb-2">
+                
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../about/" title="About">About</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../post/" title="Blog">Blog</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../uses/" title="/Uses">/Uses</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../projects/my-projects/index.html" title="Projects">Projects</a>
+                    </li>
+                
+            </ul>
+            <ul id="nav-social" class="list-inline">
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://github.com/prinzpiuz" target="_blank">
+                            <i class="fab fa-github fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://twitter.com/prinzpiuz/" target="_blank">
+                            <i class="fab fa-twitter fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://elk.zone/aana.site/@prinzpiuz" target="_blank">
+                            <i class="fab fa-mastodon text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://portfolio.pixelfed.social/prinzpiuz" target="_blank">
+                            <i class="fas fa-images text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="../../index.xml" target="">
+                            <i class="fas fa-rss text-muted"></i>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+    <hr />
+</header>
+<div class="container">
+    <div class="pl-sm-2">
+        <div class="mb-3">
+            <h3 class="mb-0">System Backup With Restic</h3>
+            
+            <small class="text-muted">Published January 25, 2025</small>
+            <small>🕐 11 Mins</small>
+
+            
+        </div>
+        <article>
+            <p>This blog post continues the discussion on my backup strategies. If you haven&rsquo;t read the previous post, please check it out <a href="../../post/my_backup_strategies/">here</a>.</p>
+<p>Currently, all the machines I am using run on Linux, so this post will focus on How I use Restic for Linux systems.</p>
+<p><strong>Experiences With System Backups</strong></p>
+<p>My experience with backup software includes using <a href="https://www.urbackup.org/">URBackup</a>. I implemented it as a common backup solution for my workplace, where we operated a LAN setup on a 2 TB server for about 20 users, consisting of both Linux and Windows platforms. URBackup follows a client-server architecture, requiring the installation of a client on each user machine. Unfortunately, we discontinued the project when the COVID-19 lockouts began.</p>
+<p>One of the advantages of URBackup was its web interface, along with a straightforward command-line setup for Linux and a simple restoration process. However, we encountered some downsides: it lacked image backup support for Linux and did not support Mac machines.</p>
+<p><strong>Rsync vs Restic</strong></p>
+<p>Although <a href="https://rsync.samba.org/">rsync</a> is a powerful tool designed for efficient file synchronization, it may not meet all your backup needs. If you&rsquo;re looking for a more robust backup solution, Restic is an excellent choice. Restic stands out with its advanced features, including strong encryption that safeguards your data from unauthorized access, deduplication that saves storage space by eliminating duplicate copies of files, and versioning that allows you to revert to previous states of your files when necessary.</p>
+<p>Moreover, Restic simplifies the process of storing backups on various remote cloud storage services, making it an ideal option for safeguarding critical data. This is particularly important for maintaining data integrity and ensuring long-term retention of valuable files. In contrast, rsync is primarily tailored for tasks involving efficient file transfers and basic synchronization between two directories or systems, lacking the extensive backup features that Restic provides.</p>
+<p><strong>What Is Restic?</strong></p>
+<p>Restic is a modern backup solution written in Go that can backup data from Linux, macOS, Windows, and BSD machines. It features encryption, support for various storage backends, incremental backups, and verifiable backups.</p>
+<p><strong>Why Restic?</strong></p>
+<p>Why Not?</p>
+<ul>
+<li>It&rsquo;s Free</li>
+<li>It&rsquo;s Simple &amp; Easy To Use</li>
+<li>Its Fast</li>
+<li>It&rsquo;s Secure</li>
+<li>It&rsquo;s Flexible</li>
+<li>It&rsquo;s Open Source</li>
+<li>Best Documentation</li>
+</ul>
+<p><strong>My Machines</strong></p>
+<p>I primarily have three machines: one workstation, a personal computer, and a home server. You can find hardware details about these machines <a href="../../uses/">here</a>. As the name suggests, the workstation is primarily for work-related tasks, while the personal computer is used for my personal interests and hobbies, including this blog. The home server is an old desktop that I&rsquo;ve been using for over 15 years. Currently, it is utilized for self-hosting some applications and as a media server. You can read more about it <a href="../../post/things-i-self-hosting/">here</a>.</p>
+<p><strong>How I Am Using Restic?</strong></p>
+<p>I am using restic primarily for taking snapshot backups in workstation and personal machine. And for my home server I am using it for backing up my config files.</p>
+<p>Also, I am using <code>SFTP</code> method to backup, which is a secure method to transfer files over the network. So it will send backups to a central repository, Which is created inside a network attached storage of mine.</p>
+<p>In my case I am using an external hard drive attached to my home server as central repository. You can see the repository structure below.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tree -d -L <span style="color:#ae81ff">1</span> .
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>├── Media_Server
+</span></span><span style="display:flex;"><span>├── Personal
+</span></span><span style="display:flex;"><span>└── Workstation
+</span></span></code></pre></div><p>Where Media Server is my home server, Personal is my personal machine, and Workstation is my workstation.</p>
+<p>I Initially started with Restic Binary, and it was little difficult to call restic command with all those arguments. But now I have moved to <a href="https://github.com/creativeprojects/resticprofile/">restic profile</a> to manage restic configuration, and it is very easy to set up.</p>
+<p><strong>How To Set up Restic &amp; Restic Profile?</strong></p>
+<p><em><strong>Note: This example is for taking full system backup using <code>SFTP</code>. And This is tested on Debian based systems.</strong></em></p>
+<ol>
+<li>
+<p><strong>Install Restic</strong></p>
+<p>I used the following command to install restic on my workstation and personal machine. To get the latest version I am building it from the source.</p>
+<p>If you are using Linux you can install it using your package manager. Details can be found <a href="https://restic.readthedocs.io/en/latest/020_installation.html">here</a>.</p>
+<ul>
+<li>
+<p>Clone the repository</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/restic/restic
+</span></span></code></pre></div></li>
+<li>
+<p>Build the binary<br>
+Restic uses <a href="https://golang.org/">Go</a> to build the binary. And It uses the latest version of Go</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd restic <span style="color:#f92672">&amp;&amp;</span> go run build.go
+</span></span></code></pre></div></li>
+<li>
+<p>You check the build binary by running the following command</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>prinzpiuz@prinzpiuz/tmp &gt; restic version
+</span></span><span style="display:flex;"><span>restic 0.17.1 compiled with go1.22.0 on linux/amd64
+</span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong>Install Restic Profile</strong></p>
+<p>To Build From Source, We need Go, Git and Make installed.</p>
+<ul>
+<li>
+<p>Clone the repository</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/creativeprojects/resticprofile.git
+</span></span></code></pre></div></li>
+<li>
+<p>Build the binary</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd resticprofile
+</span></span><span style="display:flex;"><span>make build
+</span></span></code></pre></div></li>
+<li>
+<p>Install the binary to user path</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>make install
+</span></span></code></pre></div></li>
+<li>
+<p>You can check the build binary by running the following command</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>prinzpiuz@prinzpiuz/tmp &gt; resticprofile version  
+</span></span><span style="display:flex;"><span>resticprofile version 0.28.1 commit 249fd41b3d8e1af034594c9617bc3145a6a3e29a
+</span></span></code></pre></div></li>
+</ul>
+<p>Now We have restic and restic profile installed. Let&rsquo;s create a Location for our backup.</p>
+</li>
+<li>
+<p><strong>Create Backup Location</strong></p>
+<p>I am using a network attached storage as my central repository. So I created a directory on my NAS and enabled SSH access to it, Key based authentication is enabled. If You want a separate user for restic, and you can follow this guide <a href="https://restic.readthedocs.io/en/latest/080_examples.html#backing-up-your-system-without-running-restic-as-root">here</a></p>
+</li>
+<li>
+<p><strong>Create Restic Profile Configuration</strong></p>
+<p>You can create a restic profile configuration file in different formats like YAML, JSON, HCL and TOML. I am using TOML format.
+Also, I am managing my restic profile configuration in a git repository using <a href="https://www.chezmoi.io/">Chezmoi</a>. Directory structure of my restic profile configuration is as follows.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>prinzpiuz@prinzpiuz/tmp &gt; tree -L <span style="color:#ae81ff">1</span> .
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>├── exclude_files_list.txt
+</span></span><span style="display:flex;"><span>├── log
+</span></span><span style="display:flex;"><span>├── password.txt
+</span></span><span style="display:flex;"><span>└── profiles.conf
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span> directory, <span style="color:#ae81ff">3</span> files
+</span></span></code></pre></div><p>Where</p>
+<ul>
+<li><code>exclude_files_list.txt</code> files and directories to exclude from backup.</li>
+<li><code>log</code> is a directory to store log files.</li>
+<li><code>password.txt</code> is a file to store password for restic.</li>
+<li><code>profiles.conf</code> is a configuration file for restic profile.</li>
+</ul>
+<p>A sample list of file &amp; directories to exclude from backup is like <a href="https://github.com/prinzpiuz/dotfiles/blob/linux/debian12/private_dot_config/resticprofile/exclude_files_list.txt">see here</a>.<br>
+Also, Reasons for excluding these files and directories can be found <a href="https://betterstack.com/community/questions/what-directories-on-linux-should-be-in-a-server-backup/#:~:text=%2Ftmp%20%2D%20The%20%2Ftmp%20directory,often%20be%20excluded%20from%20backups.">here</a><br>
+A sample restic profile configuration can be seen <a href="https://github.com/prinzpiuz/dotfiles/blob/linux/debian12/private_dot_config/resticprofile/profiles.conf">here</a>.<br>
+A little explanation of different sections in my configuration file is as follows:</p>
+<ul>
+<li><code>global</code>:
+<ul>
+<li><code>restic-binary</code>: Path to restic binary.</li>
+<li><code>ionice</code>: Option to prioritize restic process. <a href="https://linux.die.net/man/1/ionice">Read More Here</a>.</li>
+<li><code>log</code>: Path to log file.</li>
+</ul>
+</li>
+<li><code>default</code>:
+<ul>
+<li><code>base-dir</code>: Base directory of restic profile.</li>
+<li><code>repository</code>: Repository to store backup.</li>
+<li><code>password-file</code>: Path to password file.</li>
+</ul>
+</li>
+<li><code>default-backup</code>: Options for restic <code>backup</code> command.
+<ul>
+<li><code>dry-run</code>: Option to run restic <code>backup</code> command in dry-run mode.</li>
+<li><code>exclude-file</code>: Path to exclude file.</li>
+<li><code>tag</code>: Tag to identify backup.</li>
+<li><code>source</code>: Source directory to backup.</li>
+<li><code>schedule</code>: Schedule to run restic <code>backup</code> command.</li>
+<li><code>run-before</code>: Command to run before restic <code>backup</code> command.</li>
+<li><code>one-file-system</code>: Option to backup only one file system.</li>
+</ul>
+</li>
+<li><code>default-check</code>: Options for restic <code>check</code> command.</li>
+<li><code>default-prune</code>: Options for restic <code>prune</code> command.</li>
+</ul>
+<p>You can find the explanation for each option in the configuration file <a href="https://creativeprojects.github.io/resticprofile/configuration/index.html">here</a>.</p>
+<p>I have scheduled my backup to run every day at 3:00 AM. Additionally, I will prune my backup every Sunday at 3:00 AM according to the retention policy. Furthermore, I have set up a check of my backup for the first day of every month at 2:00 AM.</p>
+<p>One thing you need to notice is here that I am using <code>one-file-system</code> option to backup as single file system. This option does a lot of the exclusions you’re trying to do manually. Any file system which isn’t specifically mounted as part of the root partition will be excluded, including virtual file systems. This means that virtual file systems like <code>/proc</code>, <code>/sys</code>, <code>/dev</code>, <code>/tmp</code>, and <code>/run</code> will be excluded automatically without the need for an exclude file or directive (So long as you specify the <code>one-file-system</code> directive.) However! If you’re backing up to somewhere on your root partition, you will need to exclude that manually!<br>
+More about this can be found <a href="https://forum.restic.net/t/lack-of-documentation-on-how-to-do-a-full-system-back-up/659/7">here</a></p>
+<p>Now we have restic and restic profile installed and a restic profile configuration file created. Let&rsquo;s create a backup.</p>
+</li>
+<li>
+<p><strong>Initialize Restic Repository</strong></p>
+<p>To initialize a restic repository, we need to run the following command</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>restic -r sftp:user@host:/srv/restic-repo init
+</span></span></code></pre></div><p>output will be like this</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>enter password <span style="color:#66d9ef">for</span> new repository:
+</span></span><span style="display:flex;"><span>enter password again:
+</span></span><span style="display:flex;"><span>created restic repository f1c6108821 at sftp:user@host:/srv/restic-repo
+</span></span><span style="display:flex;"><span>Please note that knowledge of your password is required to access the repository.
+</span></span><span style="display:flex;"><span>Losing your password means that your data is irrecoverably lost.
+</span></span></code></pre></div><p><em><strong>Note: Password you&rsquo;re using here is very important. If you forget your password, you will lose your data. So, please keep it safe.</strong></em></p>
+<p>Also, more about restic backup using <code>SFTP</code> can be read <a href="https://restic.readthedocs.io/en/latest/030_preparing_a_new_repo.html#sftp">here</a></p>
+<p>A Sample directory structure of my restic repository is like this</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>prinzpiuz@prinzpiuz &gt; tree -d -L <span style="color:#ae81ff">2</span> /srv/Personal
+</span></span><span style="display:flex;"><span>tree -d -L <span style="color:#ae81ff">2</span> .
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>├── Personal
+</span></span><span style="display:flex;"><span>│   ├── data
+</span></span><span style="display:flex;"><span>│   ├── index
+</span></span><span style="display:flex;"><span>│   ├── keys
+</span></span><span style="display:flex;"><span>│   ├── locks
+</span></span><span style="display:flex;"><span>│   └── snapshots
+</span></span></code></pre></div><p>Now we have a restic repository initialized. Let&rsquo;s create a backup.</p>
+</li>
+<li>
+<p><strong>Test Backup</strong></p>
+<p>We can test the backup by running restic in dry mode, you can either dry from restic profile configuration using <code>--dry-run</code> or with the restic command directly.<br>
+I am using restic profile configuration file to do a dry run.
+The command will be like this</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>resticprofile --config profiles.conf --name <span style="color:#e6db74">&#39;default&#39;</span> backup --dry-run
+</span></span></code></pre></div><p>This command will run the backup in dry mode with arguments specified in the restic profile default section.<br>
+And the output will be like this</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>using parent snapshot 56d1dc8c
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Files:         <span style="color:#ae81ff">135</span> new,   <span style="color:#ae81ff">709</span> changed, <span style="color:#ae81ff">1658843</span> unmodified
+</span></span><span style="display:flex;"><span>Dirs:           <span style="color:#ae81ff">30</span> new,   <span style="color:#ae81ff">437</span> changed, <span style="color:#ae81ff">274573</span> unmodified
+</span></span><span style="display:flex;"><span>Would add to the repository: 672.158 MiB <span style="color:#f92672">(</span>242.570 MiB stored<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>processed <span style="color:#ae81ff">1659687</span> files, 97.239 GiB in 0:52
+</span></span><span style="display:flex;"><span>Applying Policy: keep <span style="color:#ae81ff">1</span> daily, <span style="color:#ae81ff">1</span> weekly, <span style="color:#ae81ff">1</span> monthly snapshots and all snapshots within 3h of the newest
+</span></span><span style="display:flex;"><span>keep <span style="color:#ae81ff">1</span> snapshots:
+</span></span><span style="display:flex;"><span>ID        Time                 Host        Tags         Reasons           Paths  Size
+</span></span><span style="display:flex;"><span>-------------------------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>56d1dc8c  2025-01-27 03:00:00  prinzpiuz   workstation  within 3h         /      97.234 GiB
+</span></span><span style="display:flex;"><span>                                                        daily snapshot
+</span></span><span style="display:flex;"><span>                                                        weekly snapshot
+</span></span><span style="display:flex;"><span>                                                        monthly snapshot
+</span></span><span style="display:flex;"><span>-------------------------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span> snapshots
+</span></span></code></pre></div><p>Since I have previously created a backup, it will show the previous backup as parent.</p>
+</li>
+<li>
+<p><strong>Create a Backup</strong></p>
+<p>Everything is working fine. Now we can create a backup.<br>
+To create a backup, we need to run the following command</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>resticprofile --config profiles.conf --name <span style="color:#e6db74">&#39;default&#39;</span> backup
+</span></span></code></pre></div><p>This command will run the backup with arguments specified in the restic profile default section.
+And will be taking little time</p>
+</li>
+<li>
+<p><strong>Scheduling Backup</strong></p>
+<p>One of the main reasons I chose to use a restic profile is for scheduling my backups. I utilize <code>systemd</code> to automate this scheduling. Additionally, the restic profile supports various other options, which you can explore further <a href="https://creativeprojects.github.io/resticprofile/schedules/index.html">here</a></p>
+<p>A schedule a Backup we can use the following command</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>resticprofile --config profiles.conf --name <span style="color:#e6db74">&#39;default&#39;</span> schedule
+</span></span></code></pre></div><p>To know the status of schedule backup we can use the following command</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>resticprofile --config profiles.conf --name <span style="color:#e6db74">&#39;default&#39;</span> status
+</span></span></code></pre></div><p>This command will create <a href="https://wiki.archlinux.org/title/Systemd/Timers">systemd/Timers</a> with arguments specified in the restic profile.</p>
+</li>
+<li>
+<p><strong>Checking Backup</strong></p>
+<p>To ensure your backup is functioning correctly, you need to check it regularly.<br>
+One way to do this is by listing the backups stored in the repository. You can use the following command to list the backups in the repository.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>restic --verbose --repo sftp:user@host:/srv/restic-repo --password-file password.txt
+</span></span></code></pre></div><p>And the output will be like this</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>repository 2294548e opened <span style="color:#f92672">(</span>version 2, compression level auto<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ID        Time                 Host        Tags         Paths  Size
+</span></span><span style="display:flex;"><span>-------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>a7698e9c  2025-01-27 22:57:45  prinzpiuz   workstation  /      97.240 GiB
+</span></span><span style="display:flex;"><span>-------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span> snapshots
+</span></span></code></pre></div></li>
+</ol>
+<div style="text-align: center">&#x1f389; <strong>You are now completely safe.</strong> &#x1f389;</div>
+
+<hr>
+<h5 id="docker-set-up">Docker Set Up</h5>
+<p>Now coming to how I am using restic with docker set up<br>
+I am using Docker containers to host applications on my home server. The main issue I am facing is backing up my configuration files. I have set up a <a href="https://github.com/prinzpiuz/Druv-Setup">script</a> to configure my server, so my primary concern is ensuring the safety of my config files.<br>
+Instead of performing a full system backup, I am focusing on backing up only my configuration files.</p>
+<div class="highlight-wrapper">
+    
+        <details>
+            <summary>Here is the compose file</summary>
+            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span><span style="color:#f92672">restic</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">mazzolino/restic</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">restic</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">hostname</span>: <span style="color:#ae81ff">restic_backup</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">RUN_ON_STARTUP=true</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">BACKUP_CRON=0 _/12 * * *</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">RESTIC_REPOSITORY=${RESTIC_REPO}</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">RESTIC_PASSWORD=${RESTIC_PASSWORD}</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">RESTIC_BACKUP_SOURCES=/mnt/volumes</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">RESTIC_COMPRESSION=auto</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">RESTIC_BACKUP_ARGS=--tag media_server --exclude log._ --exclude _.log --exclude_.db --exclude logs --exclude _.db-shm --exclude_.db-wal --verbose</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">RESTIC_FORGET_ARGS=--keep-last 10 --keep-daily 7 --keep-weekly 5 --keep-monthly 12</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">TZ=Asia/Kolkata</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">/configs:/mnt/volumes:ro</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">/home/druv/.ssh:/run/secrets/.ssh:ro</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">security_opt</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#66d9ef">no</span>-<span style="color:#ae81ff">new-privileges:true</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">prune</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">mazzolino/restic</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">restic_prune</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">hostname</span>: <span style="color:#ae81ff">restic_backup</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">unless-stopped</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">SKIP_INIT=true</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">RUN_ON_STARTUP=true</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">PRUNE_CRON=0 0 4 ***</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">RESTIC_REPOSITORY=${RESTIC_REPO}</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">RESTIC_PASSWORD=${RESTIC_PASSWORD}</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">TZ=Asia/Kolkata</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">/home/druv/.ssh:/run/secrets/.ssh:ro</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">check</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">mazzolino/restic</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">restic_check</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">hostname</span>: <span style="color:#ae81ff">restic_backup</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">unless-stopped</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">SKIP_INIT=true</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">RUN_ON_STARTUP=false</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">CHECK_CRON=0 15 5***</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">RESTIC_CHECK_ARGS=--read-data-subset=10%</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">RESTIC_REPOSITORY=${RESTIC_REPO}</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">RESTIC_PASSWORD=${RESTIC_PASSWORD}</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">TZ=Asia/Kolkata</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">/home/druv/.ssh:/run/secrets/.ssh:ro</span></span></span></code></pre></div>
+        </details>
+    
+</div>
+
+<hr>
+<h5 id="monitoring-backups">Monitoring Backups</h5>
+<p>Imagine this situation: we have a complex backup setup, and one day we need to restore a backup from last month due to an emergency. However, the backups haven&rsquo;t been working correctly, leading to a crisis.</p>
+<p>Monitoring is a crucial aspect of any backup strategy. Regardless of how robust our setup is, if an error occurs and backups are not functioning properly, it can lead to disastrous consequences.</p>
+<p>I would like to introduce you to a tool called <strong><a href="https://github.com/garethgeorge/backrest">Backrest</a></strong>. In my case, I use it to monitor whether backup schedules are running smoothly, to verify backups, and to prune old backups when storage space is limited.</p>
+<p>While Restic offers commands to check backup statuses, running these commands manually every day can be tedious. Backrest acts as a web-based user interface for Restic. Although it has the capability to schedule backups, I primarily use it as a monitoring tool to oversee backup schedules, review backup reports, and manage backups in case of an emergency.</p>
+<div class="highlight-wrapper">
+    
+        <details>
+            <summary>Backrest Docker Setup I am Using</summary>
+            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span><span style="color:#f92672">backrest</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">garethgeorge/backrest:latest</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">backrest</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">hostname</span>: <span style="color:#ae81ff">backrest</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">./configs/backrest/data:/data</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">./configs/backrest/config:/config</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">./configs/backrest/cache:/cache</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">/media/prinzpiuz/backups:/repos</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">BACKREST_DATA=/data</span> <span style="color:#75715e"># path for backrest data. restic binary and the database are placed here.</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">BACKREST_CONFIG=/config/config.json</span> <span style="color:#75715e"># path for the backrest config file.</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">XDG_CACHE_HOME=/cache</span> <span style="color:#75715e"># path for the restic cache which greatly improves performance.</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">TZ=Asia/Kolkata</span> <span style="color:#75715e"># set the timezone for the container, used as the timezone for cron jobs.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">9898</span>:<span style="color:#ae81ff">9898</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">unless-stopped</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">network_mode</span>: <span style="color:#ae81ff">host</span></span></span></code></pre></div>
+        </details>
+    
+</div>
+
+<hr>
+<p><strong>Here are some helpful resources for further research</strong></p>
+<ul>
+<li>The 3-2-1 Backup Strategy
+<ul>
+<li><a href="https://www.backblaze.com/blog/the-3-2-1-backup-strategy/">https://www.backblaze.com/blog/the-3-2-1-backup-strategy/</a></li>
+</ul>
+</li>
+<li>Restic Reddit
+<ul>
+<li><a href="https://www.reddit.com/r/restic/">https://www.reddit.com/r/restic/</a></li>
+</ul>
+</li>
+<li>Restic Forum
+<ul>
+<li><a href="https://forum.restic.net/">https://forum.restic.net/</a></li>
+</ul>
+</li>
+<li>Awesome Restic
+<ul>
+<li><a href="https://github.com/rubiojr/awesome-restic">https://github.com/rubiojr/awesome-restic</a></li>
+</ul>
+</li>
+<li>My Home Server Set Up
+<ul>
+<li><a href="https://github.com/prinzpiuz/Druv-Setup/tree/main">https://github.com/prinzpiuz/Druv-Setup/tree/main</a></li>
+</ul>
+</li>
+<li>My Restic and Restic Profile Setup
+<ul>
+<li><a href="https://github.com/prinzpiuz/dotfiles/blob/linux/debian12/private_dot_config/resticprofile/profiles.conf">https://github.com/prinzpiuz/dotfiles/blob/linux/debian12/private_dot_config/resticprofile/profiles.conf</a></li>
+</ul>
+</li>
+<li>Command alias I am using with restic
+<ul>
+<li><a href="https://github.com/prinzpiuz/dotfiles/blob/linux/debian12/dot_zshrc#L224">https://github.com/prinzpiuz/dotfiles/blob/linux/debian12/dot_zshrc#L224</a></li>
+</ul>
+</li>
+</ul>
+
+        </article>
+        
+    </div>
+</div>
+    </div>
+    
+    
+    
+    
+    <footer class="text-center pb-1">
+  <small class="text-muted">
+     © Copyright 2025, prinzpiuz<br />
+    Built with 💚 in <a href="https://gohugo.io/">Hugo</a><br />
+  </small>
+  <div id="version_div">
+     v2.0.8 
+  </div>
+  <div id="not_by_ai">
+    <img src="../../images/not_by_ai.svg" alt="Not By AI" />
+  </div>
+</footer>
+</body>
+</html>

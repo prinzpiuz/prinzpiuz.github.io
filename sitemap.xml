@@ -2,14 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://prinzpiuz.in/post/</loc>
-    <lastmod>2025-02-02T11:13:04+05:30</lastmod>
+    <loc>https://prinzpiuz.in/categories/backup/</loc>
+    <lastmod>2025-02-02T11:18:27+05:30</lastmod>
   </url><url>
-    <loc>https://prinzpiuz.in/</loc>
-    <lastmod>2025-02-02T11:13:04+05:30</lastmod>
+    <loc>https://prinzpiuz.in/categories/backup-strategies/</loc>
+    <lastmod>2025-02-02T11:18:27+05:30</lastmod>
+  </url><url>
+    <loc>https://prinzpiuz.in/categories/backup-strategies-for-linux/</loc>
+    <lastmod>2025-02-02T11:18:27+05:30</lastmod>
   </url><url>
     <loc>https://prinzpiuz.in/categories/</loc>
-    <lastmod>2025-01-28T10:27:53+05:30</lastmod>
+    <lastmod>2025-02-02T11:18:27+05:30</lastmod>
+  </url><url>
+    <loc>https://prinzpiuz.in/post/</loc>
+    <lastmod>2025-02-02T11:18:27+05:30</lastmod>
+  </url><url>
+    <loc>https://prinzpiuz.in/</loc>
+    <lastmod>2025-02-02T11:18:27+05:30</lastmod>
+  </url><url>
+    <loc>https://prinzpiuz.in/categories/restic/</loc>
+    <lastmod>2025-02-02T11:18:27+05:30</lastmod>
+  </url><url>
+    <loc>https://prinzpiuz.in/post/my_backup_strategies_part2/</loc>
+    <lastmod>2025-02-02T11:18:27+05:30</lastmod>
+  </url><url>
+    <loc>https://prinzpiuz.in/post/my_backup_strategies/</loc>
+    <lastmod>2025-02-02T11:18:27+05:30</lastmod>
   </url><url>
     <loc>https://prinzpiuz.in/uses/</loc>
     <lastmod>2025-01-28T10:27:53+05:30</lastmod>
