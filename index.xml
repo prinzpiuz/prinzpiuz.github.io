@@ -7,7 +7,7 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Copyright 2025, prinzpiuz</copyright>
-    <lastBuildDate>Sun, 02 Feb 2025 11:18:27 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 10 Sep 2025 13:24:24 +0530</lastBuildDate>
     <atom:link href="https://prinzpiuz.in/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>System Backup With Restic</title>
@@ -129,13 +129,6 @@
       <description>I was planning to set up a blog from my college days onwards. it&amp;rsquo;s been 5 years since I&amp;rsquo;m out of college. since I&amp;rsquo;m a miser person, I was always looking for the cheapest hosting service &amp;#x1f60e; also, I don&amp;rsquo;t want the headaches of hosting like&#xA;server management database management backups hosting/bandwidth/scalability/users And I have found a solution for all this, for server management, we can choose some hosting services like GitHub/Gitlab pages or Netfly.</description>
     </item>
     <item>
-      <title>My Projects</title>
-      <link>https://prinzpiuz.in/projects/my-projects/</link>
-      <pubDate>Sun, 24 May 2020 01:17:05 +0530</pubDate>
-      <guid>https://prinzpiuz.in/projects/my-projects/</guid>
-      <description>These are my hobby projects &amp;#x1f44f; if you guys like, put a &amp;#x2b50; More projects can be seen here Railgadi BOT This is a telegram BOT built with python and telegram bot framework this bot provides lots of functionalites provided by NTES inside telegram&#xA;MSM This is a android app built on top of Dart and Flutter This app helps to manage our media servers like emby/jellyfin/plex/kodi&amp;hellip;etc Works on top of ssh, No further setup needed in server</description>
-    </item>
-    <item>
       <title>Hello world..!</title>
       <link>https://prinzpiuz.in/post/hello-world/</link>
       <pubDate>Sun, 24 May 2020 00:59:10 +0530</pubDate>
@@ -148,6 +141,13 @@
       <pubDate>Sat, 23 May 2020 00:18:33 +0530</pubDate>
       <guid>https://prinzpiuz.in/about/</guid>
       <description>👋🏽 Hello Hi, I&amp;rsquo;m Prince, you might know me as @prinzpiuz on various corners of the internet.&#xA;I consider myself to be an atheist and a freethinker who puts trust and hope in science.&#xA;Currently, I&amp;rsquo;m living in Varapuzha🏝️ | Kochi | Kerala | India&#xA;I&amp;rsquo;m a software engineer, currently working for Nuventure Connect.&#xA;Previously I worked for&#xA;Tridz as a system admin I started this blog for sharing my Tweaks | Hacks | DIYs</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://prinzpiuz.in/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://prinzpiuz.in/projects/</guid>
+      <description> My Projects If you enjoy what you see, I&#39;d love for you to give them a ⭐ on GitHub!&#xA;You can find more of my work here. </description>
     </item>
   </channel>
 </rss>
