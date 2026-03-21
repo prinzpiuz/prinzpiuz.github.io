@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en"><head>
   <title>Things I Self-Hosting 🖳</title>
 
@@ -23,7 +23,7 @@
       "@id": "https:\/\/prinzpiuz.in\/post\/things-i-self-hosting\/"
     },
     "headline": "Things I Self-Hosting 🖳",
-    "description": "Disclaimer: This blog is not in any way promoting piracy.\nThis is small new year blog about things I self-host to make my life easier, I have a previous blog here about my media server setup. So the same system I am using for self-hosting some applications which are helpful for me in my day-to-day life, basically I have turned my childhood PC to a local server, it\u0026rsquo;s been 13 years since its first boot, this mighty machine working for me without any complaints.",
+    "description": "\u003cp\u003e\u003cem\u003eDisclaimer: This blog is not in any way promoting piracy.\u003c\/em\u003e\u003c\/p\u003e\n\u003cp\u003eThis is small new year blog about things I self-host to make my life easier, I have a previous blog \u003ca href=\u0022https:\/\/prinzpiuz.in\/post\/my-media-server-setup\/\u0022\u003ehere\u003c\/a\u003e about my media server setup. So the same system I am using for self-hosting some applications which are helpful for me in my day-to-day life, basically I have turned my childhood PC to a local server, it\u0026rsquo;s been 13 years since its first boot, this mighty machine working for me without any complaints. It\u0026rsquo;s not about having a big server, in terms of resources \u0026amp; hardware, it\u0026rsquo;s about the mentality to host things your own \u0026amp; having fun of DIY 🛠 things.\u003c\/p\u003e",
     "image": {
       "@type": "ImageObject",
       "url": "",
@@ -90,7 +90,10 @@
   ></script>
 </head>
 <body>
-    <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+        <div
+            id="content"
+            class="mx-auto"
+        ><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
     <div class="row">
         <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
             <a href="../../" class="text-decoration-none">
@@ -201,7 +204,7 @@
             d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"
         />
     </svg>
-    <small id="blotils_count_main"></small>
+    <small id="blotils_count"></small>
 </small>
 
         
@@ -219,7 +222,7 @@
 <p>Coming back to our topic, The services I am mainly running are these&hellip;</p>
 <ul>
 <li>
-<h5 id="calibrehttpsgithubcomkovidgoyalcalibre-for-e-book-management"><a href="https://github.com/kovidgoyal/calibre">Calibre</a> for E-book management</h5>
+<h5 id="calibre-for-e-book-management"><a href="https://github.com/kovidgoyal/calibre">Calibre</a> for E-book management</h5>
 <p>Basically I&rsquo;m only using calibre&rsquo;s Database system, I have another beautiful service for its frontend and other required features.</p>
 <ul>
 <li>Easily organize e-books</li>
@@ -230,7 +233,7 @@
 </ul>
 </li>
 <li>
-<h5 id="calibre-webhttpsgithubcomjaneczkucalibre-web-as-frontend-for-calibre-database"><a href="https://github.com/janeczku/calibre-web">Calibre-Web</a> as frontend for calibre database</h5>
+<h5 id="calibre-web-as-frontend-for-calibre-database"><a href="https://github.com/janeczku/calibre-web">Calibre-Web</a> as frontend for calibre database</h5>
 <p><a href="https://prinzpiuz.in/images/self_hosting/calibre_web.png">📸 ScreenShot</a></p>
 <p>This is a nice frontend of calibre database with some extra features. One main feature I loved was send to kindle via email, this is main reason I used calibre-web.
 So I have created a free SendGrid account and connected it with calibre-web, so whenever I want to send a file to my kindle I can just click on the particular book and do send to kindle 😃</p>
@@ -246,7 +249,7 @@ So I have created a free SendGrid account and connected it with calibre-web, so 
 </ul>
 </li>
 <li>
-<h5 id="jellyfinhttpsgithubcomjellyfinjellyfin-as-media-server"><a href="https://github.com/jellyfin/jellyfin">Jellyfin</a> as Media Server</h5>
+<h5 id="jellyfin-as-media-server"><a href="https://github.com/jellyfin/jellyfin">Jellyfin</a> as Media Server</h5>
 <p><a href="https://prinzpiuz.in/images/self_hosting/jellyfin.png">📸 ScreenShot</a></p>
 <p>Jellyfin is an open alternative to Plex and Emby, Jellyfin is very feature rich, stable &amp; also cross-platform. It has been more than a year, I am using it. No issues till here.
 Also, it&rsquo;s very easy to manage media in it</p>
@@ -262,7 +265,7 @@ Also, it&rsquo;s very easy to manage media in it</p>
 </ul>
 </li>
 <li>
-<h5 id="delugehttpsgithubcomdeluge-torrentdeluge-as-bittorrent-client"><a href="https://github.com/deluge-torrent/deluge">Deluge</a> as BitTorrent client</h5>
+<h5 id="deluge-as-bittorrent-client"><a href="https://github.com/deluge-torrent/deluge">Deluge</a> as BitTorrent client</h5>
 <p><a href="https://prinzpiuz.in/images/self_hosting/deluge.png">📸 ScreenShot</a></p>
 <p>The main reason I am using deluge is that it is very simple and minimal and doing its duty pretty awesome. There is also another reason which is, deluge have a web-UI and android client app and even a browser plugin</p>
 <ul>
@@ -273,7 +276,7 @@ Also, it&rsquo;s very easy to manage media in it</p>
 </ul>
 </li>
 <li>
-<h5 id="jacketthttpsgithubcomjackettjackett-as-torrent-search-engine"><a href="https://github.com/Jackett/Jackett">Jackett</a> as Torrent Search Engine</h5>
+<h5 id="jackett-as-torrent-search-engine"><a href="https://github.com/Jackett/Jackett">Jackett</a> as Torrent Search Engine</h5>
 <p><a href="https://prinzpiuz.in/images/self_hosting/jackett.png">📸 ScreenShot</a></p>
 <p>Jackett is a torrent search capable of listing working torrents from the configured indexes, also it has capabilities to work with other apps like Sonarr, Radarr, SickRage, CouchPotato, Mylar3, Lidarr, DuckieTV, qBittorrent, Nefarious etc.</p>
 <ul>
@@ -283,7 +286,7 @@ Also, it&rsquo;s very easy to manage media in it</p>
 </ul>
 </li>
 <li>
-<h5 id="sonarrhttpsgithubcomsonarrsonarr-as-a-coordinator-for-downloading-tv-shows"><a href="https://github.com/Sonarr/Sonarr">Sonarr</a> as a coordinator for downloading TV shows</h5>
+<h5 id="sonarr-as-a-coordinator-for-downloading-tv-shows"><a href="https://github.com/Sonarr/Sonarr">Sonarr</a> as a coordinator for downloading TV shows</h5>
 <p><a href="https://prinzpiuz.in/images/self_hosting/sonarr.png">📸 ScreenShot</a></p>
 <p>Sonarr is a PVR for Usenet and BitTorrent users. It&rsquo;s basically works as a coordinator between my configured indexers, download client, and media manager for TV shows. When I add a new show to monitor in it, Sonarr will grab the best torrent file for me and add it to my download client and when my download finishes it will rename according to the standards and move it to my media folders. Also, it will automatically fetch future episodes too. The best part is it will update the quality of video if a better quality is available.</p>
 <ul>
@@ -295,7 +298,7 @@ Also, it&rsquo;s very easy to manage media in it</p>
 </ul>
 </li>
 <li>
-<h5 id="radarrhttpsgithubcomradarrradarr-as-a-coordinator-downloading-movies"><a href="https://github.com/Radarr/Radarr">Radarr</a> as a coordinator downloading Movies</h5>
+<h5 id="radarr-as-a-coordinator-downloading-movies"><a href="https://github.com/Radarr/Radarr">Radarr</a> as a coordinator downloading Movies</h5>
 <p><a href="https://prinzpiuz.in/images/self_hosting/radarr.png">📸 ScreenShot</a></p>
 <p>Radarr is same as that of sonarr except that this will download movies</p>
 </li>
@@ -347,7 +350,7 @@ Also, it&rsquo;s very easy to manage media in it</p>
     
         <div id="blotils">
     <button
-        id="blotils_like_button"
+        id="blotils_like_btn"
         class="blotils_button"
         title="Like Me"
     >
@@ -494,38 +497,34 @@ Also, it&rsquo;s very easy to manage media in it</p>
             ></circle>
         </svg>
     </button>
-    <small id="blotils_count"></small>
+    <small id="blotils_count_main"></small>
 </div>
 
     
 </div>
 </div>
-    </div>
-    
-    
-      <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://prinzpiuz.in/css/blotils.css"
-      />
-      <script
-        src="https://cdn.jsdelivr.net/gh/prinzpiuz/BloTils@js-v1.0.1/dist/BloTils.min.js"
-        integrity="sha384-LALymwPBn/ggGNNFqVChJQiIHLwelRpvHX8Sx2382VyX0ZcOUUgjVhRRejXE0kpl"
-        crossorigin="anonymous"
-        data-blotils_url="https://blotils.prinzpiuz.in"
-        data-blotils_like_btn="blotils_like_button">
-      </script>
-      <script src="https://prinzpiuz.in/js/blotils.js"></script>
-    
-    
-    
-    <footer class="text-center pb-1">
+        </div>
+         
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://prinzpiuz.in/css/blotils.css"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/gh/prinzpiuz/BloTils@js-v1.0.2/dist/BloTils.min.js"
+            integrity="sha384-+FlMbufuS45mY7oUFG31xojfsr5iVrfjM2Apg8x8EIbh4ltC2AOSm7lBTm33LSSa"
+            crossorigin="anonymous"
+            data-blotils_url="https://blotils.prinzpiuz.in"
+            data-blotils_like_btn="blotils_like_btn"
+        ></script>
+        <script src="https://prinzpiuz.in/js/blotils.js"></script>
+           <footer class="text-center pb-1">
   <small class="text-muted">
      © Copyright 2025, prinzpiuz<br />
     Built with 💚 in <a href="https://gohugo.io/">Hugo</a><br />
   </small>
   <div id="version_div">
-     v2.0.12 
+     v2.0.13 
   </div>
 </footer>
 </body>

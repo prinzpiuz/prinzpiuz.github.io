@@ -14,7 +14,7 @@
       <link>https://prinzpiuz.in/post/how-i-automatically-deploying-this-blog/</link>
       <pubDate>Fri, 01 Jul 2022 23:37:16 +0530</pubDate>
       <guid>https://prinzpiuz.in/post/how-i-automatically-deploying-this-blog/</guid>
-      <description>This is a kinda sequel to My Blog Set up. So before explaining the current setup. I know you guys are curious about knowing about the previous setup. Before, my setup was like, I set up my blog&amp;rsquo;s build folder as a git submodule. so after completing writing my blog I manually take a build and push both repos (blog repo and build repo) to GitHub and then manually create merge requisites there and merge to master.</description>
+      <description>&lt;p&gt;This is a kinda sequel to &lt;a href=&#34;../../post/my-blog-setup/&#34;&gt;My Blog Set up&lt;/a&gt;.&#xA;So before explaining the current setup. I know you guys are curious about knowing about the previous setup. Before, my setup was like, I set up my blog&amp;rsquo;s build folder as a git submodule. so after completing writing my blog I manually take a build and push both repos (blog repo and build repo) to GitHub and then manually create merge requisites there and merge to master. This was like boring for me. and recently when got time I had some research on automatically deploying Hugo sites on GitHub pages and I found these two action plugins&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

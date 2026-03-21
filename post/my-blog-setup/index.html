@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en"><head>
   <title>My Blog Set up</title>
 
@@ -23,7 +23,7 @@
       "@id": "https:\/\/prinzpiuz.in\/post\/my-blog-setup\/"
     },
     "headline": "My Blog Set up",
-    "description": "I was planning to set up a blog from my college days onwards. it\u0026rsquo;s been 5 years since I\u0026rsquo;m out of college. since I\u0026rsquo;m a miser person, I was always looking for the cheapest hosting service \u0026#x1f60e; also, I don\u0026rsquo;t want the headaches of hosting like\nserver management database management backups hosting\/bandwidth\/scalability\/users And I have found a solution for all this, for server management, we can choose some hosting services like GitHub\/Gitlab pages or Netfly.",
+    "description": "\u003cp\u003eI was planning to set up a blog from my college days onwards. it\u0026rsquo;s been 5 years since I\u0026rsquo;m out of college. since I\u0026rsquo;m a \u003ca href=\u0022https:\/\/olam.in\/Dictionary\/en_ml\/miser\u0022\u003emiser\u003c\/a\u003e person, I was always looking for the cheapest hosting service \u0026#x1f60e; also, I don\u0026rsquo;t want the headaches of hosting like\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003eserver management\u003c\/li\u003e\n\u003cli\u003edatabase management\u003c\/li\u003e\n\u003cli\u003ebackups\u003c\/li\u003e\n\u003cli\u003ehosting\/bandwidth\/scalability\/users\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cp\u003eAnd I have found a solution for all this, for server management, we can choose some hosting services like GitHub\/Gitlab pages or Netfly..etc.\nand for database management, for a simple blog or personal website like mine, there is no need for a database at all. we can use static site generators for it. I have used \u003ca href=\u0022https:\/\/gohugo.io\/\u0022\u003eHugo\u003c\/a\u003e, which is the fastest framework for building static sites, which is built on top of fastest \u003ca href=\u0022https:\/\/golang.org\/\u0022\u003eGo\u003c\/a\u003e. for backups of static sites, their repo itself acts as a backup and provides easy portability in the future. then comes the hosting\/scalability\/users part which is somewhere we need to spend money. but thanks to GitHub pages they provide free hosting for public repos and hence it will automatically manage the rest of things. and also they support custom domains\nso the only money I had to spend for my website, is the money for the domain \u0026ldquo;prinzpiuz.in\u0026rdquo;\nThe theme used for this site is called \u003ca href=\u0022https:\/\/themes.gohugo.io\/devise\/\u0022\u003edevise\u003c\/a\u003e developed by \u003ca href=\u0022https:\/\/twitter.com\/austingebauer\u0022\u003eAustin Gebauer\u003c\/a\u003e\u003c\/p\u003e",
     "image": {
       "@type": "ImageObject",
       "url": "",
@@ -90,7 +90,10 @@
   ></script>
 </head>
 <body>
-    <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+        <div
+            id="content"
+            class="mx-auto"
+        ><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
     <div class="row">
         <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
             <a href="../../" class="text-decoration-none">
@@ -201,7 +204,7 @@
             d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"
         />
     </svg>
-    <small id="blotils_count_main"></small>
+    <small id="blotils_count"></small>
 </small>
 
         
@@ -222,7 +225,7 @@ The theme used for this site is called <a href="https://themes.gohugo.io/devise/
     
         <div id="blotils">
     <button
-        id="blotils_like_button"
+        id="blotils_like_btn"
         class="blotils_button"
         title="Like Me"
     >
@@ -369,38 +372,34 @@ The theme used for this site is called <a href="https://themes.gohugo.io/devise/
             ></circle>
         </svg>
     </button>
-    <small id="blotils_count"></small>
+    <small id="blotils_count_main"></small>
 </div>
 
     
 </div>
 </div>
-    </div>
-    
-    
-      <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://prinzpiuz.in/css/blotils.css"
-      />
-      <script
-        src="https://cdn.jsdelivr.net/gh/prinzpiuz/BloTils@js-v1.0.1/dist/BloTils.min.js"
-        integrity="sha384-LALymwPBn/ggGNNFqVChJQiIHLwelRpvHX8Sx2382VyX0ZcOUUgjVhRRejXE0kpl"
-        crossorigin="anonymous"
-        data-blotils_url="https://blotils.prinzpiuz.in"
-        data-blotils_like_btn="blotils_like_button">
-      </script>
-      <script src="https://prinzpiuz.in/js/blotils.js"></script>
-    
-    
-    
-    <footer class="text-center pb-1">
+        </div>
+         
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://prinzpiuz.in/css/blotils.css"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/gh/prinzpiuz/BloTils@js-v1.0.2/dist/BloTils.min.js"
+            integrity="sha384-+FlMbufuS45mY7oUFG31xojfsr5iVrfjM2Apg8x8EIbh4ltC2AOSm7lBTm33LSSa"
+            crossorigin="anonymous"
+            data-blotils_url="https://blotils.prinzpiuz.in"
+            data-blotils_like_btn="blotils_like_btn"
+        ></script>
+        <script src="https://prinzpiuz.in/js/blotils.js"></script>
+           <footer class="text-center pb-1">
   <small class="text-muted">
      © Copyright 2025, prinzpiuz<br />
     Built with 💚 in <a href="https://gohugo.io/">Hugo</a><br />
   </small>
   <div id="version_div">
-     v2.0.12 
+     v2.0.13 
   </div>
 </footer>
 </body>

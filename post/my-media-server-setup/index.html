@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en"><head>
   <title>My Media Server Set-up</title>
 
@@ -23,7 +23,7 @@
       "@id": "https:\/\/prinzpiuz.in\/post\/my-media-server-setup\/"
     },
     "headline": "My Media Server Set-up",
-    "description": "The reason I\u0026rsquo;m writing this blog because I learned lot of things while setting up my media server to current configuration, so this is kinda experience sharing, may be useful for those who trying one.\nLittle History \u0026#x1f55c; From my teenage itself I\u0026rsquo;m a binge movie watcher, at that time I saves money and buy DVDs of movies I like and I had a small collection of DVDs, then I brought a desktop PC, and it was time of USB sticks and it became little more easy and cheap to collect movies, still somebody need to download movies from torrent (thanks The Pirate Bay) or rip from DVDs,but still network speed was very low then(I had a BSNL bradband connection which had only 512kbps), With the arrival of 4G.",
+    "description": "\u003cfigure class=\u0022figure_center\u0022\u003e\u003cimg src=\u0022\/images\/media_server\/media_server.jpg\u0022 width=\u0022300\u0022 height=\u0022300\u0022\u003e\n\u003c\/figure\u003e\n\n\u003cblockquote\u003e\n\u003cp\u003e\u003cem\u003eThe reason I\u0026rsquo;m writing this blog because I learned lot of things while setting up my media server to current configuration, so this is kinda experience sharing, may be useful for those who trying one.\u003c\/em\u003e\u003c\/p\u003e\n\u003c\/blockquote\u003e\n\u003ch5 id=\u0022little-history-clock130\u0022\u003eLittle History \u0026#x1f55c;\u003c\/h5\u003e\n\u003cp\u003eFrom my teenage itself I\u0026rsquo;m a binge movie watcher, at that time I saves money and buy DVDs of movies I like and I had a small collection of DVDs, then I brought a desktop PC, and it was time of USB sticks and it became little more easy and cheap to collect movies, still somebody need to download movies from torrent (thanks \u003ca href=\u0022https:\/\/en.wikipedia.org\/wiki\/The_Pirate_Bay\u0022\u003eThe Pirate Bay\u003c\/a\u003e) or \u003ca href=\u0022https:\/\/en.wikipedia.org\/wiki\/Ripping\u0022\u003erip\u003c\/a\u003e from DVDs,but still network speed was very low then(I had a BSNL bradband connection which had only 512kbps),\nWith the arrival of 4G. everybody having lot of data and every body was downloading lot of movies, TV series, Documentaries..etc. and I set-up a \u003ca href=\u0022https:\/\/kodi.tv\/\u0022\u003eKodi\u003c\/a\u003e server in pc and kodi client in mobile and streaming movies from pc to mobile through LAN, which changed a lot of things in my movie watching experience. like now I can watch movies from where ever I want, also I can watch in whatever style I want. Then I moved to Banglore for my intership and work. And it changed lot of things like it was an end to first era of my pc, after i went to Banglore nobody used my PC and it was turning to an E-waste, and I am forced to watch movies in my laptop (I always hated saving media files in my work machine). But I had to, But within year due to some personal issues I had to relocate to my home town. Also we had a new smart TV in home. Also a Fibre optic internet connection @ 50MbPS \u0026#x1f606; and I have got a plan for my old PC, \u003cstrong\u003eTurning it to media server\u003c\/strong\u003e \u0026#x1f3a6;.\nso the set-up is like my old pc as \u003ca href=\u0022https:\/\/emby.media\/\u0022\u003eemby\u003c\/a\u003e server streaming contents to my TV through my Home LAN.and for performance i changed it to a minimal \u003ca href=\u0022https:\/\/www.debian.org\/\u0022\u003edebian\u003c\/a\u003e machine and all access through \u003ca href=\u0022https:\/\/en.wikipedia.org\/wiki\/Secure_Shell\u0022\u003essh\u003c\/a\u003e from lap or phone through \u003ca href=\u0022https:\/\/termux.com\/\u0022\u003etermux\u003c\/a\u003e since there is no GUI I can save lot of memory.\u003c\/p\u003e",
     "image": {
       "@type": "ImageObject",
       "url": "",
@@ -90,7 +90,10 @@
   ></script>
 </head>
 <body>
-    <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+        <div
+            id="content"
+            class="mx-auto"
+        ><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
     <div class="row">
         <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
             <a href="../../" class="text-decoration-none">
@@ -201,7 +204,7 @@
             d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"
         />
     </svg>
-    <small id="blotils_count_main"></small>
+    <small id="blotils_count"></small>
 </small>
 
         
@@ -223,12 +226,12 @@ These are the set-ups i tried so far&hellip;.</p>
 <li>
 <p><strong><a href="https://en.wikipedia.org/wiki/Secure_copy">scp</a></strong>
 its a secure file copying protocol for transferring file between two machines</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>scp -r user@host:directory/SourceFolder TargetFolder
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>scp -r user@host:directory/SourceFolder TargetFolder
 </span></span></code></pre></div></li>
 <li>
 <p><strong><a href="https://en.wikipedia.org/wiki/SSHFS">sshfs</a></strong>
 Basically it helps to mount file system from server in to our local machine, which gives us a GUI based interaction to server, so that we can edit files and move them to server like normal GUI thing,I created the following <a href="https://en.wikipedia.org/wiki/Alias_(command)">alias</a> for the easy access of same</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>alias mov<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sudo sshfs user@host:directory/SourceFolder TargetFolder&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>alias mov<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sudo sshfs user@host:directory/SourceFolder TargetFolder&#34;</span>
 </span></span></code></pre></div><p>this should be added to your corresponding rc file.</p>
 </li>
 <li>
@@ -274,7 +277,7 @@ Ios version not yet available&hellip;.</p>
     
         <div id="blotils">
     <button
-        id="blotils_like_button"
+        id="blotils_like_btn"
         class="blotils_button"
         title="Like Me"
     >
@@ -421,38 +424,34 @@ Ios version not yet available&hellip;.</p>
             ></circle>
         </svg>
     </button>
-    <small id="blotils_count"></small>
+    <small id="blotils_count_main"></small>
 </div>
 
     
 </div>
 </div>
-    </div>
-    
-    
-      <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://prinzpiuz.in/css/blotils.css"
-      />
-      <script
-        src="https://cdn.jsdelivr.net/gh/prinzpiuz/BloTils@js-v1.0.1/dist/BloTils.min.js"
-        integrity="sha384-LALymwPBn/ggGNNFqVChJQiIHLwelRpvHX8Sx2382VyX0ZcOUUgjVhRRejXE0kpl"
-        crossorigin="anonymous"
-        data-blotils_url="https://blotils.prinzpiuz.in"
-        data-blotils_like_btn="blotils_like_button">
-      </script>
-      <script src="https://prinzpiuz.in/js/blotils.js"></script>
-    
-    
-    
-    <footer class="text-center pb-1">
+        </div>
+         
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://prinzpiuz.in/css/blotils.css"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/gh/prinzpiuz/BloTils@js-v1.0.2/dist/BloTils.min.js"
+            integrity="sha384-+FlMbufuS45mY7oUFG31xojfsr5iVrfjM2Apg8x8EIbh4ltC2AOSm7lBTm33LSSa"
+            crossorigin="anonymous"
+            data-blotils_url="https://blotils.prinzpiuz.in"
+            data-blotils_like_btn="blotils_like_btn"
+        ></script>
+        <script src="https://prinzpiuz.in/js/blotils.js"></script>
+           <footer class="text-center pb-1">
   <small class="text-muted">
      © Copyright 2025, prinzpiuz<br />
     Built with 💚 in <a href="https://gohugo.io/">Hugo</a><br />
   </small>
   <div id="version_div">
-     v2.0.12 
+     v2.0.13 
   </div>
 </footer>
 </body>

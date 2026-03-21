@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en"><head>
   <title></title>
 
@@ -23,7 +23,7 @@
       "@id": "https:\/\/prinzpiuz.in\/projects\/"
     },
     "headline": "",
-    "description": " My Projects If you enjoy what you see, I\u0027d love for you to give them a ⭐ on GitHub!\nYou can find more of my work here. ",
+    "description": "\u003cstyle\u003e\n  #content {\n    max-width: 1200px;\n  }\n\u003c\/style\u003e\n\n\u003cdiv class=\u0022projects_container\u0022\u003e\n  \u003ch1 class=\u0022title text-center\u0022\u003eMy Projects\u003c\/h1\u003e\n  \u003cp class=\u0022subtitle text-center\u0022\u003e\n    If you enjoy what you see, I\u0027d love for you to give them a ⭐ on GitHub!\u003cbr \/\u003e\n    You can find more of my work\n    \u003ca href=\u0022https:\/\/github.com\/prinzpiuz\u0022\u003ehere\u003c\/a\u003e.\n  \u003c\/p\u003e\n  \u003cdiv id=\u0022projects-grid\u0022 class=\u0022projects-grid\u0022\u003e\u003c\/div\u003e\n\u003c\/div\u003e\n\n\u003cscript\u003e\n  document.addEventListener(\u0022DOMContentLoaded\u0022, async () =\u003e {\n    const languageLogos = {\n      Python:\n        \u0022https:\/\/cdn.jsdelivr.net\/gh\/devicons\/devicon@latest\/icons\/python\/python-original.svg\u0022,\n      Dart: \u0022https:\/\/cdn.jsdelivr.net\/gh\/devicons\/devicon@latest\/icons\/dart\/dart-original.svg\u0022,\n      Flutter:\n        \u0022https:\/\/cdn.jsdelivr.net\/gh\/devicons\/devicon@latest\/icons\/flutter\/flutter-original.svg\u0022,\n      \u0022Vue.js\u0022:\n        \u0022https:\/\/cdn.jsdelivr.net\/gh\/devicons\/devicon@latest\/icons\/vuejs\/vuejs-original.svg\u0022,\n      JavaScript:\n        \u0022https:\/\/cdn.jsdelivr.net\/gh\/devicons\/devicon@latest\/icons\/javascript\/javascript-original.svg\u0022,\n      Go: \u0022https:\/\/cdn.jsdelivr.net\/gh\/devicons\/devicon@latest\/icons\/go\/go-original.svg\u0022,\n      React:\n        \u0022https:\/\/cdn.jsdelivr.net\/gh\/devicons\/devicon@latest\/icons\/react\/react-original.svg\u0022,\n      Typescript:\n        \u0022https:\/\/cdn.jsdelivr.net\/gh\/devicons\/devicon@latest\/icons\/typescript\/typescript-original.svg\u0022,\n    };\n    \/\/ Define your projects with owner and repo names\n    const projects = [\n      {\n        name: \u0022RailGadi BOT\u0022,\n        description:\n          \u0022A Telegram BOT built with Python that provides lots of functionalities from NTES.\u0022,\n        languages: [\u0022Python\u0022],\n        sourceUrl: \u0022https:\/\/github.com\/prinzpiuz\/RailwayStatusBot\u0022,\n        owner: \u0022prinzpiuz\u0022,\n        repo: \u0022RailwayStatusBot\u0022,\n        logoUrl: \u0022https:\/\/placehold.co\/64x64\/17a2b8\/ffffff?text=RGB\u0022,\n        licenseLogoUrl:\n          \u0022https:\/\/www.gnu.org\/graphics\/gplv3-with-text-84x42.png\u0022,\n      },\n      {\n        name: \u0022MSM\u0022,\n        description:\n          \u0022An Android app built on Dart and Flutter to manage media servers like Emby\/Jellyfin\/Plex. \u003cbr\u003e App can be Downloaded from \u003ca href=\u0027https:\/\/apt.izzysoft.de\/fdroid\/index\/apk\/com.prinzpiuz.msm\u0027  target=\u0027_blank\u0027\u003eIzyOnDroid\u003c\/a\u003e\u0022,\n        languages: [\u0022Dart\u0022, \u0022Flutter\u0022],\n        sourceUrl: \u0022https:\/\/github.com\/prinzpiuz\/MSM\u0022,\n        owner: \u0022prinzpiuz\u0022,\n        repo: \u0022MSM\u0022,\n        logoUrl:\n          \u0022https:\/\/github.com\/prinzpiuz\/MSM\/raw\/main\/assets\/svgs\/msm.svg\u0022,\n        licenseLogoUrl:\n          \u0022https:\/\/www.gnu.org\/graphics\/gplv3-with-text-84x42.png\u0022,\n      },\n      {\n        name: \u0022Rock Paper Scissor\u0022,\n        description:\n          \u0022A server-less game app built with Vue and p2p. \u003cbr\u003e Game can be played \u003ca href=\u0027https:\/\/silly-fermat-36c0e6.netlify.app\/#\/\u0027  target=\u0027_blank\u0027\u003ehere\u003c\/a\u003e\u0022,\n        languages: [\u0022Vue.js\u0022, \u0022JavaScript\u0022],\n        sourceUrl: \u0022https:\/\/github.com\/prinzpiuz\/Stone-Paper-Scissor\u0022,\n        owner: \u0022prinzpiuz\u0022,\n        repo: \u0022Stone-Paper-Scissor\u0022,\n        logoUrl:\n          \u0022https:\/\/github.com\/prinzpiuz\/Stone-Paper-Scissor\/raw\/master\/src\/assets\/android-chrome-192x192.png\u0022,\n        licenseLogoUrl:\n          \u0022https:\/\/www.gnu.org\/graphics\/gplv3-with-text-84x42.png\u0022,\n      },\n      {\n        name: \u0022Django Update Checker \u0026 MS Teams Notifier\u0022,\n        description:\n          \u0022A forkable GitHub action to track Django\u0027s security updates and new releases.\u0022,\n        languages: [\u0022Python\u0022],\n        sourceUrl: \u0022https:\/\/github.com\/prinzpiuz\/django_update_checker\u0022,\n        owner: \u0022prinzpiuz\u0022,\n        repo: \u0022django_update_checker\u0022,\n        logoUrl: \u0022https:\/\/placehold.co\/64x64\/17a2b8\/ffffff?text=DUC\u0022,\n        licenseLogoUrl:\n          \u0022https:\/\/www.gnu.org\/graphics\/gplv3-with-text-84x42.png\u0022,\n      },\n      {\n        name: \u0022BloTils\u0022,\n        description: \u0022Blog-Utils, Common Utilities For Your Blogging Platform.\u0022,\n        languages: [\u0022Go\u0022],\n        sourceUrl: \u0022https:\/\/github.com\/prinzpiuz\/BloTils\u0022,\n        owner: \u0022prinzpiuz\u0022,\n        repo: \u0022BloTils\u0022,\n        logoUrl:\n          \u0022https:\/\/github.com\/prinzpiuz\/BloTils\/blob\/staging\/static\/favicon\/android-chrome-512x512.png?raw=true\u0022,\n        licenseLogoUrl:\n          \u0022https:\/\/www.gnu.org\/graphics\/gplv3-with-text-84x42.png\u0022,\n      },\n      {\n        name: \u0022Looi\u0022,\n        description:\n          \u0022A Minimal, Customisable New Tab page for Firefox, Chrome, and Edge.\u0022,\n        languages: [\u0022React\u0022, \u0022Typescript\u0022],\n        sourceUrl: \u0022https:\/\/github.com\/prinzpiuz\/looi\u0022,\n        owner: \u0022prinzpiuz\u0022,\n        repo: \u0022looi\u0022,\n        logoUrl:\n          \u0022https:\/\/github.com\/prinzpiuz\/looi\/raw\/main\/src\/assets\/images\/looi.svg\u0022,\n        licenseLogoUrl:\n          \u0022https:\/\/www.gnu.org\/graphics\/gplv3-with-text-84x42.png\u0022,\n      },\n    ];\n\n    const projectsGrid = document.getElementById(\u0022projects-grid\u0022);\n\n    for (const project of projects) {\n      const card = document.createElement(\u0022div\u0022);\n      card.className = \u0022project-card\u0022;\n\n      const languagesHtml = project.languages\n        .map((lang) =\u003e {\n          const logoUrl = languageLogos[lang];\n          if (logoUrl) {\n            return \u0060\u003cimg src=\u0022${logoUrl}\u0022 alt=\u0022${lang} logo\u0022 class=\u0022language-logo\u0022\u003e\u0060;\n          } else {\n            return \u0060\u003cspan class=\u0022language-tag\u0022\u003e${lang}\u003c\/span\u003e\u0060;\n          }\n        })\n        .join(\u0022\u0022);\n\n      card.innerHTML = \u0060\n          \u003cdiv\u003e\n            \u003cdiv class=\u0022card-header-logo\u0022 style=\u0022display: flex; align-items: center; margin-bottom: 1rem;\u0022\u003e\n              ${\n                project.logoUrl\n                  ? \u0060\u003cimg src=\u0022${project.logoUrl}\u0022 alt=\u0022${project.name} logo\u0022 class=\u0022project-logo\u0022\u003e\u0060\n                  : \u0060\u003ci class=\u0022fab fa-github\u0022 style=\u0022font-size: 2rem; color: #1f2937; margin-right: 1rem;\u0022\u003e\u003c\/i\u003e\u0060\n              }\n              \u003ch3 class=\u0022font-semibold\u0022\u003e${project.name}\u003c\/h3\u003e\n            \u003c\/div\u003e\n            \u003cp\u003e${project.description}\u003c\/p\u003e",
     "image": {
       "@type": "ImageObject",
       "url": "",
@@ -90,7 +90,10 @@
   ></script>
 </head>
 <body>
-    <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+        <div
+            id="content"
+            class="mx-auto"
+        ><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
     <div class="row">
         <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
             <a href="../" class="text-decoration-none">
@@ -376,18 +379,14 @@
         
     </div>
 </div>
-    </div>
-    
-    
-    
-    
-    <footer class="text-center pb-1">
+        </div>
+            <footer class="text-center pb-1">
   <small class="text-muted">
      © Copyright 2025, prinzpiuz<br />
     Built with 💚 in <a href="https://gohugo.io/">Hugo</a><br />
   </small>
   <div id="version_div">
-     v2.0.12 
+     v2.0.13 
   </div>
 </footer>
 </body>

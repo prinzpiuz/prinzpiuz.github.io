@@ -14,7 +14,7 @@
       <link>https://prinzpiuz.in/post/how-to-extent-airflow-ui/</link>
       <pubDate>Sun, 28 May 2023 10:49:11 +0530</pubDate>
       <guid>https://prinzpiuz.in/post/how-to-extent-airflow-ui/</guid>
-      <description>This is a small blog about some recent hurdles I faced in airflow and how I solved it. So what is airflow as the airflow site says, &amp;ldquo;Airflow is a platform created by the community to programmatically author, schedule and monitor workflows.&amp;rdquo;. In simple worlds it&amp;rsquo;s a platform for programmatically executing workflows which is written in DAGs, Basically Directed Acyclic Graph which is the full form of DAG, is a concept in graph theory.</description>
+      <description>&lt;p&gt;&lt;strong&gt;This&lt;/strong&gt; is a small blog about some recent hurdles I faced in airflow and how I solved it.&#xA;So what is &lt;a href=&#34;https://airflow.apache.org/&#34;&gt;airflow&lt;/a&gt; as the airflow site says, &lt;em&gt;&amp;ldquo;Airflow is a platform created by the community to programmatically author, schedule and monitor workflows.&amp;rdquo;&lt;/em&gt;. In simple worlds it&amp;rsquo;s a platform for programmatically executing workflows which is written in &lt;a href=&#34;https://en.wikipedia.org/wiki/Directed_acyclic_graph&#34;&gt;DAGs&lt;/a&gt;, &lt;strong&gt;Basically Directed Acyclic Graph&lt;/strong&gt; which is the full form of DAG, is a concept in &lt;a href=&#34;https://en.wikipedia.org/wiki/Graph_theory&#34;&gt;graph theory&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

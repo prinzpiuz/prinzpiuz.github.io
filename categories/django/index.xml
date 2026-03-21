@@ -14,7 +14,7 @@
       <link>https://prinzpiuz.in/post/introduction-to-async-django/</link>
       <pubDate>Thu, 21 Jan 2021 00:43:47 +0530</pubDate>
       <guid>https://prinzpiuz.in/post/introduction-to-async-django/</guid>
-      <description>This is a written version of the talk I presented to my colleagues. This is a basic introduction to asynchronous programming in django. So the async support for django came with django 3.1 in august 2020, a great leap in the history of Django. still, it lacks support in certain areas like ORM, and cache layer, but it will be available soon. The effort for implementing async support in django was done by Andrew Godwin &amp;#x1f44f; Now let&amp;rsquo;s look into how this async django works&amp;hellip;</description>
+      <description>&lt;p&gt;This is a written version of the talk I presented to my colleagues. This is a basic introduction to asynchronous programming in django.&#xA;So the async support for django came with &lt;a href=&#34;https://docs.djangoproject.com/en/3.1/topics/async/&#34;&gt;django 3.1&lt;/a&gt; in august 2020, a great leap in the history of Django. still, it lacks support in certain areas like ORM, and cache layer, but it will be available soon. The effort for implementing async support in django was done by &lt;a href=&#34;https://twitter.com/andrewgodwin&#34;&gt;Andrew Godwin&lt;/a&gt; &amp;#x1f44f;&#xA;Now let&amp;rsquo;s look into how this async django works&amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
